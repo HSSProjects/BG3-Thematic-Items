@@ -1,0 +1,111 @@
+new entry "ThematicItems_Minstrel_Gloves"
+type "Armor"
+using "_Hand_Magic"
+data "RootTemplate" "8782f863-c42f-442d-a17d-de05ca22e8ab"
+data "Rarity" "Uncommon"
+data "Boosts" "Advantage(Skill, Athletics);Advantage(Skill, Performance)"
+data "ValueOverride" "284"
+data "Unique" 1
+
+new entry "ThematicItems_Minstrel_Boots"
+type "Armor"
+using "_Foot_Magic"
+data "RootTemplate" "acee94e2-3eb2-4928-819b-2d76033a1d60"
+data "Rarity" "Uncommon"
+data "Boosts" "Advantage(Skill, Acrobatics);Advantage(Skill, Stealth)"
+data "ValueOverride" "170"
+data "Unique" 1
+
+new entry "ThematicItems_Minstrel_Mantle"
+type "item"
+using "_Back_Magic"
+data "RootTemplate" "8b7c6ef3-2eeb-4337-87df-a324ffc51ba5"
+data "Rarity" "Rare"
+data "PassivesOnEquip" "TI_Willful_Evasion"
+data "ValueOverride" "802"
+data "Unique" 1
+
+new entry "ThematicItems_Minstrel_Vest"
+type "Armor"
+using "_Body"
+data "RootTemplate" "c7abd4c8-90ea-451e-82b5-bfaf7578de91"
+data "Rarity" "Rare"
+data "ArmorClass" "12"
+data "ArmorType" "Padded"
+data "PassivesOnEquip" "ARM_Ambusher_1_Passive;TI_Performative_Fingers"
+data "Armor Class Ability" "Dexterity"
+data "Proficiency Group" "LightArmor"
+data "ValueOverride" "1483"
+data "Unique" 1
+
+new entry "ThematicItems_Minstrel_Crown"
+type "Armor"
+using "_Head_Magic"
+data "RootTemplate" "581feeca-92a7-4f13-801c-3a18b305b8b1"
+data "Rarity" "VeryRare"
+data "PassivesOnEquip" "TI_Greater_Lore"
+data "Boosts" "Ability(Intelligence, 2, 24)"
+data "ValueOverride" "2085"
+data "Unique" 1
+
+new entry "ThematicItems_Minstrel_Amulet"
+type "item"
+using "_Amulet_Magic"
+data "RootTemplate" "1a07a62d-1bf2-4f12-967b-bf34658558e8"
+data "Rarity" "VeryRare"
+data "PassivesOnEquip" "MAG_SpellSaveDC_Enchantment_Passive;TI_Complete_Encyclopedia"
+data "ValueOverride" "1836"
+data "Unique" 1
+
+new entry "ThematicItems_Minstrel_Ring"
+type "item"
+using "_Ring_Magic"
+data "RootTemplate" "8d7c9fe3-812f-424a-9f5b-5ea23d803e60"
+data "Rarity" "Legendary"
+data "PassivesOnEquip" "TI_Greater_ArcaneEnchantment_Passive;Arsenal_Heightened_Enchantment_Passive"
+data "Boosts" "AbilityOverrideMinimum(Charisma, 23)"
+data "ValueOverride" "6783"
+data "Unique" 1
+
+-----
+
+new entry "ThematicItems_Minstrel_Grace"
+type "Weapon"
+using "WPN_HandCrossbow"
+data "RootTemplate" "ea3cbeab-fcf3-405d-aa45-08394e5876be"
+data "Rarity" "Uncommon"
+data "DefaultBoosts" "WeaponProperty(Magical);WeaponDamage(1d4, Psychic)"
+data "ValueOverride" "470"
+data "Unique" 1
+
+-----
+
+new entry "TI_Willful_Evasion"
+type "PassiveData"
+data "DisplayName" "h9ec7aa16gd02eg4029g8425g8bcf6262683a"
+data "Description" "hefc477b0g7bb7g4046g8808g853606fb68f9"
+data "Boosts" "Skill(Stealth, CharismaModifier)"
+
+new entry "TI_Performative_Fingers"
+type "PassiveData"
+data "DisplayName" "h4d147d18gf889g4af2gb81bg9b21cf7e695c"
+data "Description" "h71410ad4g8db1g40c2gb97dg0f0324be3a51"
+data "Boosts" "Skill(SleightOfHand, CharismaModifier)"
+
+new entry "TI_Greater_Lore"
+type "PassiveData"
+data "DisplayName" "h2b9eabdeg3f3eg446bgac3bg0c438ede0b6a"
+data "Description" "hb96caa36g091dg42e1g911bg4e590544b2e7"
+data "Boosts" "Skill(Arcana, ProficiencyBonus);Skill(History, ProficiencyBonus);Skill(Investigation, ProficiencyBonus);Skill(Nature, ProficiencyBonus);Skill(Religion, ProficiencyBonus)"
+
+new entry "TI_Complete_Encyclopedia"
+type "PassiveData"
+data "DisplayName" "h01fbafaeg4a59g48d8g98a6g7e7b1a216d8a"
+data "Description" "hceac9f4fg2620g44a4gb780gb73954377f76"
+data "Boosts" "Advantage(Skill, Arcana);Advantage(Skill, History);Advantage(Skill, Investigation);Advantage(Skill, Nature);Advantage(Skill, Religion)"
+
+new entry "TI_Greater_ArcaneEnchantment_Passive"
+type "PassiveData"
+using "MAG_ArcaneEnchantment_Passive"
+data "DescriptionParams" "3"
+data "Boosts" "SpellSaveDC(3);RollBonus(MeleeSpellAttack, 3);RollBonus(RangedSpellAttack, 3)"

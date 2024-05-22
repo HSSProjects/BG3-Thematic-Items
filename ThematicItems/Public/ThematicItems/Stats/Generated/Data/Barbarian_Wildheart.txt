@@ -1,0 +1,147 @@
+new entry "ThematicItems_Wild_Mantle"
+type "item"
+using "_Back_Magic"
+data "RootTemplate" "05d27556-03c9-47fe-9a3e-e8f9101b37f7"
+data "Rarity" "Uncommon"
+data "PassivesOnEquip" "TI_Predator_Stamina"
+data "ValueOverride" "170"
+data "Unique" 1
+
+new entry "ThematicItems_Wild_Cloth"
+type "Armor"
+using "_Body"
+data "RootTemplate" "aa34d288-954e-4d09-b8d2-66944ef5312d"
+data "Rarity" "Uncommon"
+data "ArmorClass" "10"
+data "PassivesOnEquip" "TI_Bears_Fortitude"
+data "Boosts" "Skill(Survival, 1)"
+data "Armor Class Ability" "Dexterity"
+data "ValueOverride" "116"
+data "Unique" 1
+
+new entry "ThematicItems_Wild_Pendant"
+type "item"
+using "_Amulet_Magic"
+data "RootTemplate" "7df720ce-832e-4b8e-9dc1-c7e9e3249438"
+data "Rarity" "Uncommon"
+data "PassivesOnEquip" "MAG_BarbMonk_Dexterity_Passive"
+data "Boosts" "ActionResource(Movement, 1.5, 0)"
+data "ValueOverride" "137"
+data "Unique" 1
+
+new entry "ThematicItems_Wild_Gauntlets"
+type "Armor"
+using "_Hand_Magic"
+data "RootTemplate" "386a5426-a4fb-410d-8bba-c1ce16ec670b"
+data "Rarity" "Rare"
+data "PassivesOnEquip" "TI_Maul;TI_Hardened_Survivalist"
+data "ValueOverride" "522"
+data "Unique" 1
+
+new entry "ThematicItems_Wild_Headdress"
+type "Armor"
+using "_Head_Magic"
+data "RootTemplate" "b45107e1-26a2-47d0-b313-3f37b8d6dec5"
+data "Rarity" "VeryRare"
+data "PassivesOnEquip" "MAG_Barbarian_Hide_Helmet_Bloodseeker_Passive;TI_Bears_Fortitude"
+data "Boosts" "Ability(Constitution, 2, 24)"
+data "ValueOverride" "2014"
+data "Unique" 1
+
+new entry "ThematicItems_Wild_Ring"
+type "item"
+using "_Ring_Magic"
+data "RootTemplate" "9e2feb85-201c-47f9-84dd-f48970d8b5fa"
+data "Rarity" "VeryRare"
+data "PassivesOnEquip" "TI_Thick_Skin;TI_Bears_Fortitude"
+data "Boosts" "Ability(Constitution, 2, 24);UnlockSpell(Shout_TI_GoadingRoar_Ring)"
+data "ValueOverride" "2018"
+data "Unique" 1
+
+new entry "ThematicItems_Wild_Boots"
+type "Armor"
+using "_Foot_Magic"
+data "RootTemplate" "7bc98869-5a35-42da-85ba-d5ce5412b231"
+data "Rarity" "Legendary"
+data "PassivesOnEquip" "TI_Durability_Of_The_Wild"
+data "Boosts" "ActionResource(Movement, 9, 0)"
+data "ValueOverride" "5916"
+data "Unique" 1
+
+-----
+
+new entry "ThematicItems_Wild_Greatclub"
+type "Weapon"
+using "WPN_Greatclub_1"
+data "RootTemplate" "50d86baf-445f-4647-b4d4-305c93541bc1"
+data "Rarity" "Rare"
+data "PassivesOnEquip" "TI_Fight_Against_Abominations"
+data "Boosts" "UnlockSpell(Shout_TI_GoadingRoar_Club)"
+data "ValueOverride" "892"
+data "Unique" 1
+
+-----
+
+new entry "TI_Predator_Stamina"
+type "PassiveData"
+data "DisplayName" "h70e02bcagbcfdg46b2g8976g0f9115b7bb37"
+data "Description" "he3fb7cdcgd08ag41ddg99cdg1fd910eebad1"
+data "DescriptionParams" "RegainHitPoints(1d4+ConstitutionModifier)"
+data "StatsFunctorContext" "OnDamage"
+data "Conditions" "Enemy() and IsKillingBlow()"
+data "StatsFunctors" "RegainHitPoints(SELF, 1d4+ConstitutionModifier)"
+
+new entry "TI_Bears_Fortitude"
+type "PassiveData"
+data "DisplayName" "h3ee6b5a0g50a4g43cdgaa96ge4397b46782e"
+data "Description" "h34a193aag6334g4937gbd25g17f6c84a77b2"
+data "DescriptionParams" "10"
+data "Boosts" "IncreaseMaxHP(10)"
+
+new entry "TI_Maul"
+type "PassiveData"
+data "DisplayName" "h162b21f3g0ac4g4702g8b25g848b0af1c78b"
+data "Description" "h3ae3fd3fgfd29g4184g91aeg074b7c39168f"
+data "DescriptionParams" "1"
+data "StatsFunctorContext" "OnDamage"
+data "Conditions" "HasStatus('BLEEDING') and not HasStatus('GAPING_WOUND')"
+data "StatsFunctors" "ApplyStatus(GAPING_WOUND, 100, 1)"
+
+new entry "TI_Hardened_Survivalist"
+type "PassiveData"
+data "DisplayName" "h6c28b33dg5426g40e9g81b5gd85c61665647"
+data "Description" "h24ddf5abga0f9g412fg91c2g21fbdd60cd05"
+data "Boosts" "Skill(Survival, ConstitutionModifier)"
+
+new entry "TI_Thick_Skin"
+type "PassiveData"
+data "DisplayName" "h8f42325fgedd1g4e02gb130g0ba732868c1a"
+data "Description" "h2279d558gbab4g4f79g93f7g1918f62b1b70"
+data "DescriptionParams" "3"
+data "Properties" "Highlighted"
+data "BoostContext" "OnEquip;OnCreate"
+data "BoostConditions" "not WearingArmor(context.Source) and not HasShieldEquipped(context.Source)"
+data "Boosts" "DamageReduction(All, Flat, 3)"
+
+new entry "TI_Durability_Of_The_Wild"
+type "PassiveData"
+data "DisplayName" "h695dbcb1g2aeeg41edga64dgb91818aa8d4c"
+data "Description" "h53c3964eg9b2dg4b5dg9bc5g3e9452a8e687"
+data "DescriptionParams" "5"
+data "Boosts" "IncreaseMaxHP(SurvivalModifier()*5)"
+
+-----
+
+new entry "Shout_TI_GoadingRoar_Club"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_GoadingRoar_Bear_Summon"
+data "UseCosts" "BonusActionPoint:1"
+data "Cooldown" "OncePerShortRestPerItem"
+
+new entry "Shout_TI_GoadingRoar_Ring"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_GoadingRoar_Bear_Summon"
+data "UseCosts" "BonusActionPoint:1"
+data "Cooldown" "OncePerShortRestPerItem"

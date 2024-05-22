@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+	<version major="4" minor="0" revision="6" build="5" />
+    <region id="TextureAtlasInfo">
+        <node id="root">
+            <children>
+                <node id="TextureAtlasIconSize">
+                    <attribute id="Height" type="int64" value="64"/>
+                    <attribute id="Width" type="int64" value="64"/>
+                </node>
+                <node id="TextureAtlasPath">
+                    <attribute id="Path" type="LSString" value="Assets/Textures/Icons/Icons_ThematicItems.dds"/>
+                    <attribute id="UUID" type="FixedString" value="30975edd-1832-43e2-a7c0-10a6db47c614"/>
+                </node>
+                <node id="TextureAtlasTextureSize">
+                    <attribute id="Height" type="int64" value="64"/>
+                    <attribute id="Width" type="int64" value="256"/>
+                </node>
+            </children>
+        </node>
+    </region>
+    <region id="IconUVList">
+        <node id="root">
+            <children>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="ForceAbsorb"/> 1
+                    <attribute id="U1" type="float" value="0.0"/> Left
+                    <attribute id="U2" type="float" value="0.25"/> Right
+                    <attribute id="V1" type="float" value="0.0"/> Top
+                    <attribute id="V2" type="float" value="1.0"/> Bottom
+                </node>			
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="PsychicAbsorb"/> 
+                    <attribute id="U1" type="float" value="0.25"/> Left
+                    <attribute id="U2" type="float" value="0.5"/> Right
+                    <attribute id="V1" type="float" value="0.0"/> Top
+                    <attribute id="V2" type="float" value="1.0"/> Bottom
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="ProtectionOfTheAncients"/> 
+                    <attribute id="U1" type="float" value="0.5"/> Left
+                    <attribute id="U2" type="float" value="0.75"/> Right
+                    <attribute id="V1" type="float" value="0.0"/> Top
+                    <attribute id="V2" type="float" value="1.0"/> Bottom
+                </node>										
+            </children>
+        </node>
+    </region>
+</save>

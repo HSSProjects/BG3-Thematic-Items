@@ -1,0 +1,136 @@
+new entry "ThematicItems_Heavenly_Sandals"
+type "Armor"
+using "_Foot_Magic"
+data "RootTemplate" "ad73962e-1363-45c6-8ecb-126eb68c9ba1"
+data "Rarity" "Uncommon"
+data "PassivesOnEquip" "TI_Arcane_Optics"
+data "ValueOverride" "231"
+data "Unique" 1
+
+new entry "ThematicItems_Heavenly_Amulet"
+type "item"
+using "_Amulet_Magic"
+data "RootTemplate" "e09799e2-e13e-43e5-ac41-b13c25881998"
+data "Rarity" "Uncommon"
+data "PassivesOnEquip" "TI_Celestial_Might"
+data "ValueOverride" "321"
+data "Unique" 1
+
+new entry "ThematicItems_Heavenly_Mantle"
+type "item"
+using "_Back_Magic"
+data "RootTemplate" "c3d7f382-4de2-479f-bdcf-dc10d077579f"
+data "Rarity" "Rare"
+data "PassivesOnEquip" "TI_PFGAE"
+data "StatusOnEquip" "PROTECTION_FROM_EVIL_AND_GOOD"
+data "ValueOverride" "950"
+data "Unique" 1
+
+new entry "ThematicItems_Heavenly_Gauntlets"
+type "Armor"
+using "_Hand_Magic"
+data "RootTemplate" "f0d556de-8746-4105-a1ca-8b4b0bf379d9"
+data "Rarity" "Rare"
+data "PassivesOnEquip" "DEN_HellridersPride_Passive;TI_Mystra_Protection"
+data "ValueOverride" "1392"
+data "Unique" 1
+
+new entry "ThematicItems_Heavenly_Diadem"
+type "Armor"
+using "_Head_Magic"
+data "RootTemplate" "d4fc498f-625e-43b4-bde5-3d5a368a4c46"
+data "Rarity" "VeryRare"
+data "PassivesOnEquip" "TI_Divine_Restoration"
+data "Boosts" "Ability(Charisma, 2, 24)"
+data "ValueOverride" "2985"
+data "Unique" 1
+
+new entry "ThematicItems_Heavenly_Ring"
+type "item"
+using "_Ring_Magic"
+data "RootTemplate" "9e4ecc0b-3c87-4b4f-8858-535d6febd98d"
+data "Rarity" "VeryRare"
+data "Boosts" "UnlockSpell(Target_TI_Heal_Celestial);Resistance(Necrotic, Resistant);Ability(Charisma, 2, 24)"
+data "ValueOverride" "1644"
+data "Unique" 1
+
+new entry "ThematicItems_Heavenly_Armour"
+type "Armor"
+using "_Body"
+data "RootTemplate" "e48a7c51-5846-44f7-b9a8-555ded8042b3"
+data "Rarity" "Legendary"
+data "ArmorClass" "21"
+data "ArmorType" "Plate"
+data "PassivesOnEquip" "TI_Heavenly_Armour_Proficiency_Passive;TI_MAG_PreserveTheLight;MAG_Infernal_Plate_Armor_DamageThreshold_Passive;MAG_FlexibleArmor_Defense_Passive"
+data "Boosts" "UnlockSpell(Shout_TI_Celestial_Rejuvenation);UnlockSpell(Shout_MAG_Infernal_Fly)"
+data "Proficiency Group" ""
+data "ValueOverride" "2694"
+data "Unique" 1
+
+-----
+
+new entry "ThematicItems_Heavenly_Mace"
+type "Weapon"
+using "WPN_Mace_1"
+data "RootTemplate" "a28209bd-0275-4d39-8144-f8c5ab0e2d14"
+data "Rarity" "Uncommon"
+data "ValueOverride" "279"
+data "Unique" 1
+
+-----
+
+new entry "TI_Arcane_Optics"
+type "PassiveData"
+data "DisplayName" "h4cfdd0b6g64b4g4ddcgae69g8f3389110af8"
+data "Description" "hae46fa7ag6011g4875g9190g8b774d014de5"
+data "DescriptionParams" "2"
+data "Properties" "OncePerAttack"
+data "StatsFunctorContext" "OnStatusApply"
+data "Conditions" "Enemy() and not Self() and not StatusId('MAG_RADIANT_RADIATING_ORB') and not StatusDoesNotInvokeOnStatusApply()"
+data "StatsFunctors" "ApplyStatus(MAG_RADIANT_RADIATING_ORB, 100, 2);ApplyStatus(MAG_RADIANT_RADIATING_ORB_DURATION_TECHNICAL, 100, 1)"
+
+new entry "TI_Celestial_Might"
+type "PassiveData"
+data "DisplayName" "h720ef5dag0f55g4ec4g8f3bga6632c8d3102"
+data "Description" "h2157d58eg81dfg4677gbd58g87b926826f33"
+data "DescriptionParams" "DealDamage(,Fire);DealDamage(,Radiant)"
+data "BoostContext" "OnCreate"
+data "Boosts" "IF(IsCantrip() and (SpellDamageTypeIs(DamageType.Fire) or SpellDamageTypeIs(DamageType.Radiant))):DamageBonus(max(1,SpellCastingAbilityModifier))"
+
+new entry "TI_PFGAE"
+type "PassiveData"
+data "DisplayName" "h90ab57b5g38b4g4e03ga55cgdd1788318c5b;1"
+data "Description" "he81f648cga4e6g4b8egad31g43f97864d5da;1"
+data "Icon" "Spell_Abjuration_ProtectionFromEvilAndGood"
+
+new entry "TI_Heavenly_Armour_Proficiency_Passive"
+type "PassiveData"
+using "MAG_PHB_ElvenChain_Armor_Passive"
+data "DisplayName" "hf69f8a4cgc6afg4179g9cfdgf8725c528a34"
+
+-----
+
+new entry "Target_TI_Heal_Celestial"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_Heal"
+data "UseCosts" "ActionPoint:1"
+data "Cooldown" "OncePerShortRestPerItem"
+
+new entry "Shout_TI_Celestial_Rejuvenation"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_SongOfRest"
+data "DisplayName" "hd2cd1a43g3837g4031gacc4g2f1befa52aa8"
+data "CastSound" "Spell_Cast_Healing_Aid_L1to3"
+data "TargetSound" "Spell_Impact_Healing_Aid_L1to3"
+data "InstrumentComponentPrepareSound" ""
+data "InstrumentComponentLoopingSound" ""
+data "InstrumentComponentCastSound" ""
+data "InstrumentComponentImpactSound" ""
+data "SpellAnimation" "414bbf02-2918-4f01-83fb-1ddc7a588d88,,;,,;7abe77ed-9c77-4eac-872c-5b8caed070b6,,;cb171bda-f065-4520-b470-e447f678ba1f,,;0c5dcc83-fa78-41da-b6a5-440b5ea30936,,;,,;bea988a0-2ec5-40d8-a67e-ffbd7454bc53,,;,,;,,"
+data "PrepareEffect" "96a51ac8-2e7e-4718-bb62-dcfd18964a02"
+data "CastEffect" "b50decc3-5f93-4467-8d3a-aa8b01fc915e"
+data "TargetEffect" "a908e49b-b59f-4a20-b487-e25ae198d926"
+data "SpellSoundMagntitude" ""
+data "Sheathing" ""

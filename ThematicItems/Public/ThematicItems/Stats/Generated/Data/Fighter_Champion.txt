@@ -1,0 +1,112 @@
+new entry "ThematicItems_Gladiator_Helm"
+type "Armor"
+using "_Head_Magic"
+data "RootTemplate" "02b8e8c0-89be-49a8-b31e-2479db6ab512"
+data "Rarity" "Uncommon"
+data "PassivesOnEquip" "TI_Close_Combat"
+data "Proficiency Group" "MediumArmor"
+data "ValueOverride" "341"
+data "Unique" 1
+
+new entry "ThematicItems_Gladiator_Gauntlets"
+type "Armor"
+using "_Hand_Magic"
+data "RootTemplate" "86432c6c-e30b-4069-915d-dbbbf7dee139"
+data "Rarity" "Uncommon"
+data "PassivesOnEquip" "ImprovedCritical"
+data "Proficiency Group" "MediumArmor"
+data "ValueOverride" "336"
+data "Unique" 1
+
+new entry "ThematicItems_Gladiator_Amulet"
+type "item"
+using "_Amulet_Magic"
+data "RootTemplate" "4e4e1175-6fce-498d-b0de-3f529dc62e67"
+data "Rarity" "Uncommon"
+data "PassivesOnEquip" "TI_Battle_Hardened"
+data "ValueOverride" "153"
+data "Unique" 1
+
+new entry "ThematicItems_Gladiator_Armor"
+type "Armor"
+using "_Body"
+data "RootTemplate" "d6997e64-33ad-4704-980e-0f8294dca577"
+data "Rarity" "Rare"
+data "ArmorClass" "19"
+data "ArmorType" "Plate"
+data "PassivesOnEquip" "ImprovedCritical;TI_Powerful_Display;ARM_ExceptionalPlate_1_Passive"
+data "Proficiency Group" "HeavyArmor"
+data "ValueOverride" "1300"
+data "Unique" 1
+
+new entry "ThematicItems_Gladiator_Sandals"
+type "Armor"
+using "_Foot_Magic"
+data "RootTemplate" "f4581dc2-c8a0-420a-9c62-d9901b46875b"
+data "Rarity" "Rare"
+data "PassivesOnEquip" "ImprovedCritical"
+data "Boosts" "ActionResource(Movement, 3, 0)"
+data "ValueOverride" "1377"
+data "Unique" 1
+
+new entry "ThematicItems_Gladiator_Ring"
+type "item"
+using "_Ring_Magic"
+data "RootTemplate" "eb97dc7b-8802-4961-a73a-7da2c36d8487"
+data "Rarity" "VeryRare"
+data "Boosts" "ProficiencyBonus(SavingThrow, Dexterity);UnlockSpell(Shout_MAG_Martial_Exertion)"
+data "ValueOverride" "1788"
+data "Unique" 1
+
+new entry "ThematicItems_Gladiator_Mantle"
+type "item"
+using "_Back_Magic"
+data "RootTemplate" "82b110ab-241c-4890-969f-b905b34d4282"
+data "Rarity" "Legendary"
+data "PassivesOnEquip" "TI_Olympic_Blows"
+data "Boosts" "Ability(Strength, 2, 26)"
+data "ValueOverride" "6104"
+data "Unique" 1
+
+-----
+
+new entry "ThematicItems_Champion_Broadsword"
+type "Weapon"
+using "WPN_Greatsword_2"
+data "RootTemplate" "5122b5e6-32c0-4752-9d09-59d640eece3c"
+data "Rarity" "VeryRare"
+data "PassivesOnEquip" "MAG_IgnoreSlashingResistance_Passive"
+data "Boosts" "UnlockSpell(Shout_MAG_WhirlwindAttack)"
+data "ValueOverride" "2295"
+data "Unique" 1
+
+-----
+
+new entry "TI_Close_Combat"
+type "PassiveData"
+data "DisplayName" "h1e9ce5c8g134dg49a5g99b7g1c05b36218fa"
+data "Description" "hed9bc954g50bdg4378ga4f4gfceec20734eb"
+data "DescriptionParams" "1"
+data "Boosts" "RollBonus(MeleeWeaponAttack, 1);RollBonus(MeleeSpellAttack, 1);RollBonus(MeleeUnarmedAttack, 1)"
+
+new entry "TI_Battle_Hardened"
+type "PassiveData"
+data "DisplayName" "hfc584596g65d4g41ddg85d7g9cfeffc4f4f4"
+data "Description" "hc619929eg8649g4d24g8211gcde7af59d824"
+data "DescriptionParams" "2"
+data "StatsFunctorContext" "OnDamage"
+data "Conditions" "Enemy() and IsKillingBlow()"
+data "StatsFunctors" "ApplyStatus(SWAP, BLADE_WARD, 100, 2)"
+
+new entry "TI_Powerful_Display"
+type "PassiveData"
+data "DisplayName" "hdb7d08b1g9f2fg4518ga6afg11ac4de9b196"
+data "Description" "hed8d87e9ge23dg436bg9d42ga2aeddbc275a"
+data "Boosts" "Skill(Athletics, ProficiencyBonus);Skill(Performance, ProficiencyBonus)"
+
+new entry "TI_Olympic_Blows"
+type "PassiveData"
+data "DisplayName" "h23936448gc702g4885g9fb0g309b482b7263"
+data "Description" "h07504d78g6e27g40deg8b3fg507704888237"
+data "DescriptionParams" "4"
+data "Boosts" "IF(IsMeleeAttack()):MinimumRollResult(Damage,4)"

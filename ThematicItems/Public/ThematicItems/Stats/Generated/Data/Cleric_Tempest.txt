@@ -1,0 +1,151 @@
+new entry "ThematicItems_Destructive_Helm"
+type "Armor"
+using "_Head_Magic"
+data "RootTemplate" "9d407e95-21bd-4ef4-959a-3d8db866f198"
+data "Rarity" "Uncommon"
+data "PassivesOnEquip" "MAG_Shadow_BlindImmunity_Ring_Passive"
+data "Proficiency Group" "MediumArmor"
+data "ValueOverride" "360"
+data "Unique" 1
+
+new entry "ThematicItems_Destructive_Grips"
+type "Armor"
+using "_Hand_Magic"
+data "RootTemplate" "be33fe8e-b658-4a92-80ed-8e9d2f484f47"
+data "Rarity" "Uncommon"
+data "Boosts" "UnlockSpell(Target_ShockingGrasp);UnlockSpell(Target_BoomingBlade)"
+data "Proficiency Group" "MediumArmor"
+data "ValueOverride" "291"
+data "Unique" 1
+
+new entry "ThematicItems_Destructive_Ring"
+type "item"
+using "_Ring_Magic"
+data "RootTemplate" "bd6794bd-f004-4e0b-b94d-5fed5cad03c1"
+data "Rarity" "Uncommon"
+data "PassivesOnEquip" "TI_Rattling_Spell"
+data "ValueOverride" "340"
+data "Unique" 1
+
+new entry "ThematicItems_Destructive_Mail"
+type "Armor"
+using "_Body"
+data "RootTemplate" "16f3008f-51ea-441b-ab41-2ff11cb0cca5"
+data "Rarity" "Rare"
+data "ArmorClass" "19"
+data "ArmorType" "Splint"
+data "PassivesOnEquip" "TI_Bounce_Back;TI_Cloak_Of_Wind"
+data "Boosts" "Resistance(Thunder, Resistant)"
+data "Proficiency Group" "HeavyArmor"
+data "ValueOverride" "1262"
+data "Unique" 1
+
+new entry "ThematicItems_Destructive_Boots"
+type "Armor"
+using "_Foot_Magic"
+data "RootTemplate" "b7a08072-c1e8-484c-a445-c0aad100eca5"
+data "Rarity" "Rare"
+data "PassivesOnEquip" "MAG_ChargedLightning_Resistance_Ring_Passive;TI_Sure_Footed"
+data "Proficiency Group" "MediumArmor"
+data "ValueOverride" "953"
+data "Unique" 1
+
+new entry "ThematicItems_Destructive_Cloak"
+type "item"
+using "_Back_Magic"
+data "RootTemplate" "1801fcd6-3343-4f1f-a66d-9dad67b8d953"
+data "Rarity" "VeryRare"
+data "PassivesOnEquip" "MAG_ArcaneEnchantment_Lesser_Passive"
+data "Boosts" "ActionResource(Movement, 3, 0);UnlockSpell(Zone_TI_Thunderwave_Tempest)"
+data "ValueOverride" "2715"
+data "Unique" 1
+
+new entry "ThematicItems_Destructive_Amulet"
+type "item"
+using "_Amulet_Magic"
+data "RootTemplate" "f98cbf96-6d7b-4d97-be67-11db2dec6685"
+data "Rarity" "VeryRare"
+data "PassivesOnEquip" "TI_Hurricane_Winds"
+data "Boosts" "Ability(Wisdom, 2, 24);UnlockSpell(Zone_TI_ZephyrBreak)"
+data "StatusOnEquip" "MAG_FLAMING_FIST_PROTECTION_FROM_MISSILES"
+data "ValueOverride" "2088"
+data "Unique" 1
+
+-----
+
+new entry "ThematicItems_Destructive_Stormbringer"
+type "Weapon"
+using "WPN_Maul_2"
+data "RootTemplate" "e1c3e8b0-17aa-42e6-9c0c-b63940b4b6f6"
+data "Rarity" "Legendary"
+data "DefaultBoosts" "WeaponEnchantment(3);WeaponProperty(Magical)"
+data "PassivesOnEquip" "TI_Storm_Of_The_Century"
+data "ValueOverride" "4038"
+data "Unique" 1
+
+-----
+
+new entry "TI_Rattling_Spell"
+type "PassiveData"
+data "DisplayName" "he59fa75cgc26bg484bg9669g3f18670800cb"
+data "Description" "h25606132g8572g4934ga589g26e8b1176da9"
+data "DescriptionParams" "2"
+data "StatsFunctorContext" "OnDamage"
+data "Conditions" "IsSpell() and not Self()"
+data "StatsFunctors" "ApplyStatus(MAG_THUNDER_REVERBERATION, 100, 2);ApplyStatus(MAG_THUNDER_REVERBERATION_DURATION_TECHNICAL, 100, 1)"
+
+new entry "TI_Bounce_Back"
+type "PassiveData"
+data "DisplayName" "h3ca1d752g407cg45c7gb43fg3ea0c80a9e83"
+data "Description" "h1e46c475g3c5dg445cgae21g2a53050f9498"
+data "DescriptionParams" "DealDamage(1d4, Thunder);2"
+data "Properties" "OncePerAttack"
+data "StatsFunctorContext" "OnDamaged"
+data "Conditions" "IsMeleeAttack() and not IsRedirectedDamage()"
+data "StatsFunctors" "DealDamage(SWAP, 1d4, Thunder,Magical);ApplyStatus(SWAP, MAG_THUNDER_REVERBERATION, 100, 2);ApplyStatus(SWAP, MAG_THUNDER_REVERBERATION_DURATION_TECHNICAL, 100, 1)"
+
+new entry "TI_Cloak_Of_Wind"
+type "PassiveData"
+data "DisplayName" "h26bba12ag8549g4ffbgbab9ge04d8213328b"
+data "Description" "he3372587g03e4g4db2gacadg75b288f5b955"
+data "DescriptionParams" "2"
+data "StatsFunctorContext" "OnAttacked"
+data "Conditions" "IsMeleeAttack() and not HasDamageEffectFlag(DamageFlags.Hit) and Character()"
+data "StatsFunctors" "ApplyStatus(SWAP,OFF_BALANCED, 100, 2)"
+
+new entry "TI_Sure_Footed"
+type "PassiveData"
+data "DisplayName" "hee907469g9943g468fg9c5cg11b8184b3dcf"
+data "Description" "h27a38833g90dbg460fg8190gb66ee47ac924"
+data "Boosts" "Attribute(Grounded);StatusImmunity(SG_Prone)"
+
+new entry "TI_Hurricane_Winds"
+type "PassiveData"
+data "DisplayName" "h5d26d430g6f2cg4ec6gb205gd6244bd49ab1"
+data "Description" "hec3e02b8g35a3g4b94gb169gcda4744eea2c"
+data "DescriptionParams" "DealDamage(,Thunder);DealDamage(,Lightning);DealDamage(,Bludgeoning);2"
+data "StatsFunctorContext" "OnDamage"
+data "Conditions" "IsDamageTypeLightning() or IsDamageTypeThunder() or IsDamageTypeBludgeoning()"
+data "StatsFunctors" "ApplyStatus(OFF_BALANCED, 100, 2)"
+
+new entry "TI_Storm_Of_The_Century"
+type "PassiveData"
+data "DisplayName" "h4cc4b8f1gfb0ag4f15g919dg99050505f1fe"
+data "Description" "h1c4c1bbcg591bg4061g9eaag6c9dbc958ff2"
+data "DescriptionParams" "DealDamage(,Lightning);DealDamage(,Thunder)"
+data "BoostContext" "OnCreate"
+data "Boosts" "IF(HasStatus('MAG_THUNDER_REVERBERATION',context.Target) and IsDamageTypeLightning()):DamageBonus(LevelMapValue(D6Proficiency),Thunder);IF(HasStatus('OFF_BALANCED',context.Target) and IsDamageTypeLightning()):DamageBonus(LevelMapValue(D6Proficiency),Thunder)"
+
+-----
+
+new entry "Zone_TI_Thunderwave_Tempest"
+type "SpellData"
+data "SpellType" "Zone"
+using "Zone_Thunderwave"
+data "Cooldown" "OncePerShortRestPerItem"
+data "UseCosts" "ActionPoint:1"
+
+new entry "Zone_TI_ZephyrBreak"
+type "SpellData"
+data "SpellType" "Zone"
+using "Zone_MAG_ZephyrBreak"

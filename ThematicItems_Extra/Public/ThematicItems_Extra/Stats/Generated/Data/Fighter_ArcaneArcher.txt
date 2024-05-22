@@ -1,0 +1,126 @@
+new entry "ThematicItems_Corellon_Sight"
+type "Armor"
+using "_Head_Magic"
+data "RootTemplate" "770d5fee-f27e-4d13-a000-bf0285c84aac"
+data "Rarity" "Uncommon"
+data "PassivesOnEquip" "TI_Powerful_Aim"
+data "ValueOverride" "113"
+data "Unique" 1
+
+new entry "ThematicItems_Corellon_Grips"
+type "Armor"
+using "_Hand_Magic"
+data "RootTemplate" "a502e89e-61e3-40ef-b86f-86df68d1de6c"
+data "Rarity" "Uncommon"
+data "PassivesOnEquip" "TI_Lesser_Archery"
+data "ValueOverride" "129"
+data "Unique" 1
+
+new entry "ThematicItems_Corellon_Band"
+type "item"
+using "_Ring_Magic"
+data "RootTemplate" "b8e1109f-25c2-4181-863d-44bf075f5c25"
+data "Rarity" "Uncommon"
+data "PassivesOnEquip" "TI_Impact_Arrows"
+data "ValueOverride" "286"
+data "Unique" 1
+
+new entry "ThematicItems_Corellon_Mantle"
+type "item"
+using "_Back_Magic"
+data "RootTemplate" "9306d5dc-e743-47c9-ad47-aaa921d0ffe5"
+data "Rarity" "Rare"
+data "PassivesOnEquip" "TI_Imbue_Arrows"
+data "ValueOverride" "1323"
+data "Unique" 1
+
+new entry "ThematicItems_Corellon_Striders"
+type "Armor"
+using "_Foot_Magic"
+data "RootTemplate" "0617f07b-aff5-4d11-a25c-1fc80a145bc0"
+data "Rarity" "Rare"
+data "PassivesOnEquip" "ARM_Ambusher_2_Passive"
+data "Boosts" "RollBonus(SavingThrow, 1, Dexterity)"
+data "ValueOverride" "539"
+data "Unique" 1
+
+new entry "ThematicItems_Corellon_Hauberk"
+type "Armor"
+using "_Body"
+data "RootTemplate" "9ed40256-ebb9-4157-a8cb-f36224dd4e75"
+data "Rarity" "VeryRare"
+data "ArmorClass" "17"
+data "ArmorType" "HalfPlate"
+data "PassivesOnEquip" "MAG_PHB_ElvenChain_AddedEffect_Armor_Passive;MAG_ExoticMaterial_MediumArmor_Passive"
+data "StatusOnEquip" "MAG_EXOTIC_MATERIAL_ARMOR_TECHNICAL"
+data "Proficiency Group" "MediumArmor"
+data "Armor Class Ability" Dexterity"
+data "ValueOverride" "2094"
+data "Unique" 1
+
+new entry "ThematicItems_Corellon_Pendant"
+type "item"
+using "_Amulet_Magic"
+data "RootTemplate" "cdff7e6f-6792-4997-a711-968ff88d795c"
+data "Rarity" "VeryRare"
+data "Boosts" "Ability(Dexterity, 2, 24)"
+data "PassivesOnEquip" "TI_Agile_Cognition"
+data "ValueOverride" "2816"
+data "Unique" 1
+
+-----
+
+new entry "ThematicItems_Corellon_String"
+type "Weapon"
+using "WPN_Longbow_2"
+data "RootTemplate" "457975fd-1079-414d-808e-9b4a3e072d3d"
+data "Rarity" "Legendary"
+data "DefaultBoosts" "WeaponEnchantment(3);WeaponProperty(Magical)"
+data "PassivesOnEquip" "TI_Eldritch_Weapon"
+data "Boosts" "UnlockSpell(Shout_TI_Elemental_Imbuement)"
+data "ValueOverride" "3482"
+data "Unique" 1
+
+-----
+
+new entry "TI_Powerful_Aim"
+type "PassiveData"
+data "DisplayName" "h5f010860g4018g416fga300g06f391eeb9d3"
+data "Description" "h3535721cgf5deg42bcgad64g31c6a5d6e943"
+data "Boosts" "IF(IsRangedWeaponAttack()):Reroll(Damage, 2, true)"
+
+new entry "TI_Lesser_Archery"
+type "PassiveData"
+data "DisplayName" "h93c44a3fg57e2g4999g83f8ge193f7ff0203"
+data "Description" "h01d71b7dg1cd2g48dag9547g4f5f8f21ef10"
+data "DescriptionParams" "1"
+data "Boosts" "RollBonus(RangedWeaponAttack, 1);RollBonus(RangedOffHandWeaponAttack, 1)"
+
+new entry "TI_Impact_Arrows"
+type "PassiveData"
+data "DisplayName" "he24ea46dg980bg4298g8ddag574b31a741e1"
+data "Description" "h81dd619ag6e00g4a44gadc6g8d0e856e502d"
+data "DescriptionParams" "2"
+data "Boosts" "IF(IsRangedWeaponAttack()):CharacterWeaponDamage(2)"
+
+new entry "TI_Imbue_Arrows"
+type "PassiveData"
+data "DisplayName" "h97aa56ddgd342g4d16gbefeg42adfbfefc7c"
+data "Description" "hf5fa3b7dga6ecg4c91g8953g868629f4ee7a"
+data "DescriptionParams" "2"
+data "StatsFunctorContext" "OnAttack"
+data "Conditions" "IsRangedWeaponAttack()"
+data "StatsFunctors" "ApplyStatus(SELF, MAG_GISH_ARCANE_SYNERGY, 100, 2)"
+
+new entry "TI_Agile_Cognition"
+type "PassiveData"
+data "DisplayName" "h61f152cdg4c07g476dg9de9g51a3fc348226"
+data "Description" "hd0075f91gf74dg4f51g9b83g09b7f0ae3bb5"
+data "BoostContext" "OnEquip;OnCreate"
+data "Boosts" "IF(IsDexterityEqual(1)):AbilityOverrideMinimum(Intelligence,1);IF(IsDexterityEqual(2)):AbilityOverrideMinimum(Intelligence,2);IF(IsDexterityEqual(3)):AbilityOverrideMinimum(Intelligence,3);IF(IsDexterityEqual(4)):AbilityOverrideMinimum(Intelligence,4);IF(IsDexterityEqual(5)):AbilityOverrideMinimum(Intelligence,5);IF(IsDexterityEqual(6)):AbilityOverrideMinimum(Intelligence,6);IF(IsDexterityEqual(7)):AbilityOverrideMinimum(Intelligence,7);IF(IsDexterityEqual(8)):AbilityOverrideMinimum(Intelligence,8);IF(IsDexterityEqual(9)):AbilityOverrideMinimum(Intelligence,9);IF(IsDexterityEqual(10)):AbilityOverrideMinimum(Intelligence,10);IF(IsDexterityEqual(11)):AbilityOverrideMinimum(Intelligence,11);IF(IsDexterityEqual(12)):AbilityOverrideMinimum(Intelligence,12);IF(IsDexterityEqual(13)):AbilityOverrideMinimum(Intelligence,13);IF(IsDexterityEqual(14)):AbilityOverrideMinimum(Intelligence,14);IF(IsDexterityEqual(15)):AbilityOverrideMinimum(Intelligence,15);IF(IsDexterityEqual(16)):AbilityOverrideMinimum(Intelligence,16);IF(IsDexterityEqual(17)):AbilityOverrideMinimum(Intelligence,17);IF(IsDexterityEqual(18)):AbilityOverrideMinimum(Intelligence,18);IF(IsDexterityEqual(19)):AbilityOverrideMinimum(Intelligence,19);IF(IsDexterityEqual(20)):AbilityOverrideMinimum(Intelligence,20);IF(IsDexterityEqual(21)):AbilityOverrideMinimum(Intelligence,21);IF(IsDexterityEqual(22)):AbilityOverrideMinimum(Intelligence,22);IF(IsDexterityEqual(23)):AbilityOverrideMinimum(Intelligence,23);IF(IsDexterityEqual(24)):AbilityOverrideMinimum(Intelligence,24);IF(IsDexterityEqual(25)):AbilityOverrideMinimum(Intelligence,25);IF(IsDexterityEqual(26)):AbilityOverrideMinimum(Intelligence,26);IF(IsDexterityEqual(27)):AbilityOverrideMinimum(Intelligence,27);IF(IsDexterityEqual(28)):AbilityOverrideMinimum(Intelligence,28);IF(IsDexterityEqual(29)):AbilityOverrideMinimum(Intelligence,29);IF(IsDexterityEqual(30)):AbilityOverrideMinimum(Intelligence,30)"
+
+new entry "TI_Eldritch_Weapon"
+type "PassiveData"
+data "DisplayName" "h788ea26eg09b3g4142ga040g68bdf10bbba2"
+data "Description" "hf3794443ge79dg4806ga1d3g09e1db98e16b"
+data "Boosts" "IF(IsRangedWeaponAttack()):DamageBonus(max(1,IntelligenceModifier))"

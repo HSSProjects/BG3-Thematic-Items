@@ -1,0 +1,29 @@
+new treasuretable "TUT_Chest_Potions"
+CanMerge 1
+new subtable "1,1"
+object category "I_ThematicItems_Scroll_BearEndurance",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_ThematicItems_Scroll_BullStrength",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_ThematicItems_Scroll_CatGrace",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_ThematicItems_Scroll_EagleSplendor",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_ThematicItems_Scroll_FoxCunning",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_ThematicItems_Scroll_OwlWisdom",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_ThematicItems_Scroll_Dessicate",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_ThematicItems_Scroll_FireStorm",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_ThematicItems_Scroll_Colossify",1,0,0,0,0,0,0,0
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,52 @@
+    AC/SpellSaveDC(n) - flat bonus/minus to AC
+        "AC(1)"
+        "SpellSaveDC(1)"
+
+    Ability(Stat, Modifier, (Optional)Stat Limit) - Modifies a stat, can be used for any stat, and can be used to set a stat to a specific value
+        "Ability(Charisma, -1)"
+        "Ability(Wisdom, 1, 21)"
+        "Ability(Constitution, 2, 20)"
+
+    AbilityOverrideMinimum(Stat, n) - Raises stat to n, unless you have a higher stat already
+        "AbilityOverrideMinimum(Intelligence,17)"
+        "AbilityOverrideMinimum(Strength, 23)"
+        "AbilityOverrideMinimum(Constitution, 23)"
+
+    ActionResource(Type, n, m) - Gives a resource to the character, likely can be used for spell slots, ki points, etc. needs testing
+        "ActionResource(Movement,3,0)"
+
+    Advantage/Disadvantage(Skill or SavingThrow, Stat) - Good chance this works for DeathSavingThrow and Attack
+        "Advantage(SavingThrow, Constitution)"
+        "Advantage(Skill,Perception)"
+        "Disadvantage(Skill,Stealth)"
+
+    CriticalHit(AttackTarget, Success, Never) - Makes you never get crit when attacked, look to see if there is an Attacker version
+        "CriticalHit(AttackTarget,Success,Never)"
+
+    ProficiencyBonus(Saving Throw, Stat) - Gives proficiency bonus to a roll type, probably works with (Skill, Stealth) or something like that
+        "ProficiencyBonus(SavingThrow,Wisdom)"
+
+    Resistance(DamageType, Resistant or Vulnerable) - Gives resistance or vulnerability to damage types
+        "Resistance(Slashing, Resistant)"
+        "Resistance(Bludgeoning, Vulnerable)"
+        "Resistance(Fire, Resistant)"
+
+    RollBonus(Saving Throw or Attack, n, (Optional)Stat for SavingThrow) - flat bonus/minus to roll types (Saving Throw, Attack, DeathSavingThrow)
+        "RollBonus(SavingThrow, 1, Strength)"
+        "RollBonus(SavingThrow, 2)"
+        "RollBonus(Attack, 1)"
+        "RollBonus(DeathSavingThrow, 2)"
+
+    Skill(SkillName, n) - flat bonus/minus to skill rolls
+        "Skill(Perception,2)"
+        "Skill(SleightOfHand, 1)"
+        "Skill(Athletics,1)"    
+
+    Tag(TagName) - Sets game flags/tags, might be able to be used for advanced stuff
+
+    UnlockSpell(Spell) - Unlocks a spell for the character, can modify the spell beforehand to make more unique items
+        "UnlockSpell(Target_MAG_FlamingFist_ScoutRing_Invisibility)"
+        "UnlockSpell(Shout_MAG_FlamingFist_ScoutRing_Blur)"
+
+    Logic Statements - We can use basic logic inside boosts to make them different, i.e. race specific, class specific, etc. context.Source seems to be the character
+        "IF(not HasPassive('MediumArmorMaster', context.Source)):

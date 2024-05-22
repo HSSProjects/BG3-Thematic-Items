@@ -1,0 +1,190 @@
+new entry "ThematicArsenal_Badger_Claw"
+type "Weapon"
+using "WPN_Dagger_1"
+data "RootTemplate" "e8db2eea-7672-4566-8138-81b9b67b9fff"
+data "Rarity" "Uncommon"
+data "PassivesOnEquip" "Arsenal_Badgers_Bite"
+data "ValueOverride" "284"
+data "Unique" 1
+
+new entry "ThematicArsenal_Eagle_Talon"
+type "Weapon"
+using "WPN_Scimitar_1"
+data "RootTemplate" "c66bdfd8-751e-416a-8939-5f51ed6042d7"
+data "Rarity" "Uncommon"
+data "PassivesOnEquip" "Arsenal_Refined_Vaulting"
+data "ValueOverride" "218"
+data "Unique" 1
+
+new entry "ThematicArsenal_Raven_Beak"
+type "Weapon"
+using "WPN_WarPick_1"
+data "RootTemplate" "c803ae18-826c-404c-9cb1-c843c5db7b2a"
+data "Rarity" "Uncommon"
+data "PassivesOnEquip" "Arsenal_Ravens_Curse"
+data "ValueOverride" "278"
+data "Unique" 1
+
+new entry "ThematicArsenal_Spider_Fang"
+type "Weapon"
+using "WPN_Rapier_1"
+data "RootTemplate" "b62a6cb0-49c9-47a8-ba53-80decbca9986"
+data "Rarity" "Uncommon"
+data "DefaultBoosts" "WeaponEnchantment(1);WeaponProperty(Magical);WeaponDamage(1d4, Poison)"
+data "Boosts" "UnlockSpell(Target_Arsenal_Web)"
+data "ValueOverride" "168"
+data "Unique" 1
+
+new entry "ThematicArsenal_Boar_Tusk"
+type "Weapon"
+using "WPN_Battleaxe_1"
+data "RootTemplate" "1f600314-fcf7-437c-bacc-7dc7369ed009"
+data "Rarity" "Uncommon"
+data "Boosts" "UnlockSpell(Rush_Arsenal_Trample)"
+data "ValueOverride" "162"
+data "Unique" 1
+
+new entry "ThematicArsenal_Elk_Antlers"
+type "Weapon"
+using "WPN_Halberd_1"
+data "RootTemplate" "a19ded58-4698-4783-9308-af8e75931818"
+data "Rarity" "Uncommon"
+data "Boosts" "ActionResource(Movement, 3, 0)"
+data "ValueOverride" "391"
+data "Unique" 1
+
+new entry "ThematicArsenal_Panther_Pounce"
+type "Weapon"
+using "WPN_Shortsword_1"
+data "RootTemplate" "74156927-ba4d-45eb-8069-d88c0cdb1c53"
+data "Rarity" "Uncommon"
+data "Boosts" "Advantage(Skill, Stealth)"
+data "PassivesOnEquip" "FelineFall"
+data "ValueOverride" "431"
+data "Unique" 1
+
+new entry "ThematicArsenal_Wolf_Bite"
+type "Weapon"
+using "WPN_Flail_1"
+data "RootTemplate" "b2a57a19-bf4d-49d9-8ba9-c499597b1f08"
+data "Rarity" "Uncommon"
+data "PassivesOnEquip" "Arsenal_Strength_OfThe_Pack"
+data "ValueOverride" "133"
+data "Unique" 1
+
+new entry "ThematicArsenal_Monkey_Paw"
+type "Weapon"
+using "WPN_Quarterstaff_1"
+data "RootTemplate" "f770a7b2-2bcf-497b-9cb1-4059b33ad469"
+data "Rarity" "Uncommon"
+data "WeaponRange" "250"
+data "Weapon Properties" "Melee;Dippable;Versatile;Finesse;Reach"
+data "ValueOverride" "305"
+data "Unique" 1
+
+new entry "ThematicArsenal_Bear_Might"
+type "Weapon"
+using "WPN_Maul_1"
+data "RootTemplate" "e27fccee-9954-43d0-9d64-0fa985db966a"
+data "Rarity" "Uncommon"
+data "PassivesOnEquip" "TI_Bears_Fortitude"
+data "ValueOverride" "270"
+data "Unique" 1
+
+new entry "ThematicArsenal_Tiger_Maul"
+type "Weapon"
+using "WPN_Glaive_1"
+data "RootTemplate" "4b69310b-de21-4fe7-8b1a-337ac5f76a97"
+data "Rarity" "Uncommon"
+data "BoostsOnEquipMainHand" "UnlockSpell(Rush_SpringAttack);UnlockSpell(Target_Slash_New);UnlockSpell(Shout_Steady);UnlockSpell(Zone_TI_Cleave)"
+data "ValueOverride" "470"
+data "Unique" 1
+
+new entry "ThematicArsenal_Crocodile_Maw"
+type "Weapon"
+using "WPN_Greatclub_1"
+data "RootTemplate" "e922faa8-c35f-4ca1-8ca6-d546b22cef12"
+data "Rarity" "Uncommon"
+data "PassivesOnEquip" "MAG_LC_Wave_Trident_Passive"
+data "ValueOverride" "155"
+data "Unique" 1
+
+new entry "ThematicArsenal_Stallion_Hoof"
+type "Weapon"
+using "WPN_Mace_1"
+data "RootTemplate" "89d29628-9cde-46a9-9e46-fe6d5303bfb4"
+data "Rarity" "Uncommon"
+data "Boosts" "UnlockSpell(Shout_Arsenal_Dash_BonusAction)"
+data "ValueOverride" "303"
+data "Unique" 1
+
+new entry "ThematicArsenal_Falcon_Eye"
+type "Weapon"
+using "WPN_Longbow_1"
+data "RootTemplate" "6120d8ee-755a-4b1c-b767-f4957f098d10"
+data "Rarity" "Uncommon"
+data "Boosts" "Advantage(Skill, Perception)"
+data "ValueOverride" "254"
+data "Unique" 1
+
+new entry "ThematicArsenal_Viper_Venom"
+type "Weapon"
+using "WPN_HandCrossbow_1"
+data "RootTemplate" "42f840df-b134-4550-826c-397efa7c9211"
+data "Rarity" "Uncommon"
+data "DefaultBoosts" "WeaponEnchantment(1);WeaponProperty(Magical);WeaponDamage(1d4, Poison)"
+data "ValueOverride" "157"
+data "Unique" 1
+
+new entry "ThematicArsenal_Hornet_Sting"
+type "Weapon"
+using "WPN_LightCrossbow_1"
+data "RootTemplate" "c77a1ee0-4887-445a-b773-1cb774d57188"
+data "Rarity" "Uncommon"
+data "PassivesOnEquip" "MAG_Marksmanship_Passive"
+data "ValueOverride" "124"
+data "Unique" 1
+
+-----
+
+new entry "Arsenal_Badgers_Bite"
+type "PassiveData"
+using "MAG_Sarevok_OfChaos_Greatsword_Leeching_Passive"
+data "DisplayName" "h09abf7b6gec1eg40ddg91b6g455d1f1927c1"
+data "DescriptionParams" "RegainHitPoints(1)"
+data "StatsFunctors" "RegainHitPoints(SELF, 1)"
+
+new entry "Arsenal_Refined_Vaulting"
+type "PassiveData"
+using "MAG_JumpBoost_Passive"
+data "DescriptionParams" "Distance(3)"
+data "Boosts" "JumpMaxDistanceBonus(3)"
+
+new entry "Arsenal_Ravens_Curse"
+type "PassiveData"
+using "DEN_RaidingParty_GoblinCaptain_Gloves_Passive"
+data "DisplayName" "h508c89fdg9ff0g4a50g995dg137ff28534f8"
+data "StatsFunctors" "ApplyStatus(BANE,100,2,,,,not SavingThrow(Ability.Charisma,11))"
+
+new entry "Arsenal_Strength_OfThe_Pack"
+type "PassiveData"
+data "DisplayName" "hd35d1bb2g5b5dg47f1g9ae0g7fb04aaad619"
+data "Description" "h326ae81fg6521g4341g885bge0c2a74394b6"
+data "DescriptionParams" "1d4;Distance(3)"
+data "Boosts" "IF(HasAllyWithinRange('SG_Incapacitated', 3)):DamageBonus(1d4)"
+
+-----
+
+new entry "Target_Arsenal_Web"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_Web"
+data "UseCosts" "ActionPoint:1"
+data "Cooldown" "OncePerRestPerItem"
+
+new entry "Rush_Arsenal_Trample"
+type "SpellData"
+data "SpellType" "Rush"
+using "Rush_MAG_Barbarian_Armor_Trample"
+data "DisplayName" "hc7f93a09gf891g4afegadd3g1f7c49db3fea"
+data "Icon" "Action_Boar_Charge"

@@ -1,0 +1,156 @@
+new entry "ThematicItems_Seraphim_Gloves"
+type "Armor"
+using "_Hand_Magic"
+data "RootTemplate" "419f7a77-0af7-4eaf-9474-c1f73fccdc15"
+data "Rarity" "Uncommon"
+data "PassivesOnEquip" "TI_Mystra_Protection"
+data "ValueOverride" "149"
+data "Unique" 1
+
+new entry "ThematicItems_Seraphim_Sandals"
+type "Armor"
+using "_Foot_Magic"
+data "RootTemplate" "55fbeffc-f3e7-46c2-b880-fbea56670f2a"
+data "Rarity" "Uncommon"
+data "PassivesOnEquip" "TI_Rejuvenating_Expediency"
+data "ValueOverride" "250"
+data "Unique" 1
+
+new entry "ThematicItems_Seraphim_Crown"
+type "Armor"
+using "_Head_Magic"
+data "RootTemplate" "014270fb-ad1d-4d04-827c-184537aeb2f8"
+data "Rarity" "Rare"
+data "PassivesOnEquip" "TI_Connection_Divine;MAG_SpellSaveDC_Enchantment_Lesser_Passive"
+data "ValueOverride" "957"
+data "Unique" 1
+
+new entry "ThematicItems_Seraphim_Vestments"
+type "Armor"
+using "_Body"
+data "RootTemplate" "99d00327-5ab5-4b21-9243-1fdabc02932c"
+data "Rarity" "Rare"
+data "ArmorClass" "10"
+data "PassivesOnEquip" "MAG_SpellSaveDC_Enchantment_Lesser_Passive;TI_MAG_PreserveTheLight"
+data "Armor Class Ability" "Dexterity"
+data "ValueOverride" "1056"
+data "Unique" 1 
+
+new entry "ThematicItems_Seraphim_Mantle"
+type "item"
+using "_Back_Magic"
+data "RootTemplate" "b37ed799-1057-40a1-9b64-d083f1c79413"
+data "Rarity" "VeryRare"
+data "PassivesOnEquip" "MAG_ArcaneEnchantment_Lesser_Passive"
+data "Boosts" "Ability(Charisma, 2, 24);UnlockSpell(Target_TI_Sanctuary_DS)"
+data "ValueOverride" "1849"
+data "Unique" 1
+
+new entry "ThematicItems_Seraphim_Amulet"
+type "item"
+using "_Amulet_Magic"
+data "RootTemplate" "55b559e8-a262-423e-a9b4-3a1feb4faa92"
+data "Rarity" "VeryRare"
+data "PassivesOnEquip" "TI_Divine_Empowerment"
+data "Boosts" "Ability(Charisma, 2, 24)"
+data "ValueOverride" "1907"
+data "Unique" 1
+
+new entry "ThematicItems_Seraphim_Ring"
+type "item"
+using "_Ring_Magic"
+data "RootTemplate" "f7881c59-e195-4a0f-b510-c9fc26964ee2"
+data "Rarity" "Legendary"
+data "PassivesOnEquip" "TI_Conduit_Divine;TI_Explosive_Healing"
+data "ValueOverride" "8230"
+data "Unique" 1
+
+-----
+
+new entry "ThematicItems_Seraphim_Staff"
+type "Weapon"
+using "WPN_Quarterstaff_1"
+data "RootTemplate" "face07b1-aba0-4a13-8224-f0ed257ac58b"
+data "Rarity" "Uncommon"
+data "PassivesOnEquip" "TI_Tempus_Blessing"
+data "Boosts" "UnlockSpell(Target_UND_Bless_StaffBlessMystra)"
+data "ValueOverride" "178"
+data "Unique" 1
+
+-----
+
+new entry "TI_Tempus_Blessing"
+type "PassiveData"
+data "DisplayName" "h0de14b19g50adg4395g8a19gd76e52852c97"
+data "Description" "h17910e3bg20fbg454aga275g96548af39a51"
+data "DescriptionParams" "1d4"
+data "StatsFunctorContext" "OnAttack"
+data "Conditions" "SpellId('Target_Bless') or SpellId('Target_Bless_2') or SpellId('Target_UND_Bless_StaffBlessMystra') or SpellId('Target_TI_Heroic_Bless')"
+data "StatsFunctors" "ApplyStatus(TI_TEMPUS_BLESSING,100,10)"
+
+new entry "TI_Mystra_Protection"
+type "PassiveData"
+data "DisplayName" "h2111f9d6gce31g48aag9ef8g5168d7e94e3a"
+data "Description" "h46e247e9gbfd2g4f79gabc1g6d15c49c6b4d"
+data "StatsFunctorContext" "OnHeal"
+data "Conditions" "Character() and not Self()"
+data "StatsFunctors" "ApplyStatus(TI_MAGIC_WARD,100,2)"
+
+new entry "TI_Rejuvenating_Expediency"
+type "PassiveData"
+data "DisplayName" "h2a72cb44g0b53g4c6fg9a47gd838552b5731"
+data "Description" "hfb19001cgca89g4aa4gae42gfd9949752d27"
+data "DescriptionParams" "2"
+data "StatsFunctorContext" "OnHeal"
+data "Conditions" "Character()"
+data "StatsFunctors" "ApplyStatus(MAG_MOMENTUM, 100, 2); ApplyStatus(MAG_MOMENTUM_DURATION_TECHNICAL, 100, 1)"
+
+new entry "TI_Connection_Divine"
+type "PassiveData"
+data "DisplayName" "h9884c93agf77fg4090gbd7eg96001add699d"
+data "Description" "he25ec74age79cg48degbc40g5ee083963ddd"
+data "Boosts" "Skill(Religion, CharismaModifier)"
+
+new entry "TI_Divine_Empowerment"
+type "PassiveData"
+data "DisplayName" "h1a2183c3gddf0g4d1dga3d8ge8ca2b90b0a1"
+data "Description" "hb584d4d6gfb4ag45f5g9f18g6128f85f5569"
+data "DescriptionParams" "DealDamage(,Radiant);DealDamage(,Necrotic)"
+data "Boosts" "IF(SpellDamageTypeIs(DamageType.Radiant) or SpellDamageTypeIs(DamageType.Necrotic)):DamageBonus(max(1,CharismaModifier))"
+
+new entry "TI_Conduit_Divine"
+type "PassiveData"
+data "DisplayName" "h92457681g7871g43a5g8ea0gb8fc27cbc33a"
+data "Description" "h951f69e6g5587g487bgb655g971ce9011e2d"
+data "DescriptionParams" "DealDamage(,Radiant);DealDamage(,Necrotic)"
+data "Boosts" "IF(SpellDamageTypeIs(DamageType.Radiant) or SpellDamageTypeIs(DamageType.Necrotic)):DamageBonus(max(1,ReligionModifier()))"
+
+new entry "TI_Explosive_Healing"
+type "PassiveData"
+data "DisplayName" "hcdb70118gec25g44b9ga172g0ee700ccc991"
+data "Description" "h4019308bg1ef8g4938gacf0gcac03b86888e"
+data "StatsFunctorContext" "OnHeal"
+data "Conditions" "Character()"
+data "StatsFunctors" "RegainHitPoints(LevelMapValue(D6Proficiency))"
+
+-----
+
+new entry "TI_TEMPUS_BLESSING"
+type "StatusData"
+data "StatusType" "BOOST"
+using "BLESS"
+data "DisplayName" "h0de14b19g50adg4395g8a19gd76e52852c97"
+data "Description" "h17910e3bg20fbg454aga275g96548af39a51"
+data "DescriptionParams" "1d4"
+data "StackId" "TI_TEMPUS_BLESSING"
+data "Boosts" "RollBonus(MeleeWeaponAttack,1d4);RollBonus(RangedWeaponAttack,1d4);RollBonus(MeleeUnarmedAttack,1d4)"
+data "Passives" ""
+
+-----
+
+new entry "Target_TI_Sanctuary_DS"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_Sanctuary"
+data "Cooldown" "OncePerShortRestPerItem"
+data "UseCosts" "BonusActionPoint:1"

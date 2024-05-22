@@ -1,0 +1,9 @@
+In order to get the full set of item icons to choose from you will need 
+to unpack the Game.pak file inside your bg3 steam install
+
+SteamLibrary\steamapps\common\Baldurs Gate 3\Data\Game.pak
+
+You can do this by pulling up the LSLib Toolkit and navigating to the PAK/LSV tab, 
+then select the Game.pak in the extract package section and set a folder to extract to.
+
+The Icons will then be inside of ExtractLocation\Public\Game\GUI\Assets\Tooltips\ItemIcons

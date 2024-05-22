@@ -1,0 +1,79 @@
+new entry "ThematicItems_Wave_Gloves"
+type "Armor"
+using "_Hand_Magic"
+data "RootTemplate" "b18f2fcb-73d5-4d96-9439-21067395af96"
+data "Rarity" "Uncommon"
+data "PassivesOnEquip" "TI_Rejuvenating_Strikes"
+data "ValueOverride" "443"
+data "Unique" 1
+
+new entry "ThematicItems_Wave_Cloak"
+type "item"
+using "_Back_Magic"
+data "RootTemplate" "4184f905-d49e-46a8-9dfb-ba474ac6ee9c"
+data "Rarity" "Rare"
+data "PassivesOnEquip" "Absorb_Elements_Passive;Absorb_Elements_Technical_Passive;MAG_Interrupt_MAG_Interrupt_AbsorbElements_Resource_Passive"
+data "Boosts" "ProficiencyBonus(SavingThrow, Constitution)"
+data "ValueOverride" "1166"
+data "Unique" 1
+
+new entry "ThematicItems_Wave_Vest"
+type "Armor"
+using "_Body"
+data "RootTemplate" "0c33d1c0-ad86-41fd-9c02-2774544cfc0e"
+data "Rarity" "Rare"
+data "ArmorClass" "11"
+data "Boosts" "Resistance(Cold, Resistant);Ability(Constitution, 2, 20)"
+data "Armor Class Ability" "Dexterity"
+data "ValueOverride" "935"
+data "Unique" 1
+
+new entry "ThematicItems_Wave_Crown"
+type "Armor"
+using "_Head_Magic"
+data "RootTemplate" "835abbb6-b0e7-4c2f-aecb-06dfbd0b94e0"
+data "Rarity" "VeryRare"
+data "Boosts" "Ability(Wisdom, 2, 24);UnlockSpell(Target_TI_Rejuvenating_Water)"
+data "ValueOverride" "1833"
+data "Unique" 1
+
+new entry "ThematicItems_Wave_Boots"
+type "Armor"
+using "_Foot_Magic"
+data "RootTemplate" "87fd45c6-4cf2-4d26-bf54-c705b1997518"
+data "Rarity" "VeryRare"
+data "PassivesOnEquip" "TI_Chill_Out;MAG_Frost_IceSurfaceProneImmunity_Boots_Passive"
+data "Boosts" "UnlockSpell(Target_UNI_MistyStep_NightWalkers)"
+data "ValueOverride" "1803"
+data "Unique" 1
+
+-----
+
+new entry "TI_Rejuvenating_Strikes"
+type "PassiveData"
+data "DisplayName" "h3d1c5567gc4fdg4c40g87a6g91754d3c0652"
+data "Description" "h413c36cdge44ag4d9eg86aag2f62d8361533"
+data "DescriptionParams" "RegainHitPoints(1d6)"
+data "Properties" "OncePerTurn"
+data "StatsFunctorContext" "OnDamage"
+data "Conditions" "IsUnarmedAttack()"
+data "StatsFunctors" "RegainHitPoints(SELF, 1d6)"
+
+new entry "TI_Chill_Out"
+type "PassiveData"
+data "DisplayName" "h2ff4d85agcbcbg4448g8fadg37a51c49a42a"
+data "Description" "h5b5ea4b3g855dg461dg8242g11103680f5da"
+data "DescriptionParams" "2"
+data "Properties" "OncePerAttack"
+data "StatsFunctorContext" "OnStatusApply"
+data "Conditions" "Enemy() and not Self() and not StatusId('MAG_FROST') and not StatusDoesNotInvokeOnStatusApply()"
+data "StatsFunctors" "ApplyStatus(MAG_FROST, 100, 2);ApplyStatus(MAG_FROST_DURATION_TECHNICAL, 100, 1)"
+
+-----
+
+new entry "Target_TI_Rejuvenating_Water"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_Heal"
+data "SpellProperties" "RegainHitPoints(70);RemoveStatus(SG_Blinded);RemoveStatus(SG_Disease);ApplyStatus(SELF,MARTIAL_ARTS_BONUS_UNARMED_STRIKE,100,1)"
+data "UseCosts" "ActionPoint:1;KiPoint:4"

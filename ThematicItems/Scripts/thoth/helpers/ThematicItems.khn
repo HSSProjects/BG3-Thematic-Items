@@ -1,0 +1,168 @@
+local __util = require 'larian.util'
+
+function IsStrengthEqual(value)
+    return ConditionResult(context.Source.Strength == value)
+end
+
+function IsDexterityEqual(value)
+    return ConditionResult(context.Source.Dexterity == value)
+end
+
+function IsCharismaEqual(value)
+    return ConditionResult(context.Source.Charisma == value)
+end
+
+function AthleticsModifier()
+    return (GetPassiveSkill(Skill.Athletics) - 10)
+end
+
+function AcrobaticsModifier()
+    return (GetPassiveSkill(Skill.Acrobatics) - 10)
+end
+
+function ArcanaModifier()
+    return (GetPassiveSkill(Skill.Arcana) - 10)
+end
+
+function SleightOfHandModifier()
+    return (GetPassiveSkill(Skill.SleightOfHand) - 10)
+end
+
+function StealthModifier()
+    return (GetPassiveSkill(Skill.Stealth) - 10)
+end
+
+function NatureModifier()
+    return (GetPassiveSkill(Skill.Nature) - 10)
+end
+
+function ReligionModifier()
+    return (GetPassiveSkill(Skill.Religion) - 10)
+end
+
+function SurvivalModifier()
+    return (GetPassiveSkill(Skill.Survival) - 10)
+end
+
+function IntimidationModifier()
+    return (GetPassiveSkill(Skill.Intimidation) - 10)
+end
+
+function ScorchingRaySpellCheck()
+    return SpellId('Projectile_ScorchingRay')
+    | SpellId('Projectile_ScorchingRay_CircletOfBlasting')
+    | SpellId('Projectile_ScorchingRay_Trap')
+    | SpellId('Projectile_FireRay_Cambion')
+end
+
+function RayOfSicknessSpellCheck()
+    return SpellId('Projectile_RayOfSickness')
+    | SpellId('Projectile_HAG_RayOfSickness_Staff')
+    | SpellId('Projectile_MAG_Legendary_Chromatic_RayOfSickness')
+end
+
+function RayOfEnfeeblementSpellCheck()
+    return SpellId('Projectile_RayOfEnfeeblement')
+    | SpellId('Projectile_TI_RayOfEnfeeblement')
+end
+
+function BlightSpellCheck()
+    return SpellId('Target_Blight')
+    | SpellId('Target_MAG_Blight')
+end
+
+function GuidingBoltSpellCheck()
+    return SpellId('Projectile_GuidingBolt')
+    | SpellId('Projectile_TI_GuidingBolt_Star')
+    | SpellId('Projectile_MAG_GuidingBolt_MonkGloves')
+    | SpellId('Projectile_GuidingBolt_Stars')
+end
+
+function TerraformingSpellCheck()
+    return SpellId('Target_Entangle')
+    | SpellId('Target_DEN_Entangle_Staff')
+    | SpellId('Target_FogCloud')
+    | SpellId('Target_MAG_Shadow_FogCloud')
+    | SpellId('Target_Grease')
+    | SpellId('Target_TI_Grease_Conjurer')
+    | SpellId('Target_CloudOfDaggers')
+    | SpellId('Target_TI_Legendary_Chromatic_CloudOfDaggers')
+    | SpellId('Target_Web')
+    | SpellId('Target_Arsenal_Web')
+    | SpellId('Target_HungerOfHadar')
+    | SpellId('Target_MAG_Legendary_Chromatic_HungerOfHadar')
+    | SpellId('Target_SleetStorm')
+    | SpellId('Target_StinkingCloud')
+    | SpellId('Target_BlackTentacles')
+    | SpellId('Target_MAG_BlackTentacle')
+    | SpellId('Target_Cloudkill')
+    | SpellId('Target_MAG_Legendary_Chromatic_CloudKill')
+    | SpellId('Target_InsectPlague')
+    | SpellId('Target_TI_Legendary_Chromatic_InsectPlague')
+end
+
+function HeightenedConjurationSpellCheck()
+    return (HasStringInSpellRoll('SavingThrow') | HasStringInFunctorConditions('SavingThrow') | HasStringInSpellRoll('SpellAutoResolveOnAlly')) &
+    (HasSpellFlag(SpellFlags.Spell) & IsSpellOfSchool(SpellSchool.Conjuration))
+end
+
+function HeightenedEnchantmentSpellCheck()
+    return (HasStringInSpellRoll('SavingThrow') | HasStringInFunctorConditions('SavingThrow') | HasStringInSpellRoll('SpellAutoResolveOnAlly')) &
+    (HasSpellFlag(SpellFlags.Spell) & IsSpellOfSchool(SpellSchool.Enchantment))
+end
+
+function HeightenedEvocationSpellCheck()
+    return (HasStringInSpellRoll('SavingThrow') | HasStringInFunctorConditions('SavingThrow') | HasStringInSpellRoll('SpellAutoResolveOnAlly')) &
+    (HasSpellFlag(SpellFlags.Spell) & IsSpellOfSchool(SpellSchool.Evocation))
+end
+
+function HeightenedIllusionSpellCheck()
+    return (HasStringInSpellRoll('SavingThrow') | HasStringInFunctorConditions('SavingThrow') | HasStringInSpellRoll('SpellAutoResolveOnAlly')) &
+    (HasSpellFlag(SpellFlags.Spell) & IsSpellOfSchool(SpellSchool.Illusion))
+end
+
+function EnchantmentSpellFilter()
+    return IsSpellOfSchool(SpellSchool.Enchantment)
+end
+
+function IllusionSpellFilter()
+    return IsSpellOfSchool(SpellSchool.Illusion)
+end
+
+function DecayCounterRequirement(entity)
+    local entity = entity or context.Target
+    return ConditionResult(GetStatusDuration('TI_NECROTIC_DECAY', entity) >= 7)
+end
+
+function OverheatRequirement(entity)
+    local entity = entity or context.Target
+    return ConditionResult(GetStatusDuration('MAG_FIRE_HEAT', entity) >= 5)
+end
+
+function RampageRequirement(entity)
+    local entity = entity or context.Target
+    return ConditionResult(GetStatusDuration('MAG_VIOLENCE', entity) >= 5)
+end
+
+function HasCursedStatusCondition()
+    return (HasHexStatus() | HasAnyStatus({'CURSE_SKIP_TURN','CURSE_ATTACK','CURSE_ABILITY_CHARISMA','CURSE_ABILITY_CONSTITUTION','CURSE_ABILITY_DEXTERITY','CURSE_ABILITY_INTELLIGENCE','CURSE_ABILITY_STRENGTH','CURSE_ABILITY_WISDOM','CURSE_EXTRA_DAMAGE','BANE'}, {}, {},context.Target,context.Source))
+end
+
+function UnarmedReachCheck()
+    return HasStringInSpellRoll('MeleeUnarmedAttack') & ~TargetRadiusGreaterThan(1.5)
+end
+
+function SizeEqual(size, entity)
+    entity = entity or context.Target
+    return ConditionResult(entity.Size ~= Size.None and entity.Size.value == size.value)
+end
+
+function SizeEqualOrLesser(size, entity)
+    entity = entity or context.Target
+    return ConditionResult(entity.Size ~= Size.None and entity.Size.value <= size.value)
+end
+
+function StrengthGreaterThan(value, entity)
+    entity = entity or context.Target
+    return ConditionResult(entity.Strength > value)
+end

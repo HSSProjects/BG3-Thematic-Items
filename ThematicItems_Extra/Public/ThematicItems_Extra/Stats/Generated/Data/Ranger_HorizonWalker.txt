@@ -1,0 +1,139 @@
+new entry "ThematicItems_Planar_Gloves"
+type "Armor"
+using "_Hand_Magic"
+data "RootTemplate" "54d9a146-20c5-4fb6-ac31-0cb69e183e55"
+data "Rarity" "Uncommon"
+data "PassivesOnEquip" "TI_Forceful_Attack"
+data "ValueOverride" "446"
+data "Unique" 1
+
+new entry "ThematicItems_Planar_Amulet"
+type "item"
+using "_Amulet_Magic"
+data "RootTemplate" "7863a6e8-0b4f-44c8-afbf-167559afe12a"
+data "Rarity" "Uncommon"
+data "Boosts" "Resistance(Force, Resistant);Resistance(Psychic, Resistant)"
+data "ValueOverride" "286"
+data "Unique" 1
+
+new entry "ThematicItems_Planar_Ring"
+type "item"
+using "_Ring_Magic"
+data "RootTemplate" "30307a15-e02f-4c88-8513-d26881bc3118"
+data "Rarity" "Uncommon"
+data "PassivesOnEquip" "TI_Powerful_Strikes"
+data "ValueOverride" "197"
+data "Unique" 1
+
+new entry "ThematicItems_Planar_Circlet"
+type "Armor"
+using "_Head_Magic"
+data "RootTemplate" "a1e4dc87-69a8-4dec-8673-394ea25192c8"
+data "Rarity" "Rare"
+data "Boosts" "Advantage(SavingThrow, Wisdom);Ability(Wisdom, 2, 20)"
+data "ValueOverride" "1441"
+data "Unique" 1
+
+new entry "ThematicItems_Planar_Mantle"
+type "item"
+using "_Back_Magic"
+data "RootTemplate" "d8198e47-2213-4123-840e-1a0e98a5ab7f"
+data "Rarity" "Rare"
+data "Boosts" "UnlockSpell(Target_TI_MistyStep)"
+data "PassivesOnEquip" "TI_Forceful_Reprisal"
+data "ValueOverride" "741"
+data "Unique" 1
+
+new entry "ThematicItems_Planar_Plate"
+type "Armor"
+using "_Body"
+data "RootTemplate" "da8994ad-0292-45bc-a3ec-300dc31a0c64"
+data "Rarity" "VeryRare"
+data "ArmorClass" "17"
+data "ArmorType" "HalfPlate"
+data "PassivesOnEquip" "MAG_ExoticMaterial_MediumArmor_Passive;TI_Planar_Protection"
+data "StatusOnEquip" "MAG_EXOTIC_MATERIAL_ARMOR_TECHNICAL"
+data "Proficiency Group" "MediumArmor"
+data "Armor Class Ability" "Dexterity"
+data "AbilityModifierCap" ""
+data "ValueOverride" "1669"
+data "Unique" 1
+
+new entry "ThematicItems_Planar_Boots"
+type "Armor"
+using "_Foot_Magic"
+data "RootTemplate" "a56ff456-eaf1-4b9d-a11a-81aebb682e49"
+data "Rarity" "Legendary"
+data "PassivesOnEquip" "TI_Total_Freedom"
+data "Boosts" "Ability(Dexterity, 2, 26);UnlockSpell(Target_TI_MistyStep_Free)"
+data "ValueOverride" "9354"
+data "Unique" 1
+
+-----
+
+new entry "ThematicItems_Planar_Longbow"
+type "Weapon"
+using "WPN_Longbow_2"
+data "RootTemplate" "a7d2557d-6d9a-4bfa-b6cf-4fddc1ed968b"
+data "Rarity" "VeryRare"
+data "PassivesOnEquip" "TI_Outsider_Bane;TI_Slayer_Of_Outsiders"
+data "ValueOverride" "2209"
+data "Unique" 1
+
+-----
+
+new entry "TI_Forceful_Attack"
+type "PassiveData"
+data "DisplayName" "h2be7622bgd7d1g44a2g95c1g712980ec2499"
+data "Description" "hbb72ea14g9fc1g484ag94e4gb85b356a3548"
+data "DescriptionParams" "DealDamage(1d4, Force)"
+data "Boosts" "CharacterWeaponDamage(1d4, Force)"
+
+new entry "TI_Powerful_Strikes"
+type "PassiveData"
+data "DisplayName" "hcb0af02cg06c3g4083gb412g587d34740f0d"
+data "Description" "h1b218464g41a0g464ega1f6gd3ab4f1eceda"
+data "DescriptionParams" "DealDamage(2, Force)"
+data "Boosts" "CharacterWeaponDamage(2, Force)"
+
+new entry "TI_Forceful_Reprisal"
+type "PassiveData"
+using "MAG_Acid_AcidMeleeCounter_Cloak_Passive"
+data "DisplayName" "h370a7cb6g6fccg438dg9a1age94a50d3ed7c"
+data "DescriptionParams" "DealDamage(1d4, Force)"
+data "StatsFunctors" "DealDamage(SWAP, 1d4, Force, Magical)"
+
+new entry "TI_Outsider_Bane"
+type "PassiveData"
+data "DisplayName" "h70cc0690g8b6dg429dga32ag68a1610bae5d"
+data "Description" "hd5a093d3g8c7bg454dg929bg8a4b91a6099f"
+data "DescriptionParams" "DealDamage(2d8, Force)"
+data "Boosts" "IF(Tagged('ABERRATION', context.Target) or Tagged('CELESTIAL', context.Target) or Tagged('ELEMENTAL', context.Target) or Tagged('FEY', context.Target) or Tagged('FIEND', context.Target) or Tagged('ELF', context.Target) or Tagged('GNOME', context.Target) or Tagged('GITHYANKI', context.Target)):CharacterWeaponDamage(2d8, Force)"
+
+new entry "TI_Slayer_Of_Outsiders"
+type "PassiveData"
+data "DisplayName" "h6db27b7dg8044g448bga041g62c8f46b4ba0"
+data "Description" "hc61e340bg4562g42e7gbc66gab26503775f3"
+data "Boosts" "IF(Tagged('ABERRATION', context.Target) or Tagged('CELESTIAL', context.Target) or Tagged('ELEMENTAL', context.Target) or Tagged('FEY', context.Target) or Tagged('FIEND', context.Target) or Tagged('ELF', context.Target) or Tagged('GNOME', context.Target) or Tagged('GITHYANKI', context.Target)):Advantage(AttackRoll)"
+
+new entry "TI_Planar_Protection"
+type "PassiveData"
+data "DisplayName" "ha011720bg4a64g4339gbe97g28354a0be278"
+data "Description" "hd0080a5bg50b2g4ac0g9921g692f12630b73"
+data "BoostContext" "OnCreate"
+data "Boosts" "IF(Tagged('ABERRATION', context.Target) or Tagged('CELESTIAL', context.Target) or Tagged('ELEMENTAL', context.Target) or Tagged('FEY', context.Target) or Tagged('FIEND', context.Target) or Tagged('ELF', context.Target) or Tagged('GNOME', context.Target) or Tagged('GITHYANKI', context.Target)):Disadvantage(AttackTarget)"
+
+new entry "TI_Total_Freedom"
+type "PassiveData"
+data "DisplayName" "h485df054g2f97g485dgaa8ag6546b4deb725"
+data "Description" "h697988eeg8fdcg4c20g93c2g46ca41da0d39"
+data "Boosts" "StatusImmunity(SG_Paralyzed);StatusImmunity(SG_Restrained);StatusImmunity(SG_DifficultTerrain);StatusImmunity(SG_Prone);StatusImmunity(SG_Surface);ActionResourcePreventReduction(Movement);IgnoreLeaveAttackRange()"
+
+-----
+
+new entry "Target_TI_MistyStep_Free"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_MistyStep"
+data "Cooldown" "OncePerTurn"
+data "UseCosts" ""
