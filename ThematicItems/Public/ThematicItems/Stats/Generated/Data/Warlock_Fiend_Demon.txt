@@ -1,0 +1,158 @@
+new entry "ThematicItems_Abyssal_Helm"
+type "item"
+using "ARM_Circlet"
+data "RootTemplate" "030fb69f-6186-4911-8723-c46672d6ff4d"
+data "Rarity" "Uncommon"
+data "Boosts" "UnlockSpell(Projectile_TI_Abyssal_ChromaticOrb)"
+data "ValueOverride" "179"
+data "Unique" 1
+
+new entry "ThematicItems_Abyssal_Boots"
+type "Armor"
+using "ARM_Boots_Leather"
+data "RootTemplate" "816d06ce-57da-4061-9075-0465f316449c"
+data "Rarity" "Uncommon"
+data "PassivesOnEquip" "TI_MAG_ChaosDash"
+data "ValueOverride" "298"
+data "Unique" 1
+
+new entry "ThematicItems_Abyssal_Grips"
+type "Armor"
+using "_Hand_Magic"
+data "RootTemplate" "d4f16e50-9151-4f03-a172-1ae7e772c03d"
+data "Rarity" "Rare"
+data "PassivesOnEquip" "TI_MAG_ChaosStrikes"
+data "ValueOverride" "710"
+data "Unique" 1
+
+new entry "ThematicItems_Abyssal_Locket"
+type "item"
+using "_Amulet_Magic"
+data "RootTemplate" "654fec2f-6cf1-4056-b107-5b714adceb20"
+data "Rarity" "Rare"
+data "PassivesOnEquip" "TI_MAG_ArcaneChaos"
+data "ValueOverride" "1107"
+data "Unique" 1
+
+new entry "ThematicItems_Abyssal_Cloth"
+type "Armor"
+using "_Body"
+data "RootTemplate" "304f0391-570d-42c5-a48b-3d736087116b"
+data "Rarity" "VeryRare"
+data "ArmorClass" 10
+data "Boosts" "UnlockSpell(Shout_TI_Abyssal_DemonicRage)"
+data "PassivesOnEquip" "TI_MAG_CharismaInsteadOfDexterityToAC"
+data "Armor Class Ability" "Charisma"
+data "ValueOverride" "2171"
+data "Unique" 1
+
+new entry "ThematicItems_Abyssal_Band"
+type "item"
+using "_Ring"
+data "RootTemplate" "51711bb2-df5c-4903-ba4e-492d949cb90a"
+data "Rarity" "VeryRare"
+data "PassivesOnEquip" "TI_MAG_ChaosCasting"
+data "ValueOverride" "1635"
+data "Unique" 1
+
+new entry "ThematicItems_Abyssal_Mantle"
+type "item"
+using "_Back_Magic"
+data "RootTemplate" "7deef59a-2a3f-4afd-8219-1a600a0d97c7"
+data "Rarity" "Legendary"
+data "Boosts" "AbilityOverrideMinimum(Charisma, 24);Resistance(Poison, Immune);UnlockSpell(Projectile_TI_Abyssal_ChaosBall)"
+data "ValueOverride" "4258"
+data "Unique" 1
+
+-----
+
+new entry "TI_MAG_ChaosDash"
+type "PassiveData"
+data "DisplayName" "h7bf9bbfegbf1fg498agb916g835530e9dd48"
+data "Description" "hce364d62g8dafg4143g947bg31f5b8cd0577"
+data "DescriptionParams" "2"
+data "StatsFunctorContext" "OnCast"
+data "Conditions" "SpellCategoryIs(SpellCategory.Dash)"
+data "StatsFunctors" "IF(RollDieAgainstDC(DiceType.d20,16)):ApplyStatus(MAG_MOMENTUM, 100, 2);IF(RollDieAgainstDC(DiceType.d20,16)):ApplyStatus(FREEDOM_OF_MOVEMENT, 100, 2);IF(RollDieAgainstDC(DiceType.d20,16)):ApplyStatus(MAG_VIOLENCE, 100, 2);IF(RollDieAgainstDC(DiceType.d20,16)):ApplyStatus(FLY, 100, 2)"
+
+new entry "TI_MAG_ChaosStrikes"
+type "PassiveData"
+data "DisplayName" "hd76a9494ge9deg4cffg93c3g37aefcc6407e"
+data "Description" "h159f56b2g5952g4a2bgb8fcg2349c90bf519"
+data "DescriptionParams" "DealDamage(2, Acid);DealDamage(2, Cold);DealDamage(2, Fire);DealDamage(2, Lightning)"
+data "BoostContext" "OnTurn"
+data "Boosts" "IF(RollDieAgainstDC(DiceType.d20,16)):CharacterWeaponDamage(2, Acid);IF(RollDieAgainstDC(DiceType.d20,16)):CharacterWeaponDamage(2, Cold);IF(RollDieAgainstDC(DiceType.d20,16)):CharacterWeaponDamage(2, Fire);IF(RollDieAgainstDC(DiceType.d20,16)):CharacterWeaponDamage(2, Lightning)"
+
+new entry "TI_MAG_ArcaneChaos"
+type "PassiveData"
+data "DisplayName" "h26f7a091g72b8g4a1bg8b08g8e22fbb719d0"
+data "Description" "h9b94ce5bg205bg44dag8995g45d199f69750"
+data "DescriptionParams" "2"
+data "StatsFunctorContext" "OnCast"
+data "Conditions" "IsSpell() and RollDieAgainstDC(DiceType.d20,16)"
+data "StatsFunctors" "IF(RollDieAgainstDC(DiceType.d20,16)):ApplyStatus(MAG_GISH_ARCANE_ACUITY, 100, 2);IF(RollDieAgainstDC(DiceType.d20,16)):ApplyStatus(MAG_GISH_ARCANE_CHARGE, 100, 2);IF(RollDieAgainstDC(DiceType.d20,16)):ApplyStatus(MAG_GISH_ARCANE_SYNERGY, 100, 2);IF(RollDieAgainstDC(DiceType.d20,16)):ApplyStatus(MAG_VIOLENCE, 100, 2)"
+
+new entry "TI_MAG_CharismaInsteadOfDexterityToAC"
+type "PassiveData"
+data "DisplayName" "hbe974901gb28eg46a5g80eege91ffc34058a"
+data "Description" "hbccf8bedg56d5g4a38ga9fbgd065c69cca71"
+
+new entry "Rage_DemonicRage_Boosts"
+type "PassiveData"
+using "Rage_Rage_Boosts"
+data "DisplayName" "h7557862ag0276g499cga03bg42ea92401581"
+data "Boosts" "Advantage(Ability, Strength); Advantage(SavingThrow, Strength); Resistance(Slashing, Resistant); Resistance(Piercing, Resistant); Resistance(Bludgeoning, Resistant); IF(IsAttackType(AttackType.MeleeWeaponAttack)): CharacterWeaponDamage(max(0,CharismaModifier));EntityThrowDamage(2);IF(IsAttackType(AttackType.MeleeOffHandWeaponAttack)):CharacterWeaponDamage(max(0,CharismaModifier));CharacterUnarmedDamage(max(0,CharismaModifier));FallDamageMultiplier(0.5)"
+
+new entry "TI_MAG_ChaosCasting"
+type "PassiveData"
+data "DisplayName" "h52ceb5a0gf9afg4513ga6aeg28aafdc7db1a"
+data "Description" "h2809b804g7383g4b3dg9e91gb2fa558e7fb3"
+data "BoostContext" "OnCast"
+data "Boosts" "IF(RollDieAgainstDC(DiceType.d20,16) and SpellDamageTypeIs(DamageType.Acid)):DamageBonus(CharismaModifier);IF(RollDieAgainstDC(DiceType.d20,16) and SpellDamageTypeIs(DamageType.Cold)):DamageBonus(CharismaModifier);IF(RollDieAgainstDC(DiceType.d20,16) and SpellDamageTypeIs(DamageType.Fire)):DamageBonus(CharismaModifier);IF(RollDieAgainstDC(DiceType.d20,16) and SpellDamageTypeIs(DamageType.Lightning)):DamageBonus(CharismaModifier)"
+
+-----
+
+new entry "DEMONIC_RAGE"
+type "StatusData"
+data "StatusType" "BOOST"
+using "RAGE"
+data "DisplayName" "h7557862ag0276g499cga03bg42ea92401581"
+data "Description" "h2809b804g7383g4b3dg9e91gb2fa558e7fb3"
+data "DescriptionParams" "DealDamage(AbilityModifier, Bludgeoning)"
+data "Passives" "Rage_DemonicRage_Boosts;Rage_Attack;Rage_Damaged;Rage_NoHeavyArmour_VFX"
+
+-----
+
+new entry "Projectile_TI_Abyssal_ChromaticOrb"
+type "SpellData"
+data "SpellType" "Projectile"
+using "Projectile_ChromaticOrb"
+data "Cooldown" "OncePerShortRestPerItem"
+data "UseCosts" "ActionPoint:1"
+
+new entry "Shout_TI_Abyssal_DemonicRage"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_Rage"
+data "SpellProperties" "ApplyStatus(DEMONIC_RAGE, 100, 10);ApplyStatus(RAGE_MUTE, 100, 10)"
+data "DisplayName" "h7557862ag0276g499cga03bg42ea92401581"
+data "Description" "he723a0d0g7d79g48c8g8090g9a0afce6acf6"
+data "DescriptionParams" "DealDamage(AbilityModifier, Bludgeoning)"
+data "TooltipStatusApply" "ApplyStatus(DEMONIC_RAGE, 100, 10)"
+data "Cooldown" "OncePerShortRestPerItem"
+data "UseCosts" "BonusActionPoint:1"
+data "RequirementConditions" "not HasStatus('RAGE') and not HasStatus('DEMONIC_RAGE')"
+
+new entry "Projectile_TI_Abyssal_ChaosBall"
+type "SpellData"
+data "SpellType" "Projectile"
+using "Projectile_Fireball"
+data "SpellProperties" ""
+data "SpellSuccess" "DealDamage(2d6,Acid,Magical);DealDamage(2d6,Cold,Magical);DealDamage(2d6,Fire,Magical);DealDamage(2d6,Lightning,Magical)"
+data "SpellFail" "DealDamage((2d6)/2,Acid,Magical);DealDamage((2d6)/2,Cold,Magical);DealDamage((2d6)/2,Fire,Magical);DealDamage((2d6)/2,Lightning,Magical)"
+data "DisplayName" "hab23e626gd289g4f90ga11bg5a52b80a0b31"
+data "Description" "hf41e761eg8969g4c7cg94cag8d0e63835dd8"
+data "TooltipDamageList" "DealDamage(2d6,Acid);DealDamage(2d6,Cold);DealDamage(2d6,Fire);DealDamage(2d6,Lightning)"
+data "Cooldown" "OncePerShortRestPerItem"
+data "UseCosts" "ActionPoint:1"
+data "DamageType" "Acid;Cold;Fire;Lightning"

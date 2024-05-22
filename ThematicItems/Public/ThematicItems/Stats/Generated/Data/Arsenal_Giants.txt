@@ -1,0 +1,193 @@
+new entry "ThematicArsenal_Stone_Greatclub"
+type "Weapon"
+using "WPN_Greatclub_1"
+data "RootTemplate" "7a8c209e-d948-4214-b429-f2bf294a1830"
+data "Rarity" "Rare"
+data "DefaultBoosts" "WeaponEnchantment(1);WeaponProperty(Magical);IF(SizeEqual(Size.Large, context.Source)):WeaponDamage(1d8, Bludgeoning);IF(SizeEqual(Size.Huge, context.Source)):WeaponDamage(2d8, Bludgeoning);IF(SizeEqual(Size.Gargantuan, context.Source)):WeaponDamage(3d8, Bludgeoning)"
+data "PassivesOnEquip" "Arsenal_Oversized_Weapon_D8;Arsenal_Strength_Requirement_21"
+data "ValueOverride" "901"
+data "Unique" 1
+
+new entry "ThematicArsenal_Desert_Scimitar"
+type "Weapon"
+using "WPN_Scimitar_1"
+data "RootTemplate" "2c2913e2-9386-4308-9ee2-e282b517067a"
+data "Rarity" "Rare"
+data "DefaultBoosts" "WeaponEnchantment(1);WeaponProperty(Magical);IF(SizeEqual(Size.Large, context.Source)):WeaponDamage(1d6, Slashing);IF(SizeEqual(Size.Huge, context.Source)):WeaponDamage(2d6, Slashing);IF(SizeEqual(Size.Gargantuan, context.Source)):WeaponDamage(3d6, Slashing)"
+data "PassivesOnEquip" "Arsenal_Oversized_Weapon_D6;Arsenal_Strength_Requirement_21;Arsenal_LesserPowerAttack"
+data "ValueOverride" "846"
+data "Unique" 1
+
+new entry "ThematicArsenal_Sun_Spear"
+type "Weapon"
+using "WPN_Spear_1"
+data "RootTemplate" "beaffad4-35a6-4e60-aeca-2b6555459d1e"
+data "Rarity" "Rare"
+data "DefaultBoosts" "WeaponEnchantment(1);WeaponProperty(Magical);IF(SizeEqual(Size.Large, context.Source)):WeaponDamage(1d6, Piercing);IF(SizeEqual(Size.Huge, context.Source)):WeaponDamage(2d6, Piercing);IF(SizeEqual(Size.Gargantuan, context.Source)):WeaponDamage(3d6, Piercing)"
+data "PassivesOnEquip" "Arsenal_Oversized_Weapon_D6;Arsenal_Strength_Requirement_21;Arsenal_LesserPowerAttack"
+data "ValueOverride" "1161"
+data "Unique" 1
+
+new entry "ThematicArsenal_Death_Glaive"
+type "Weapon"
+using "WPN_Glaive_1"
+data "RootTemplate" "92354e88-bf95-4419-a869-2744dc78e237"
+data "Rarity" "Rare"
+data "DefaultBoosts" "WeaponEnchantment(1);WeaponProperty(Magical);IF(SizeEqual(Size.Large, context.Source)):WeaponDamage(1d10, Slashing);IF(SizeEqual(Size.Huge, context.Source)):WeaponDamage(2d10, Slashing);IF(SizeEqual(Size.Gargantuan, context.Source)):WeaponDamage(3d10, Slashing)"
+data "PassivesOnEquip" "Arsenal_Oversized_Weapon_D10;Arsenal_Strength_Requirement_21"
+data "ValueOverride" "1470"
+data "Unique" 1
+
+new entry "ThematicArsenal_Frost_Greataxe"
+type "Weapon"
+using "WPN_Greataxe_2"
+data "RootTemplate" "c3e5e43e-1fb7-4f69-97d0-42b025e9d045"
+data "Rarity" "VeryRare"
+data "DefaultBoosts" "WeaponEnchantment(2);WeaponProperty(Magical);IF(SizeEqual(Size.Large, context.Source)):WeaponDamage(1d12, Slashing);IF(SizeEqual(Size.Huge, context.Source)):WeaponDamage(2d12, Slashing);IF(SizeEqual(Size.Gargantuan, context.Source)):WeaponDamage(3d12, Slashing)"
+data "PassivesOnEquip" "Arsenal_Oversized_Weapon_D12;Arsenal_Strength_Requirement_23"
+data "BoostsOnEquipMainHand" "UnlockSpell(Zone_Cleave);UnlockSpell(Target_Slash_New);UnlockSpell(Shout_FullSwing);UnlockSpell(Shout_Arsenal_WhirlwindAttack)"
+data "ValueOverride" "1998"
+data "Unique" 1
+
+new entry "ThematicArsenal_Forest_Longbow"
+type "Weapon"
+using "WPN_Longbow_2"
+data "RootTemplate" "e751fcbe-c3ae-43c8-ab72-d0f887a9fd58"
+data "Rarity" "VeryRare"
+data "DefaultBoosts" "WeaponEnchantment(2);WeaponProperty(Magical);IF(SizeEqual(Size.Large, context.Source)):WeaponDamage(1d8, Piercing);IF(SizeEqual(Size.Huge, context.Source)):WeaponDamage(2d8, Piercing);IF(SizeEqual(Size.Gargantuan, context.Source)):WeaponDamage(3d8, Piercing)"
+data "PassivesOnEquip" "Arsenal_Oversized_Weapon_D8;Arsenal_Strength_Requirement_23;MAG_StrengthBonusToWeaponDamage_Passive"
+data "ValueOverride" "2846"
+data "Unique" 1
+
+new entry "ThematicArsenal_Fire_Maul"
+type "Weapon"
+using "WPN_Maul_2"
+data "RootTemplate" "5547879d-107f-4384-9805-50206eb0f7ec"
+data "Rarity" "VeryRare"
+data "DefaultBoosts" "WeaponEnchantment(2);WeaponProperty(Magical);IF(SizeEqual(Size.Large, context.Source)):WeaponDamage(2d6, Bludgeoning);IF(SizeEqual(Size.Huge, context.Source)):WeaponDamage(4d6, Bludgeoning);IF(SizeEqual(Size.Gargantuan, context.Source)):WeaponDamage(6d6, Bludgeoning)"
+data "PassivesOnEquip" "Arsenal_Oversized_Weapon_2D6;Arsenal_Strength_Requirement_25;MAG_Fire_HeatOnWeaponDamage_Passive"
+data "BoostsOnEquipMainHand" "UnlockSpell(Target_PostureBreaker);UnlockSpell(Target_ConcussiveSmash);UnlockSpell(Shout_Arsenal_WhirlwindAttack)"
+data "ValueOverride" "2734"
+data "Unique" 1
+
+new entry "ThematicArsenal_Cloud_Morningstar"
+type "Weapon"
+using "WPN_Morningstar_2"
+data "RootTemplate" "c304dd2b-77e4-445d-b755-536178756bba"
+data "Rarity" "Legendary"
+data "DefaultBoosts" "WeaponEnchantment(3);WeaponProperty(Magical);IF(SizeEqual(Size.Large, context.Source)):WeaponDamage(2d6, Piercing);IF(SizeEqual(Size.Huge, context.Source)):WeaponDamage(4d6, Piercing);IF(SizeEqual(Size.Gargantuan, context.Source)):WeaponDamage(6d6, Piercing)"
+data "Damage" "2d6"
+data "PassivesOnEquip" "Arsenal_Oversized_Weapon_2D6;Arsenal_Strength_Requirement_27;Arsenal_LesserPowerAttack"
+data "Boosts" "UnlockSpell(Target_Arsenal_MistyStep)"
+data "ValueOverride" "6027"
+data "Unique" 1
+
+new entry "ThematicArsenal_Storm_Greatsword"
+type "Weapon"
+using "WPN_Greatsword_2"
+data "RootTemplate" "287bad7b-0b68-435b-b497-cbf766c6d095"
+data "Rarity" "Legendary"
+data "DefaultBoosts" "WeaponEnchantment(3);WeaponProperty(Magical);IF(SizeEqual(Size.Large, context.Source)):WeaponDamage(3d6, Slashing);IF(SizeEqual(Size.Huge, context.Source)):WeaponDamage(6d6, Slashing);IF(SizeEqual(Size.Gargantuan, context.Source)):WeaponDamage(9d6, Slashing)"
+data "Damage" "3d6"
+data "PassivesOnEquip" "Arsenal_Oversized_Weapon_3D6;Arsenal_Strength_Requirement_29;Arsenal_2HF"
+data "BoostsOnEquipMainHand" "UnlockSpell(Target_PommelStrike);UnlockSpell(Target_Slash_New);UnlockSpell(Zone_Cleave);UnlockSpell(Shout_Arsenal_WhirlwindAttack)"
+data "ValueOverride" "9555"
+data "Unique" 1
+
+-----
+
+new entry "Arsenal_Oversized_Weapon_D8"
+type "PassiveData"
+data "DisplayName" "h5299d707g00c7g47b8g8eb5ge4f4645dab17"
+data "Description" "h99f2f61dg0cf4g42cag9b71g8cdc599cc789"
+data "DescriptionParams" "1d8;2d8;3d8"
+
+new entry "Arsenal_Oversized_Weapon_D6"
+type "PassiveData"
+using "Arsenal_Oversized_Weapon_D8"
+data "DescriptionParams" "1d6;2d6;3d6"
+
+new entry "Arsenal_Oversized_Weapon_D10"
+type "PassiveData"
+using "Arsenal_Oversized_Weapon_D8"
+data "DescriptionParams" "1d10;2d10;3d10"
+
+new entry "Arsenal_Oversized_Weapon_D12"
+type "PassiveData"
+using "Arsenal_Oversized_Weapon_D8"
+data "DescriptionParams" "1d12;2d12;3d12"
+
+new entry "Arsenal_Oversized_Weapon_2D6"
+type "PassiveData"
+using "Arsenal_Oversized_Weapon_D8"
+data "DescriptionParams" "2d6;4d6;6d6"
+
+new entry "Arsenal_Oversized_Weapon_3D6"
+type "PassiveData"
+using "Arsenal_Oversized_Weapon_D8"
+data "DescriptionParams" "3d6;6d6;9d6"
+
+new entry "Arsenal_Strength_Requirement_21"
+type "PassiveData"
+data "DisplayName" "hdfb3eaafg01e3g49a4g92b1gc7f3a7e1eaf5"
+data "Description" "hdc300097g8a80g42ddg88f1g1f7aa2446b08"
+data "DescriptionParams" "21"
+data "Boosts" "IF(not StrengthGreaterThan(20,context.Source)):Disadvantage(AttackRoll)"
+
+new entry "Arsenal_Strength_Requirement_23"
+type "PassiveData"
+using "Arsenal_Strength_Requirement_21"
+data "DescriptionParams" "23"
+data "Boosts" "IF(not StrengthGreaterThan(22,context.Source)):Disadvantage(AttackRoll)"
+
+new entry "Arsenal_Strength_Requirement_25"
+type "PassiveData"
+using "Arsenal_Strength_Requirement_21"
+data "DescriptionParams" "25"
+data "Boosts" "IF(not StrengthGreaterThan(24,context.Source)):Disadvantage(AttackRoll)"
+
+new entry "Arsenal_Strength_Requirement_27"
+type "PassiveData"
+using "Arsenal_Strength_Requirement_21"
+data "DescriptionParams" "27"
+data "Boosts" "IF(not StrengthGreaterThan(26,context.Source)):Disadvantage(AttackRoll)"
+
+new entry "Arsenal_Strength_Requirement_29"
+type "PassiveData"
+using "Arsenal_Strength_Requirement_21"
+data "DescriptionParams" "29"
+data "Boosts" "IF(not StrengthGreaterThan(28,context.Source)):Disadvantage(AttackRoll)"
+
+-----
+
+new entry "ARSENAL_D8_THUNDER"
+type "StatusData"
+data "StatusType" "BOOST"
+data "Icon" "statIcons_AbsorbElement_Thunder"
+data "Boosts" "WeaponDamage(1d8, Thunder)"
+data "StatusEffect" "d852e43c-3e66-4dd1-bd78-a6243bdd7e6d"
+data "SoundStart" ""
+data "SoundStop" ""
+data "StackPriority" "10"
+data "StatusPropertyFlags" "DisableOverhead;IgnoreResting;DisableCombatlog;DisablePortraitIndicator"
+
+new entry "ARSENAL_D8_LIGHTNING"
+type "StatusData"
+data "StatusType" "BOOST"
+using "ARSENAL_D6_LIGHTNING"
+data "Boosts" "WeaponDamage(1d8, Lightning)"
+
+-----
+
+new entry "Shout_Arsenal_WhirlwindAttack"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_MAG_WhirlwindAttack"
+data "Cooldown" "OncePerTurn"
+
+new entry "Target_Arsenal_MistyStep"
+type "SpellData"
+data "SpellType" "Shout"
+using "Target_MistyStep"
+data "Cooldown" "OncePerShortRestPerItem"
+data "UseCosts" "BonusActionPoint:1"

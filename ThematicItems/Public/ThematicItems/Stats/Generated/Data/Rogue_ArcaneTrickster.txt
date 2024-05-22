@@ -1,0 +1,142 @@
+new entry "ThematicItems_Trickster_Veil"
+type "Armor"
+using "_Head_Magic"
+data "RootTemplate" "c1b86fae-f8ea-4821-99ec-f2408ae9f734"
+data "Rarity" "Uncommon"
+data "PassivesOnEquip" "TI_Pinpoint_Acuity"
+data "ValueOverride" "193"
+data "Unique" 1
+
+new entry "ThematicItems_Trickster_Boots"
+type "Armor"
+using "_Foot_Magic"
+data "RootTemplate" "e04c09dd-94c0-4208-ab83-cd174e902a86"
+data "Rarity" "Uncommon"
+data "Boosts" "UnlockSpell(Shout_TI_ExpeditiousRetreat_AT)"
+data "ValueOverride" "312"
+data "Unique" 1
+
+new entry "ThematicItems_Trickster_Ring"
+type "item"
+using "_Ring_Magic"
+data "RootTemplate" "22ddca2a-96a7-4722-84d4-ec55339be73b"
+data "Rarity" "Uncommon"
+data "Boosts" "Ability(Dexterity, 1, 20);Ability(Intelligence, 1, 20)"
+data "ValueOverride" "486"
+data "Unique" 1
+
+new entry "ThematicItems_Trickster_Vest"
+type "Armor"
+using "_Body"
+data "RootTemplate" "47af2755-af79-46dc-be04-1e8258da4fa7"
+data "Rarity" "Rare"
+data "ArmorClass" "12"
+data "ArmorType" "Padded"
+data "PassivesOnEquip" "MAG_CQCaster_CloseRangedSpellMastery_Gloves_Passive;TI_Spell_Accuracy"
+data "Armor Class Ability" "Dexterity"
+data "Proficiency Group" "LightArmor"
+data "ValueOverride" "1019"
+data "Unique" 1
+
+new entry "ThematicItems_Trickster_Cloak"
+type "item"
+using "_Back_Magic"
+data "RootTemplate" "14dde7bf-b375-45a8-87ec-bb8ab8be5ad7"
+data "Rarity" "VeryRare"
+data "PassivesOnEquip" "TI_Spell_Accuracy;TI_Arcane_Precision"
+data "ValueOverride" "2664"
+data "Unique" 1
+
+new entry "ThematicItems_Trickster_Gloves"
+type "Armor"
+using "_Hand_Magic"
+data "RootTemplate" "e95828f2-8a22-43a9-9dad-ed17fb01ddc0"
+data "Rarity" "VeryRare"
+data "PassivesOnEquip" "TI_Uncanny_Agility;Arsenal_Heightened_Enchantment_Passive"
+data "Boosts" "Ability(Intelligence, 2, 24)"
+data "ValueOverride" "1619"
+data "Unique" 1
+
+new entry "ThematicItems_Trickster_Amulet"
+type "item"
+using "_Amulet_Magic"
+data "RootTemplate" "feb2b034-aa0b-4e2e-88c8-0a66d6b7fe8a"
+data "Rarity" "Legendary"
+data "PassivesOnEquip" "TI_Dexterous_Caster;TI_Spell_Critical;TI_Vicious_Spell"
+data "ValueOverride" "3492"
+data "Unique" 1
+
+-----
+
+new entry "ThematicItems_Trickster_Blade"
+type "Weapon"
+using "WPN_Shortsword_1"
+data "RootTemplate" "66b48183-6f98-419b-b4eb-b2483d03007d"
+data "Rarity" "Rare"
+data "PassivesMainHand" "MAG_CQCaster_CloseRangedSpellMastery_Gloves_Passive"
+data "PassivesOffHand" "Arsenal_ImprovedTwoWeaponFighting"
+data "ValueOverride" "977"
+data "Unique" 1
+
+-----
+
+new entry "TI_Pinpoint_Acuity"
+type "PassiveData"
+data "DisplayName" "h5cd1ab93ga415g433agad2ag6ddd72003bdd"
+data "Description" "h9a8d5ce5g296bg4ab5ga8c8ga0a768281e78"
+data "DescriptionParams" "2"
+data "StatsFunctorContext" "OnDamage"
+data "Conditions" "SpellId('Target_SneakAttack') or SpellId('Projectile_SneakAttack') or SpellId('Interrupt_SneakAttack')"
+data "StatsFunctors" "ApplyStatus(SELF, MAG_GISH_ARCANE_ACUITY, 100, 2);ApplyStatus(SELF, MAG_GISH_ARCANE_ACUITY_DURATION_TECHNICAL, 100, 1)"
+
+new entry "TI_Spell_Accuracy"
+type "PassiveData"
+data "DisplayName" "h3a4511fag4286g4dcbg9bb8gbf60fd4867e7"
+data "Description" "h82a5c523gd8bag47c5gb74fga97c6bb5eec4;3"
+data "Boosts" "IF(IsSpell() and IsSpellAttack()):ReduceCriticalAttackThreshold(1)"
+
+new entry "TI_Arcane_Precision"
+type "PassiveData"
+data "DisplayName" "h537e32f0g7532g416fg9993g6126257203ee"
+data "Description" "h6f90aabdg875eg4601gb813g3c08f8babdea"
+data "DescriptionParams" "2"
+data "StatsFunctorContext" "OnDamage"
+data "Conditions" "SpellId('Target_SneakAttack') or SpellId('Projectile_SneakAttack') or SpellId('Interrupt_SneakAttack')"
+data "StatsFunctors" "ApplyStatus(SELF, MAG_GISH_ARCANE_SYNERGY, 100, 2)"
+
+new entry "TI_Uncanny_Agility"
+type "PassiveData"
+data "DisplayName" "hd7fa3ae6g6954g4956ga2c4gdecdb5a9a6ec"
+data "Description" "ha2831771g813bg4938gacc3g0ef925d9f2fb"
+data "BoostContext" "OnEquip;OnCreate"
+data "Boosts" "IF(HasPassive('UncannyDodge',context.Source) and not HasPassive('FastHands',context.Source)):ActionResource(BonusActionPoint,1,0)"
+
+new entry "TI_Dexterous_Caster"
+type "PassiveData"
+data "DisplayName" "h756faefdg738fg48f4gaf46g8bb0160c015b"
+data "Description" "h51996d85g9699g42abg8b77g08bc493666ba"
+data "BoostContext" "OnCreate"
+data "Boosts" "IF(IsCantrip()):DamageBonus(max(1,DexterityModifier))"
+
+new entry "TI_Spell_Critical"
+type "PassiveData"
+data "DisplayName" "h4f7c9583g0068g4f19g8931g859726e499dc"
+data "Description" "h6ed7937bgb4a1g4b75g84d9g0e7dd4f03cbd"
+data "Boosts" "IF(IsSpell() and IsSpellAttack()):ReduceCriticalAttackThreshold(4)"
+
+new entry "TI_Vicious_Spell"
+type "PassiveData"
+data "DisplayName" "h22f47633g689cg4bcbgbdfaga3151b648d35"
+data "Description" "ha1af579fg8cb9g46dfg9bf2gcf8bd657d19c"
+data "DescriptionParams" "7"
+data "BoostContext" "OnCreate"
+data "Boosts" "IF(IsSpell() and IsSpellAttack() and IsCritical()):DamageBonus(7,,false)"
+
+-----
+
+new entry "Shout_TI_ExpeditiousRetreat_AT"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_ExpeditiousRetreat"
+data "Cooldown" "OncePerShortRestPerItem"
+data "UseCosts" "ActionPoint:1"

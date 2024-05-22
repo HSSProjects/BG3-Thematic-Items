@@ -1,0 +1,108 @@
+new entry "ThematicItems_Terran_Cloak"
+type "item"
+using "_Back_Magic"
+data "RootTemplate" "2a3c2d3b-ffdf-4703-b529-3fa692adfab6"
+data "Rarity" "Uncommon"
+data "PassivesOnEquip" "TI_Accumulating_Force"
+data "ValueOverride" "308"
+data "Unique" 1
+
+new entry "ThematicItems_Terran_Helm"
+type "Armor"
+using "_Head_Magic"
+data "RootTemplate" "ca04b32a-f4fd-48a9-94f5-0e6b61d43438"
+data "Rarity" "Rare"
+data "Boosts" "CriticalHit(AttackTarget,Success,Never);UnlockSpell(Shout_MAG_PullingShout)"
+data "ValueOverride" "1176"
+data "Unique" 1
+
+new entry "ThematicItems_Terran_Boots"
+type "Armor"
+using "_Foot_Magic"
+data "RootTemplate" "abb799b8-91e7-4a44-b1b1-5626ce5b2240"
+data "Rarity" "Rare"
+data "Boosts" "AC(1)"
+data "PassivesOnEquip" "MOO_KethericArmor"
+data "ValueOverride" "1277"
+data "Unique" 1
+
+new entry "ThematicItems_Terran_Plate"
+type "Armor"
+using "_Body"
+data "RootTemplate" "72985335-e005-477c-853a-bfc8984dbc45"
+data "ArmorClass" "20"
+data "ArmorType" "Plate"
+data "Rarity" "VeryRare"
+data "PassivesOnEquip" "MAG_FlexibleArmor_Defense_Passive;TI_Terran_Plate_Proficiency_Passive;ARM_MagicalPlate_2_Passive"
+data "Boosts" "UnlockSpell(Target_TI_Powerful_Punch)"
+data "Proficiency Group" ""
+data "ValueOverride" "2694"
+data "Unique" 1
+
+new entry "ThematicItems_Terran_Gauntlets"
+type "Armor"
+using "_Hand_Magic"
+data "RootTemplate" "1a5c9cdf-f615-4508-b9ec-51e8469b3165"
+data "Rarity" "VeryRare"
+data "PassivesOnEquip" "TI_Bolster;TI_Crushing_Fist"
+data "ValueOverride" "2937"
+data "Unique" 1
+
+-----
+
+new entry "TI_Accumulating_Force"
+type "PassiveData"
+data "DisplayName" "hebe2a304g9faeg4b40g9d08g1e6d2b9bae65"
+data "Description" "ha20721a7g2eb1g44efga22eg5e7194bb55a4"
+data "DescriptionParams" "2"
+data "StatsFunctorContext" "OnDamaged"
+data "Conditions" "IsMeleeAttack()"
+data "StatsFunctors" "ApplyStatus(MAG_ZOC_FORCE_CONDUIT_CHARGE_UP_TECHNICAL,100, 0);ApplyStatus(MAG_ZOC_FORCE_CONDUIT, 100, 2);IF(not HasStatus('MAG_ZOC_FORCE_CONDUIT_MAX_CHARGED_TECHNICAL') and ForceConduitBlastRequirement(context.Target)):ApplyStatus(MAG_ZOC_FORCE_CONDUIT_MAX_CHARGED_TECHNICAL, 100, -1);ApplyStatus(MAG_ZOC_FORCE_CONDUIT_DURATION_TECHNICAL, 100, 1)"
+
+new entry "TI_Terran_Plate_Proficiency_Passive"
+type "PassiveData"
+using "MAG_PHB_ElvenChain_Armor_Passive"
+data "DisplayName" "h4dc5e5eegc655g4ed3ga0dbg71b888f93970"
+
+new entry "TI_Bolster"
+type "PassiveData"
+data "DisplayName" "h90faefe3g6778g45ccg8966gf35a84f0bc41"
+data "Description" "h874752c2ge272g42b8g9466gfc47b4acd063"
+data "DescriptionParams" "2"
+data "StatsFunctorContext" "OnDamage"
+data "Conditions" "IsUnarmedAttack() or IsWeaponAttack()"
+data "StatsFunctors" "ApplyStatus(MAG_ZOC_FORCE_CONDUIT_CHARGE_UP_TECHNICAL,100, 0);ApplyStatus(SELF, MAG_ZOC_FORCE_CONDUIT, 100, 2);IF(not HasStatus('MAG_ZOC_FORCE_CONDUIT_MAX_CHARGED_TECHNICAL') and ForceConduitBlastRequirement(context.Target)):ApplyStatus(MAG_ZOC_FORCE_CONDUIT_MAX_CHARGED_TECHNICAL, 100, -1);ApplyStatus(SELF, MAG_ZOC_FORCE_CONDUIT_DURATION_TECHNICAL, 100, 1)"
+
+new entry "TI_Crushing_Fist"
+type "PassiveData"
+data "DisplayName" "h5d65a2cfg708ag45deg87fcg9ffef83cbedf"
+data "Description" "hb7571f12gf4e3g408eg9d9bg25fd5e7807f6"
+data "DescriptionParams" "DealDamage(1d4, Force)"
+data "Boosts" "CharacterUnarmedDamage(1d4, Force)"
+
+-----
+
+new entry "TI_TECTONIC_FRACTURE"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h58dffe01g8379g4527g8070g58747798939d"
+data "Description" "h21fc0771g3363g41c6ga632gb99508a141cd"
+data "DescriptionParams" "DealDamage(,Bludgeoning);DealDamage(,Force)"
+data "Icon" "GenericIcon_DamageType_Physical"
+data "StackId" "TI_TECTONIC_FRACTURE"
+data "Boosts" "Resistance(Bludgeoning, Vulnerable);Resistance(Force, Vulnerable)"
+
+-----
+
+new entry "Target_TI_Powerful_Punch"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_UnarmedAttack"
+data "Cooldown" "OncePerTurn"
+data "DisplayName" "h58dffe01g8379g4527g8070g58747798939d"
+data "Description" "h9f7fb31bg9fd2g492eg9936g0c47fb3f690c"
+data "DescriptionParams" "1;DealDamage(,Bludgeoning);DealDamage(,Force);2"
+data "SpellProperties" "SetStatusDuration(MAG_ZOC_FORCE_CONDUIT,-1,Add)"
+data "SpellSuccess" "DealDamage(UnarmedDamage, Bludgeoning);ApplyStatus(TI_TECTONIC_FRACTURE, 100, 2)"
+data "RequirementConditions" "HasStatus('MAG_ZOC_FORCE_CONDUIT')"
+data "SpellFlags" "IsMelee;IsHarmful;DisableBlood"

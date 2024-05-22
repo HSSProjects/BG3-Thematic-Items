@@ -1,0 +1,160 @@
+new entry "ThematicItems_Huntmaster_Hood"
+type "Armor"
+using "_Head_Magic"
+data "RootTemplate" "9b997668-371b-44b8-8b0f-68a873885964"
+data "Rarity" "Uncommon"
+data "PassivesOnEquip" "TI_Lesser_Colossus_Slayer"
+data "ValueOverride" "228"
+data "Unique" 1
+
+new entry "ThematicItems_Huntmaster_Mantle"
+type "item"
+using "_Back_Magic"
+data "RootTemplate" "5ae0dcd4-20b0-4c38-8461-b7b5ec405520"
+data "Rarity" "Uncommon"
+data "Boosts" "ActionResource(Movement, 3, 0)"
+data "ValueOverride" "486"
+data "Unique" 1
+
+new entry "ThematicItems_Huntmaster_Boots"
+type "Armor"
+using "_Foot_Magic"
+data "RootTemplate" "f9e323ae-ac77-4cd7-b19a-dad99cd56451"
+data "Rarity" "Uncommon"
+data "Boosts" "UnlockSpell(Shout_TI_TakeAim)"
+data "ValueOverride" "119"
+data "Unique" 1
+
+new entry "ThematicItems_Huntmaster_Gloves"
+type "Armor"
+using "_Hand_Magic"
+data "RootTemplate" "14b370be-4f9d-49df-832d-50f76bc8d14f"
+data "Rarity" "Rare"
+data "PassivesOnEquip" "LOW_Guildhall_IsolatedPrey"
+data "ValueOverride" "984"
+data "Unique" 1
+
+new entry "ThematicItems_Huntmaster_Pendant"
+type "item"
+using "_Amulet_Magic"
+data "RootTemplate" "466d6162-fa95-4da9-88e3-e43db9116039"
+data "Rarity" "Rare"
+data "PassivesOnEquip" "TI_Hunters_Arm;ARM_Ambusher_1_Passive"
+data "ValueOverride" "641"
+data "Unique" 1
+
+new entry "ThematicItems_Huntmaster_Armor"
+type "Armor"
+using "_Body"
+data "RootTemplate" "6ca54e1f-c389-45db-9f3e-56fcb6a7b661"
+data "Rarity" "VeryRare"
+data "ArmorClass" "14"
+data "ArmorType" "Hide"
+data "PassivesOnEquip" "TI_Eagle_Eye;TI_Stalker_Awareness"
+data "Boosts" "Ability(Dexterity, 2, 24)"
+data "Armor Class Ability" "Dexterity"
+data "Proficiency Group" "MediumArmor"
+data "ValueOverride" "1551"
+data "Unique" 1
+
+new entry "ThematicItems_Huntmaster_Ring"
+type "item"
+using "_Ring_Magic"
+data "RootTemplate" "ddd360b6-6319-4d23-9c28-b15ade3ff1aa"
+data "Rarity" "VeryRare"
+data "PassivesOnEquip" "TI_Greater_Marksmanship"
+data "Boosts" "Advantage(Skill, Perception)"
+data "ValueOverride" "2510"
+data "Unique" 1
+
+-----
+
+new entry "ThematicItems_Big_Game_Hunter"
+type "Weapon"
+using "WPN_HeavyCrossbow_2"
+data "RootTemplate" "52af77ab-b0d8-4da2-82be-4d5fea3ef302"
+data "Rarity" "Legendary"
+data "DefaultBoosts" "WeaponEnchantment(3);WeaponProperty(Magical)"
+data "PassivesOnEquip" "TI_Big_Game_Hunter"
+data "Boosts" "UnlockSpell(Projectile_TI_TopplingShot);UnlockSpell(Target_SteelWatcher_Biped_RetrievingShot)"
+data "StatusOnEquip" "MAG_GIANTSLAYER_ADVANTAGE_TECHNICAL"
+data "ValueOverride" "3078"
+data "Unique" 1
+
+-----
+
+new entry "TI_Lesser_Colossus_Slayer"
+type "PassiveData"
+data "DisplayName" "hf5a99c75g5e76g4db6g868ag68ed36288edf"
+data "Description" "h8d735739g4165g4dd4g9667g2df76fd7d4f1"
+data "DescriptionParams" "1d4"
+data "StatsFunctorContext" "OnDamage"
+data "Conditions" "IsWeaponAttack() and HasDamageEffectFlag(DamageFlags.Hit) and not HasMaxHP()"
+data "StatsFunctors" "IF(IsAttackType(AttackType.MeleeWeaponAttack)):DealDamage(1d4, MainMeleeWeaponDamageType);IF(IsAttackType(AttackType.RangedWeaponAttack)):DealDamage(1d4, MainRangedWeaponDamageType);IF(IsAttackType(AttackType.MeleeOffHandWeaponAttack)):DealDamage(1d4, OffhandMeleeWeaponDamageType);IF(IsAttackType(AttackType.RangedOffHandWeaponAttack)):DealDamage(1d4, OffhandRangedWeaponDamageType)"
+
+new entry "TakeAim_Passive"
+type "PassiveData"
+using "FullSwing_Passive"
+data "DisplayName" "h635e14e1g4f60g43a6ga9acg9ded69dd9c3e"
+data "Description" "h645d8dc0g18b1g41bcgad7dgb87690994ee6"
+data "DescriptionParams" "DealDamage(max(1,DexterityModifier), MainRangedWeaponDamageType)"
+data "Conditions" "(HasDamageEffectFlag(DamageFlags.Hit) or HasDamageEffectFlag(DamageFlags.Critical)) and IsRangedAttack() and IsProficientWithEquippedWeapon() and not (IsCriticalMiss() or IsMiss())"
+data "StatsFunctors" "DealDamage(max(1,DexterityModifier), MainRangedWeaponDamageType)"
+
+new entry "TI_Hunters_Arm"
+type "PassiveData"
+data "DisplayName" "haf77ab63gd6d2g4044g9327g8851baf6a962"
+data "Description" "h42f82339g2541g4207gaa1fg2b8100b51651"
+data "DescriptionParams" "1d6"
+data "Boosts" "IF(HasMarkingStatusCondition()):CharacterWeaponDamage(1d6)"
+
+new entry "TI_Eagle_Eye"
+type "PassiveData"
+using "ARM_Ambusher_1_Passive"
+data "DisplayName" "h7290894eg7d4bg4d38ga31eg5b2030d072c9"
+data "DescriptionParams" "5"
+data "Boosts" "Initiative(5)"
+
+new entry "TI_Greater_Marksmanship"
+type "PassiveData"
+using "MAG_Marksmanship_Passive"
+data "DescriptionParams" "3"
+data "Boosts" "RollBonus(RangedWeaponAttack, 3);RollBonus(RangedSpellAttack, 3);IF(SpellTypeIs(SpellType.Throw)):RollBonus(Attack, 3)"
+
+new entry "TI_Big_Game_Hunter"
+type "PassiveData"
+data "DisplayName" "h6c7a7edcg002fg499egad20g38e4ab642ea5"
+data "Description" "h9f3003adgcb9fg4364g9752gef93a4c69f71"
+data "Boosts" "DamageBonus(max(0,DexterityModifier));IF(SizeEqualOrGreater(Size.Large) and HasStatus('MAG_GIANTSLAYER_ADVANTAGE_TECHNICAL', GetAttackWeapon())):Advantage(AttackRoll)"
+
+-----
+
+new entry "TAKE_AIM"
+type "StatusData"
+data "StatusType" "BOOST"
+using "FULL_SWING"
+data "DisplayName" "h635e14e1g4f60g43a6ga9acg9ded69dd9c3e"
+data "Description" "h645d8dc0g18b1g41bcgad7dgb87690994ee6"
+data "DescriptionParams" "DealDamage(max(1,DexterityModifier), MainRangedWeaponDamageType)"
+data "StackId" "TAKE_AIM"
+data "Passives" "TakeAim_Passive"
+
+-----
+
+new entry "Shout_TI_TakeAim"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_FullSwing"
+data "SpellProperties" "ApplyStatus(TAKE_AIM,100,1)"
+data "DisplayName" "h635e14e1g4f60g43a6ga9acg9ded69dd9c3e"
+data "Description" "h37692d5cga8d4g46ccg9592g541a1ab60d10"
+data "DescriptionParams" "Distance(6);DealDamage(max(1,DexterityModifier), MainRangedWeaponDamageType)"
+data "TooltipStatusApply" "ApplyStatus(TAKE_AIM,100,1)"
+data "SpellFlags" ""
+data "RequirementConditions" ""
+
+new entry "Projectile_TI_TopplingShot"
+type "SpellData"
+data "SpellType" "Projectile"
+using "Projectile_MAG_Automaton_LightTagging_Shot"
+data "SpellSuccess" "DealDamage(1d4, MainRangedWeaponDamageType); ExecuteWeaponFunctors(MainHand);ApplyStatus(OFF_BALANCED, 100, 1)"

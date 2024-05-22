@@ -1,0 +1,172 @@
+new entry "ThematicItems_Colossus_Helm"
+type "Armor"
+using "_Head_Magic"
+data "RootTemplate" "cdeea092-6c09-4453-b04b-ec6fecd47cec"
+data "Rarity" "Uncommon"
+data "PassivesOnEquip" "TI_Giants_Might"
+data "ValueOverride" "221"
+data "Unique" 1
+
+new entry "ThematicItems_Colossus_Mantle"
+type "item"
+using "_Back_Magic"
+data "RootTemplate" "a421c5f0-e97a-4498-a991-941bfb50aab7"
+data "Rarity" "Uncommon"
+data "PassivesOnEquip" "TI_Shrink_Away"
+data "ValueOverride" "281"
+data "Unique" 1
+
+new entry "ThematicItems_Colossus_Amulet"
+type "item"
+using "_Amulet_Magic"
+data "RootTemplate" "3c596f17-a47e-40cb-a157-12b9ca1aa07d"
+data "Rarity" "Rare"
+data "PassivesOnEquip" "TI_Colossal_Blows"
+data "ValueOverride" "1217"
+data "Unique" 1
+
+new entry "ThematicItems_Colossus_Ring"
+type "item"
+using "_Ring_Magic"
+data "RootTemplate" "f4d58529-b47d-4053-95f4-a5b2736e3991"
+data "Rarity" "Rare"
+data "PassivesOnEquip" "TI_Ferocity;TI_Giant_Muscles"
+data "ValueOverride" "1101"
+data "Unique" 1
+
+new entry "ThematicItems_Colossus_Gauntlets"
+type "Armor"
+using "_Hand_Magic"
+data "RootTemplate" "fc267a87-0461-441d-ab6b-cfedc3c5bd14"
+data "Rarity" "VeryRare"
+data "PassivesOnEquip" "TI_Giant_Strength"
+data "Boosts" "Advantage(SavingThrow, Strength)"
+data "ValueOverride" "2201"
+data "Unique" 1
+
+new entry "ThematicItems_Colossus_Boots"
+type "Armor"
+using "_Foot_Magic"
+data "RootTemplate" "052b52f6-458c-49ec-9a43-a673c7dd25b3"
+data "Rarity" "VeryRare"
+data "PassivesOnEquip" "TI_Giant_Fortitude;TI_Giant_Stride;MAG_Infernal_Metal_Boots_AntiDisplacement_Passive"
+data "Boosts" "UnlockSpell(Projectile_MAG_Barbarian_BrutalLeap)"
+data "ValueOverride" "2337"
+data "Unique" 1
+
+new entry "ThematicItems_Colossus_Garb"
+type "Armor"
+using "_Body"
+data "RootTemplate" "ebe0ced0-7b2b-4d43-92f2-3d20b2c6c623"
+data "Rarity" "Legendary"
+data "ArmorClass" "10"
+data "PassivesOnEquip" "TI_Aspect_OfThe_Titans;TI_Grow_Taller;TI_Clumsy"
+data "StatusOnEquip" "TI_GROW_TALLER"
+data "Armor Class Ability" "Dexterity"
+data "ValueOverride" "5721"
+data "Unique" 1
+
+-----
+
+new entry "ThematicItems_Ogre_Javelin"
+type "Weapon"
+using "WPN_Javelin_1"
+data "RootTemplate" "926218fa-fa55-48f6-a32f-1121ead2f3a9"
+data "Rarity" "Uncommon"
+data "PassivesOnEquip" "MAG_HomingWeapon_Passive"
+data "Boosts" "AbilityOverrideMinimum(Strength, 17)"
+data "ValueOverride" "155"
+data "Unique" 1
+
+-----
+
+new entry "TI_Giants_Might"
+type "PassiveData"
+data "DisplayName" "he68b2f20g124cg44a8gb46egdccfec48c7bd"
+data "Description" "hc88e7151ge44cg4ec2gac87gde4fbe6cf3b6"
+data "DescriptionParams" "1d4"
+data "Boosts" "IF(SizeEqualOrGreater(Size.Large, context.Source)):EntityThrowDamage(1d4);IF(SizeEqualOrGreater(Size.Large, context.Source)):CharacterUnarmedDamage(1d4);IF(IsMeleeAttack() and SizeEqualOrGreater(Size.Large, context.Source)):CharacterWeaponDamage(1d4)"
+
+new entry "TI_Shrink_Away"
+type "PassiveData"
+data "DisplayName" "ha337977bg7e24g4366gbdd9g2ee7b6c09e6e"
+data "Description" "hbfa07c4dgdc4ag4876gbf5fgf92ab403cb40"
+data "DescriptionParams" "Distance(2)"
+data "Properties" "OncePerAttack"
+data "StatsFunctorContext" "OnDamaged"
+data "Conditions" "IsMeleeAttack()"
+data "StatsFunctors" "IF(not SavingThrow(Ability.Constitution, 12, false, false, context.Source) and not HasStatus('REDUCE', context.Source)):ApplyStatus(SWAP, REDUCE, 100, 2)"
+
+new entry "TI_Colossal_Blows"
+type "PassiveData"
+data "DisplayName" "habde7920g3023g41b1ga6c6ge59487698180"
+data "Description" "h7b46c361g390ag4a13g82a6g13605f421e7b"
+data "DescriptionParams" "1;2;3;4"
+data "Boosts" "IF(SizeEqualOrLesser(Size.Medium, context.Source) and (IsMeleeAttack() or IsRangedUnarmedAttack())):Reroll(Damage, 1, False);IF(SizeEqual(Size.Large, context.Source) and (IsMeleeAttack() or IsRangedUnarmedAttack())):Reroll(Damage, 2, False);IF(SizeEqual(Size.Huge, context.Source) and (IsMeleeAttack() or IsRangedUnarmedAttack())):Reroll(Damage, 3, False);IF(SizeEqual(Size.Gargantuan, context.Source) and (IsMeleeAttack() or IsRangedUnarmedAttack())):Reroll(Damage, 4, False)"
+
+new entry "TI_Giant_Muscles"
+type "PassiveData"
+data "DisplayName" "h398ab6cegf204g4b10gbb72gbcc19f0f9fa2"
+data "Description" "hb0604022g06c0g4566gaaf6g14419d87da64"
+data "Boosts" "Skill(Athletics, StrengthModifier)"
+
+new entry "TI_Giant_Strength"
+type "PassiveData"
+data "DisplayName" "h19a1e8b2g6efag4794gbe70g73b2802c32d1"
+data "Description" "hf997508bg9ef8g4c4cg8313g531028cde194"
+data "DescriptionParams" "2;4;8"
+data "BoostContext" "OnStatusApplied;OnStatusRemoved;OnCreate"
+data "Boosts" "IF(SizeEqual(Size.Large, context.Source)):Ability(Strength, 2, 30);IF(SizeEqual(Size.Huge, context.Source)):Ability(Strength, 4, 30);IF(SizeEqual(Size.Gargantuan, context.Source)):Ability(Strength, 8, 30)"
+
+new entry "TI_Giant_Fortitude"
+type "PassiveData"
+data "DisplayName" "h7f2d34a1gb2edg4d55g93f6g03953917430e"
+data "Description" "h09931621gab9dg49aegb96fg233d770d92c8"
+data "DescriptionParams" "2;4;8"
+data "BoostContext" "OnStatusApplied;OnStatusRemoved;OnCreate"
+data "Boosts" "IF(SizeEqual(Size.Large, context.Source)):Ability(Constitution, 2, 30);IF(SizeEqual(Size.Huge, context.Source)):Ability(Constitution, 4, 30);IF(SizeEqual(Size.Gargantuan, context.Source)):Ability(Constitution, 8, 30)"
+
+new entry "TI_Giant_Stride"
+type "PassiveData"
+data "DisplayName" "h3033e1f1g7e56g4be1ga940g2141cdd7ff70"
+data "Description" "h30b43a45g2261g45f2ga47cgea9fc3f88bc6"
+data "DescriptionParams" "Distance(1.5);Distance(3);Distance(6)"
+data "BoostContext" "OnStatusApplied;OnStatusRemoved;OnCreate"
+data "Boosts" "IF(SizeEqual(Size.Large, context.Source)):ActionResource(Movement, 1.5, 0);IF(SizeEqual(Size.Huge, context.Source)):ActionResource(Movement, 3, 0);IF(SizeEqual(Size.Gargantuan, context.Source)):ActionResource(Movement, 6, 0)"
+
+new entry "TI_Aspect_OfThe_Titans"
+type "PassiveData"
+data "DisplayName" "h68c25647g2135g4712g8042g09a316fc886b"
+data "Description" "h62fed684g590dg4477g825eg866e89287f6e"
+data "Boosts" "IF(SizeEqual(Size.Large, context.Source) and (IsMeleeAttack() or IsRangedUnarmedAttack())):DamageBonus(max(0,((StrengthModifier)/2)));IF(SizeEqual(Size.Huge, context.Source) and (IsMeleeAttack() or IsRangedUnarmedAttack())):DamageBonus(max(0,StrengthModifier));IF(SizeEqual(Size.Gargantuan, context.Source) and (IsMeleeAttack() or IsRangedUnarmedAttack())):DamageBonus(max(0,(StrengthModifier*2)))"
+
+new entry "TI_Grow_Taller"
+type "PassiveData"
+data "DisplayName" "h3ae4d475gd363g49ddg916agbf6cecb1ba4f"
+data "Description" "h2cd2e4f6g2e0dg4371gaeecg26c83c3149c7"
+data "StatsFunctorContext" "OnStatusApplied;OnStatusRemoved"
+data "StatsFunctors" "IF(context.HasContextFlag(StatsFunctorContext.OnStatusApplied) and StatusId('RAGE_GIANT_BASE')):ApplyStatus(TI_OVERRIDE_GROW_TALLER, 100, -1);IF(context.HasContextFlag(StatsFunctorContext.OnStatusRemoved) and StatusId('RAGE_GIANT_BASE')):RemoveStatus(TI_OVERRIDE_GROW_TALLER)"
+
+new entry "TI_Clumsy"
+type "PassiveData"
+data "DisplayName" "h75ffba57g4296g4645gab06g1c8d1bc97c52"
+data "Description" "h64c8a4d1gb6b5g4dbagba17g176b3bd683cf"
+data "DescriptionParams" "1;2;3;4"
+data "BoostContext" "OnStatusApplied;OnStatusRemoved;OnCreate"
+data "Boosts" "IF(SizeEqualOrLesser(Size.Medium, context.Source)):AC(-1);IF(SizeEqual(Size.Large, context.Source)):AC(-2);IF(SizeEqual(Size.Huge, context.Source)):AC(-3);IF(SizeEqual(Size.Gargantuan, context.Source)):AC(-4)"
+
+-----
+
+new entry "TI_GROW_TALLER"
+type "StatusData"
+data "StatusType" "BOOST"
+using "ENLARGE"
+data "DisplayName" "h3ae4d475gd363g49ddg916agbf6cecb1ba4f"
+data "StackId" "TI_GROW_TALLER"
+
+new entry "TI_OVERRIDE_GROW_TALLER"
+type "StatusData"
+data "StatusType" "BOOST"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
+data "StackId" "TI_OVERRIDE_GROW_TALLER"
+data "Boosts" "ObjectSize(+1);ScaleMultiplier(1.33)"

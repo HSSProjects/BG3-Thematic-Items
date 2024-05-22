@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<save>
+    <version major="4" minor="0" revision="6" build="5" />
+    <region id="ActionResourceDefinitions">
+        <node id="root">
+            <children>
+                <node id="ActionResourceDefinition">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h7a6ede5dg8e3ag460bg87fagaa9391b45185" version="1" />
+                    <attribute id="IsHidden" type="bool" value="True" />
+                    <attribute id="Name" type="FixedString" value="TI_Interrupt_MAG_Shield_MageKnight" />
+                    <attribute id="ReplenishType" type="FixedString" value="Never" />
+                    <attribute id="UUID" type="guid" value="1052bf4b-08e4-4c02-b893-fbbed9b04447" />
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

@@ -1,0 +1,128 @@
+new entry "ThematicItems_Lethal_Shroud"
+type "item"
+using "_Back_Magic"
+data "RootTemplate" "1f7da61b-cc15-4d85-8694-c12f2d977dd9"
+data "Rarity" "Uncommon"
+data "Boosts" "UnlockSpell(Target_TI_Invisibility_Sin)"
+data "ValueOverride" "245"
+data "Unique" 1
+
+new entry "ThematicItems_Lethal_Amulet"
+type "item"
+using "_Amulet_Magic"
+data "RootTemplate" "a628841f-4faf-4bd1-864b-385a9973eaef"
+data "Rarity" "Uncommon"
+data "Boosts" "UnlockSpell(Shout_TI_PassWithoutTrace)"
+data "ValueOverride" "391"
+data "Unique" 1
+
+new entry "ThematicItems_Lethal_Ring"
+type "item"
+using "_Ring_Magic"
+data "RootTemplate" "647d55f3-a417-4bf6-94ac-76b6de3d50f8"
+data "Rarity" "Uncommon"
+data "PassivesOnEquip" "ImprovedCritical"
+data "ValueOverride" "163"
+data "Unique" 1
+
+new entry "ThematicItems_Lethal_Vest"
+type "Armor"
+using "_Body"
+data "RootTemplate" "0c5a0ad0-3071-47ce-83b6-53d28738644b"
+data "Rarity" "Rare"
+data "ArmorClass" "12"
+data "ArmorType" "Leather"
+data "PassivesOnEquip" "ARM_Ambusher_2_Passive;ARM_Stealthy_1_Passive;TI_Volatile_Poison"
+data "Armor Class Ability" "Dexterity"
+data "Proficiency Group" "LightArmor"
+data "ValueOverride" "569"
+data "Unique" 1
+
+new entry "ThematicItems_Lethal_Gloves"
+type "Armor"
+using "_Hand_Magic"
+data "RootTemplate" "19455269-d562-417f-a29d-5496abf12249"
+data "Rarity" "Rare"
+data "PassivesOnEquip" "TI_Uncanny_Agility;ImprovedCritical"
+data "ValueOverride" "590"
+data "Unique" 1
+
+new entry "ThematicItems_Lethal_Mask"
+type "Armor"
+using "_Head_Magic"
+data "RootTemplate" "a47cd174-0ab0-4126-a8ce-8ca0369406a6"
+data "Rarity" "VeryRare"
+data "PassivesOnEquip" "TI_Soul_Deception"
+data "Boosts" "Ability(Dexterity, 2, 24)"
+data "ValueOverride" "2337"
+data "Unique" 1
+
+new entry "ThematicItems_Lethal_Boots"
+type "Armor"
+using "_Foot_Magic"
+data "RootTemplate" "2a840216-e4f0-4ff1-9d91-c2ce6405baea"
+data "Rarity" "VeryRare"
+data "PassivesOnEquip" "ImprovedCritical;MAG_Critical_CriticalSwiftness_Passive"
+data "Boosts" "Ability(Dexterity, 2, 24)"
+data "ValueOverride" "2468"
+data "Unique" 1
+
+-----
+
+new entry "ThematicItems_Deathbite"
+type "Weapon"
+using "WPN_Dagger_2"
+data "RootTemplate"  "68d45dba-13fd-4a1a-a8c8-71b594a4da05"
+data "Rarity" "Legendary"
+data "DefaultBoosts" "WeaponEnchantment(3);WeaponProperty(Magical)"
+data "PassivesMainHand" "TI_Piranha_Strike"
+data "PassivesOffHand" "Arsenal_ImprovedTwoWeaponFighting"
+data "PassivesOnEquip" "TI_Legendary_Assassin;ImprovedCritical"
+data "ValueOverride" "8519"
+data "Unique" 1
+
+-----
+
+new entry "TI_Volatile_Poison"
+type "PassiveData"
+using "MAG_Ambushing_Attack_Passive"
+data "DisplayName" "h59802bb1ga496g4b08ga5d1g5d12382ec5bc"
+data "DescriptionParams" "DealDamage(2d6, Poison)"
+data "Boosts" "IF(Combat(context.Source) and Combat() and not HadTurnInCombat()):CharacterWeaponDamage(2d6, Poison)"
+
+new entry "TI_Soul_Deception"
+type "PassiveData"
+data "DisplayName" "h7a369224ge754g4538g9a08g6b0185a025b2"
+data "Description" "he980402bgc825g438fg93d3g11572248eba3"
+data "DescriptionParams" "2"
+data "Boosts" "RollBonus(Attack, 2);Initiative(2);Skill(Stealth, 2)"
+
+new entry "TI_Piranha_Strike"
+type "PassiveData"
+data "DisplayName" "h6a208d43ga828g4b69gaf89g099adb17ce7b"
+data "Description" "hd08b9627gcf67g4a59g9a50gfb37b65932d2"
+data "Boosts" "DamageBonus(max(0,DexterityModifier))"
+
+new entry "TI_Legendary_Assassin"
+type "PassiveData"
+data "DisplayName" "h927b0c7cgd5a7g43ccga793gd17a8efc47e7"
+data "Description" "h6eac594fga5e5g4fc7gb7cfgf30a2c554d5d"
+data "DescriptionParams" "DealDamage(,Poison)"
+data "BoostContext" "OnCreate"
+data "Boosts" "IF(IsWeaponAttack() and IsCritical()):DamageBonus(StealthModifier(),Poison)"
+
+-----
+
+new entry "Target_TI_Invisibility_Sin"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_Invisibility"
+data "UseCosts" "ActionPoint:1"
+data "Cooldown" "OncePerShortRestPerItem"
+
+new entry "Shout_TI_PassWithoutTrace"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_PassWithoutTrace"
+data "UseCosts" "ActionPoint:1"
+data "Cooldown" "OncePerShortRestPerItem"

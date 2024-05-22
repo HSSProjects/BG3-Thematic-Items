@@ -1,0 +1,137 @@
+new entry "ThematicItems_Corsair_Tricorne"
+type "Armor"
+using "ARM_Circlet"
+data "RootTemplate" "beb47651-6bb7-4463-affa-13c4285bce77"
+data "Rarity" "Uncommon"
+data "Boosts" "Skill(Deception, 1);Skill(Persuasion, 1);Proficiency(Scimitars);Proficiency(Tridents);Proficiency(HandCrossbows)"
+data "PassivesOnEquip" "TI_Pirate_Proficiency"
+data "ValueOverride" "301"
+data "Unique" 1
+
+new entry "ThematicItems_Corsair_Gloves"
+type "Armor"
+using "_Hand_Magic"
+data "RootTemplate" "17c9d367-e563-46e8-afcf-24759db7ae26"
+data "Rarity" "Uncommon"
+data "PassivesOnEquip" "TI_Uncanny_Agility"
+data "ValueOverride" "188"
+data "Unique" 1
+
+new entry "ThematicItems_Corsair_Parley"
+type "item"
+using "_Ring_Magic"
+data "RootTemplate" "677cde80-6f46-47b4-b674-c234ca8975da"
+data "Rarity" "Uncommon"
+data "Boosts" "AbilityOverrideMinimum(Charisma, 16)"
+data "ValueOverride" "143"
+data "Unique" 1
+
+new entry "ThematicItems_Corsair_Mantle"
+type "item"
+using "_Back_Magic"
+data "RootTemplate" "f22f199d-ec01-478b-8680-0c3c47756e01"
+data "Rarity" "Rare"
+data "Boosts" "Advantage(SavingThrow, Dexterity)"
+data "StatusOnEquip" "WET"
+data "PassivesOnEquip" "TI_Splash"
+data "ValueOverride" "951"
+data "Unique" 1
+
+new entry "ThematicItems_Corsair_Boots"
+type "Armor"
+using "ARM_Boots_Leather"
+data "RootTemplate" "a0392e42-be04-4995-9d1a-c52c4c056347"
+data "Rarity" "Rare"
+data "PassivesOnEquip" "TI_Sea_Legs"
+data "ValueOverride" "1033"
+data "Unique" 1
+
+new entry "ThematicItems_Corsair_Rigging"
+type "Armor"
+using "_Body"
+data "RootTemplate" "6ee495d6-52c9-44e5-b317-a38f388f5893"
+data "ArmorClass" "14"
+data "ArmorType" "StuddedLeather"
+data "Rarity" "VeryRare"
+data "Boosts" "Ability(Dexterity, 2, 24);JumpMaxDistanceMultiplier(2)"
+data "PassivesOnEquip" "TI_Perfect_Balance"
+data "Armor Class Ability" "Dexterity"
+data "Proficiency Group" "LightArmor"
+data "ValueOverride" "2696"
+data "Unique" 1
+
+new entry "ThematicItems_Corsair_Pendant"
+type "item"
+using "_Amulet_Magic"
+data "RootTemplate" "16fe9678-03c1-4939-a6e2-0e5187f70610"
+data "Rarity" "Legendary"
+data "PassivesOnEquip" "TI_Ambush_Of_The_Deep"
+data "ValueOverride" "8956"
+data "Unique" 1
+
+-----
+
+new entry "ThematicItems_Corsair_Tidecutter"
+type "Weapon"
+using "WPN_Scimitar_2"
+data "RootTemplate" "5716454a-55db-4df2-aedc-3eea6dfd4875"
+data "Rarity" "VeryRare"
+data "PassivesMainHand" "MAG_LC_Wave_Trident_Passive"
+data "PassivesOffHand" "Arsenal_ImprovedTwoWeaponFighting"
+data "PassivesOnEquip" "TI_Deadly_Water"
+data "ValueOverride" "2036"
+data "Unique" 1
+
+new entry "ThematicItems_Corsair_Seaslicer"
+type "Weapon"
+using "WPN_Scimitar_2"
+data "RootTemplate" "fddf79e5-45df-4b02-a426-949570fcd860"
+data "Rarity" "VeryRare"
+data "PassivesOffHand" "Arsenal_ImprovedTwoWeaponFighting"
+data "PassivesOnEquip" "TI_Deadly_Water"
+data "BoostsOnEquipMainHand" "UnlockSpell(Target_OpeningAttack);UnlockSpell(Target_Slash_New);UnlockSpell(Shout_MAG_WhirlwindAttack)"
+data "ValueOverride" "1998"
+data "Unique" 1
+
+-----
+
+new entry "TI_Pirate_Proficiency"
+type "PassiveData"
+data "DisplayName" "hda88d16fg97cdg42b5g9199gdbd7daee4036"
+data "Description" "h693eb84dg1ac4g4ffagb03dgcac952b9ade8"
+
+new entry "TI_Splash"
+type "PassiveData"
+data "DisplayName" "hfe1386a4g1adcg4cfega5f4g9ffd8a5e7188"
+data "Description" "hdc0aa618g3b9cg4bc0g9150gbcd2016a3a93"
+data "DescriptionParams" "Distance(2)"
+data "Properties" "OncePerAttack"
+data "StatsFunctorContext" "OnDamaged"
+data "Conditions" "IsMeleeAttack()"
+data "StatsFunctors" "ApplyStatus(SWAP, WET, 100, 2)"
+
+new entry "TI_Sea_Legs"
+type "PassiveData"
+data "DisplayName" "h7eda654dg23a4g43a0g8bc2g9e517e216a77"
+data "Description" "h5064b96cga9adg489bg99c0g3abcf532f60a"
+data "Boosts" "StatusImmunity(PRONE);StatusImmunity(PRONE_GREASE);StatusImmunity(PRONE_ICE);Resistance(Cold, Resistant)"
+
+new entry "TI_Deadly_Water"
+type "PassiveData"
+data "DisplayName" "h793376abgbb57g429bg8064g2356ce1d3958"
+data "Description" "hc0b6daacgd87eg45c5g958cgcf24bd1ab217"
+data "Boosts" "IF(InSurface('SurfaceWater') or InSurface('SurfaceWaterElectrified')):ReduceCriticalAttackThreshold(1)"
+
+new entry "TI_Perfect_Balance"
+type "PassiveData"
+data "DisplayName" "h9c5bf548gf7b7g4d94g9485gb50948428a56"
+data "Description" "h7c537207ge7e6g4a55gb5eag7b604349da67"
+data "Boosts" "CharacterWeaponDamage(max(1,AcrobaticsModifier()))"
+
+new entry "TI_Ambush_Of_The_Deep"
+type "PassiveData"
+data "DisplayName" "hca1df56cg5ca5g40a5g9d2ag15196e85b05a"
+data "Description" "h6afa12a9gccdfg4feaga89eg9cd3ea413c99"
+data "StatsFunctorContext" "OnDamage"
+data "Conditions" "SpellId('Target_SneakAttack') or SpellId('Projectile_SneakAttack') or SpellId('Interrupt_SneakAttack')"
+data "StatsFunctors" "DealDamage(LevelMapValue(SneakAttack), Cold,Magical)"

@@ -1,0 +1,115 @@
+new entry "ThematicItems_Predator_Amulet"
+type "item"
+using "_Amulet_Magic"
+data "RootTemplate" "7e9d0df7-3be5-48a6-9711-7f56357862b1"
+data "Rarity" "Uncommon"
+data "PassivesOnEquip" "TI_Ferocity"
+data "ValueOverride" "462"
+data "Unique" 1
+
+new entry "ThematicItems_Predator_Ring"
+type "item"
+using "_Ring_Magic"
+data "RootTemplate" "b526377f-6140-4266-b020-c9aa0590f6d9"
+data "Rarity" "Uncommon"
+data "PassivesOnEquip" "ThematicItems_Corner_The_Prey"
+data "ValueOverride" "178"
+data "Unique" 1
+
+new entry "ThematicItems_Predator_Mantle"
+type "item"
+using "_Back_Magic"
+data "RootTemplate" "5005b64c-e43e-4afd-abba-c7268837874d"
+data "Rarity" "Rare"
+data "Boosts" "UnlockSpell(Shout_TI_Predator_Prowl)"
+data "ValueOverride" "937"
+data "Unique" 1
+
+new entry "ThematicItems_Predator_Garb"
+type "Armor"
+using "_Body"
+data "RootTemplate" "e2adc371-7d17-4dc1-a009-0146091820f6"
+data "ArmorClass" "10"
+data "Rarity" "Rare"
+data "Boosts" "UnlockSpell(Shout_Arsenal_Dash_BonusAction);ActionResource(Movement,3,0)"
+data "Armor Class Ability" "Dexterity"
+data "ValueOverride" "1362"
+data "Unique" 1
+
+new entry "ThematicItems_Predator_Cap"
+type "Armor"
+using "ARM_Circlet"
+data "RootTemplate" "c6c3f2d4-6217-41e7-8111-f7c6dda4f8d7"
+data "Rarity" "VeryRare"
+data "PassivesOnEquip" "ThematicItems_Scent_Of_Blood;TI_Ferocity"
+data "ValueOverride" "2042"
+data "Unique" 1
+
+new entry "ThematicItems_Predator_Boots"
+type "Armor"
+using "ARM_Boots_Leather"
+data "RootTemplate" "541b5f5c-4470-4e32-87d7-cee4d5f1851f"
+data "Rarity" "VeryRare"
+data "PassivesOnEquip" "ThematicItems_Agility_Of_The_Predator;ThematicItems_Improved_Cat_Grace"
+data "StatusOnEquip" "MAG_CATS_GRACE"
+data "ValueOverride" "2558"
+data "Unique" 1
+
+new entry "ThematicItems_Predator_Gauntlets"
+type "Armor"
+using "_Hand_Magic"
+data "RootTemplate" "7fabb319-a49b-4df2-aab4-8078fe8bc270"
+data "Rarity" "Legendary"
+data "Boosts" "Ability(Strength, 2, 26)"
+data "PassivesOnEquip" "ThematicItems_Savagery_Of_The_Beast"
+data "ValueOverride" "6446"
+data "Unique" 1
+
+-----
+
+new entry "ThematicItems_Corner_The_Prey"
+type "PassiveData"
+data "DisplayName" "h7ae90372g417ag411fgb817gd479871b0f65"
+data "Description" "h0571216age7efg4454gbb3fg114cbac0a779"
+data "DescriptionParams" "2"
+data "Properties" "OncePerTurn"
+data "StatsFunctorContext" "OnAttack"
+data "StatsFunctors" "IF(not HasMaxHP()):ApplyStatus(SELF,MAG_VIOLENCE, 100, 2);IF(not HasMaxHP()):ApplyStatus(SELF,MAG_VIOLENCE_DURATION_TECHNICAL, 100, 1)"
+
+new entry "ThematicItems_Scent_Of_Blood"
+type "PassiveData"
+data "DisplayName" "h797f2e31g7fd5g4f2bg9860gcfa209166eed"
+data "Description" "h354df96cgce1fg4dc0ga7b7g700585cbd7e2"
+data "DescriptionParams" "1d8"
+data "BoostContext" "OnCreate;OnEquip"
+data "Boosts" "IF(not HasMaxHP()):CharacterUnarmedDamage(1d8);IF(not HasMaxHP()):CharacterWeaponDamage(1d8)"
+
+new entry "ThematicItems_Agility_Of_The_Predator"
+type "PassiveData"
+data "DisplayName" "h2635f8e0gf6a9g4498g9617g2f280eca8302"
+data "Description" "h931a4876gaf53g4ea0g9f57gb179435175a3"
+data "Boosts" "UnlockSpellVariant(SpellId('Projectile_Jump'),ModifyUseCosts(Replace,BonusActionPoint,0,0,BonusActionPoint))"
+
+new entry "ThematicItems_Improved_Cat_Grace"
+type "PassiveData"
+using "MAG_BarbMonk_Armor_Defensive_Passive"
+data "DisplayName" "hb445c856gad75g4f64g84ddg3df3a12c7a82"
+data "DescriptionParams" "2;24"
+data "Boosts" "Ability(Dexterity, 2, 24)"
+
+new entry "ThematicItems_Savagery_Of_The_Beast"
+type "PassiveData"
+data "DisplayName" "he3100de4gf056g49a7gb772g9686d4a2e8df"
+data "Description" "h073606bbgf68ag4e4cgb290ge44fd9483029"
+data "Boosts" "Reroll(MeleeWeaponDamage,20,false);IF(IsMeleeUnarmedAttack()):Reroll(MeleeUnarmedDamage,20,false);"
+
+-----
+
+new entry "Shout_TI_Predator_Prowl"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_Prowl_Panther"
+data "Cooldown" "OncePerShortRestPerItem"
+data "SpellProperties" "ApplyStatus(INVISIBILITY, 100, 10);ApplyStatus(PROWL, 100, 10);ApplyStatus(PROWL_USED, 100, 10)"
+data "TooltipStatusApply" "ApplyStatus(INVISIBILITY, 100, 10);ApplyStatus(PROWL, 100, 10)"
+data "SpellFlags" "UnavailableInDialogs;IsMelee"

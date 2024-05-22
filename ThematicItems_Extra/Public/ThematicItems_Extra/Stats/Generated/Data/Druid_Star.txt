@@ -1,0 +1,119 @@
+new entry "ThematicItems_Celestial_Mantle"
+type "item"
+using "_Back_Magic"
+data "RootTemplate" "e2197634-c2fa-4e5b-8600-1be72a819546"
+data "Rarity" "Uncommon"
+data "Boosts" "AbilityOverrideMinimum(Constitution, 16)"
+data "ValueOverride" "315"
+data "Unique" 1
+
+new entry "ThematicItems_Celestial_Grips"
+type "Armor"
+using "_Hand_Magic"
+data "RootTemplate" "ebdab226-95ce-47cd-b802-9dcd0b4d86aa"
+data "Rarity" "Uncommon"
+data "PassivesOnEquip" "TI_Twinkle"
+data "ValueOverride" "285"
+data "Unique" 1
+
+new entry "ThematicItems_Celestial_Boots"
+type "Armor"
+using "_Foot_Magic"
+data "RootTemplate" "85738283-79a2-4028-b59f-1d0857a3d789"
+data "Rarity" "Uncommon"
+data "Boosts" "RollBonus(SavingThrow, 2, Constitution)"
+data "ValueOverride" "217"
+data "Unique" 1
+
+new entry "ThematicItems_Celestial_Amulet"
+type "item"
+using "_Amulet_Magic"
+data "RootTemplate" "3fba9b61-0457-4176-a2de-d6f539a8e6e2"
+data "Rarity" "Rare"
+data "PassivesOnEquip" "TI_Celestial_Guidance"
+data "ValueOverride" "648"
+data "Unique" 1
+
+new entry "ThematicItems_Celestial_Crown"
+type "Armor"
+using "_Head_Magic"
+data "RootTemplate" "6e7db986-8f77-4131-91d2-9aa74b69d832"
+data "Rarity" "VeryRare"
+data "PassivesOnEquip" "MAG_ArcaneEnchantment_Lesser_Passive"
+data "Boosts" "Ability(Wisdom, 2, 24)"
+data "ValueOverride" "2495"
+data "Unique" 1
+
+new entry "ThematicItems_Celestial_Robes"
+type "Armor"
+using "_Body"
+data "RootTemplate" "da92313a-0538-41d0-88c8-780433937de7"
+data "Rarity" "VeryRare"
+data "ArmorClass" "13"
+data "ArmorType" "Leather"
+data "PassivesOnEquip" "TI_Powerful_Healing"
+data "Boosts" "ProficiencyBonus(SavingThrow,Constitution)"
+data "Armor Class Ability" "Dexterity"
+data "Proficiency Group" "LightArmor"
+data "ValueOverride" "2880"
+data "Unique" 1
+
+new entry "ThematicItems_Celestial_Ring"
+type "item"
+using "_Ring_Magic"
+data "RootTemplate" "5e012d33-438e-410b-a9cc-75178a8b4b6f"
+data "Rarity" "Legendary"
+data "PassivesOnEquip" "TI_Starfall"
+data "Boosts" "Ability(Wisdom, 2, 26)"
+data "ValueOverride" "7708"
+data "Unique" 1
+
+-----
+
+new entry "ThematicItems_Celestial_Staff"
+type "Weapon"
+using "WPN_Quarterstaff_1"
+data "RootTemplate" "323f0ee9-1d8b-4615-8f7a-069e4425263d"
+data "Rarity" "Rare"
+data "Boosts" "UnlockSpell(Projectile_TI_GuidingBolt_Star)
+data "ValueOverride" "1286"
+data "Unique" 1
+
+-----
+
+new entry "TI_Twinkle"
+type "PassiveData"
+data "DisplayName" "h0d4ce44bgbc3dg4d20g8923g0a4b259094ba"
+data "Description" "h6a1f8453g9f7cg4074g88a3gcba37eec7b86"
+data "DescriptionParams" "DealDamage(,Radiant);1"
+data "Boosts" "IF(HasDamageDoneForType(DamageType.Radiant)):DamageBonus(1, Radiant)"
+
+new entry "TI_Celestial_Guidance"
+type "PassiveData"
+data "DisplayName" "ha3e49511g543dg48a1ga3c7g5fe18a46c8f2"
+data "Description" "h5a6eb24egabb4g494bga81ag5900844ea030"
+data "DescriptionParams" "DealDamage(,Radiant)"
+data "BoostContext" "OnCreate"
+data "Boosts" "IF(SpellDamageTypeIs(DamageType.Radiant)):DamageBonus(max(1,WisdomModifier))"
+
+new entry "TI_Powerful_Healing"
+type "PassiveData"
+data "DisplayName" "h7dcaf478g824cg4a67ga7d9g029812278b3a"
+data "Description" "h1e2b9629g1b63g4a6fgabd6g75966cca8790"
+data "Boosts" "MaximizeHealing(Outgoing)"
+
+new entry "TI_Starfall"
+type "PassiveData"
+data "DisplayName" "hab9ed236g24d8g4bb5gbf4dga0c458d493fe"
+data "Description" "h74e2e98egcc1fg408dg9a06g2f0f90c845aa"
+data "DescriptionParams" "2"
+data "Boosts" "UnlockSpellVariant(GuidingBoltSpellCheck(), ModifyNumberOfTargets(AdditiveBase, 2, true), ModifyTooltipDescription())"
+
+-----
+
+new entry "Projectile_TI_GuidingBolt_Star"
+type "SpellData"
+data "SpellType" "Projectile"
+using "Projectile_GuidingBolt"
+data "UseCosts" "ActionPoint:1"
+data "Cooldown" "OncePerCombat"

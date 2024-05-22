@@ -1,0 +1,609 @@
+<contentList date="26/10/2020 01:10">
+    <!--Beast Barbarian-->
+    <content contentuid="h46b9a76ag151ag4b96gacddgb0fc7087d7c8" version="1">An amulet featuring a savage fang, it vibrates subtly when enemies are near, sharpening the wearer's instincts and lowering their guard only against the least threatening.</content>
+    <content contentuid="h494e4db9gc312g4c9dgb7a8g6fcc9f827da9" version="1">Predator's Amulet</content>
+
+    <content contentuid="h95c71597g60b3g460cg8e9ag2bfa19ca0010" version="1">A simple band with an animalistic engraving that grows warm in the heat of battle. It allows the wearer to anticipate the movements of their prey, cornering them with the cunning of a seasoned hunter.</content>
+    <content contentuid="hef02d4edg6ffdg457cg84e4g09e4f4864174" version="1">Predator's Ring</content>
+    <content contentuid="h7ae90372g417ag411fgb817gd479871b0f65" version="1">Corner the Prey</content>
+    <content contentuid="h0571216age7efg4454gbb3fg114cbac0a779" version="1">Once per turn, the wielder gains [1] turns of &lt;LSTag Type="Status" Tooltip="MAG_VIOLENCE"&gt;Wrath&lt;/LSTag&gt; when attacking creatures that have already taken damage.</content>
+
+    <content contentuid="h47b59ad8ge0e4g4f4agb571gef87695fec39" version="1">A shoulder guard adorned with the teeth and claws of great beasts, it seems to pulse with life when the wearer enters battle, lending them the stealth and cunning of a hunting animal.</content>
+    <content contentuid="h883168d8g6d84g4618ga986gb05bd0dc5494" version="1">Predator's Mantle</content>
+
+    <content contentuid="h697603bfga8d3g4b65g9cbeg7501174301cb" version="1">This durable garb is etched with primal runes imbued with the essence of a wild spirit, stretching and flexing with the wearer's every movement, never hindering their ferocious combat style.</content>
+    <content contentuid="h14e43933g5ea6g4713g8eedgfa31351cf59e" version="1">Predator's Garb</content>
+
+    <content contentuid="h9adcf79cg3dc1g4011g9a6ag53a1d3a85039" version="1">This cap is made from the hide of a legendary alpha predator. Its deep, natural colors shift to give the wearer the aspect of various predatory beasts, enhancing their hunting prowess.</content>
+    <content contentuid="hc7c13dbfg1555g4535g9930ga642ac41ec91" version="1">Predator's Cap</content>
+    <content contentuid="h797f2e31g7fd5g4f2bg9860gcfa209166eed" version="1">Scent of Blood</content>
+    <content contentuid="h354df96cgce1fg4dc0ga7b7g700585cbd7e2" version="1">You deal an additional [1] damage when attacking creatures that have already taken damage.</content>
+
+    <content contentuid="hbb0a406dg1dfeg409cga343ge4ca423b1b69" version="1">Supple boots that mold to the wearer's feet, providing an extraordinary grip and balance. The soles are patterned with the tracks of a mythical predator, leaving no trace while enabling swift, silent movement.</content>
+    <content contentuid="h144955b5g5beeg45c9g8746gf33fd5bc3b2a" version="1">Predator's Boots</content>
+    <content contentuid="h2635f8e0gf6a9g4498g9617g2f280eca8302" version="1">Agility of the Predator</content>
+    <content contentuid="h931a4876gaf53g4ea0g9f57gb179435175a3" version="1">&lt;LSTag Type="Spell" Tooltip="Projectile_Jump"&gt;Jump&lt;/LSTag&gt; no longer requires a bonus action.</content>
+    <content contentuid="hb445c856gad75g4f64g84ddg3df3a12c7a82" version="1">Improved Cat's Grace</content>
+
+    <content contentuid="h657f6005ga379g4e1eg9bc0g8ca53b41d0b1" version="1">Crafted from the scales of a draconic creature and bound with sinew, these gauntlets enhance the natural strength of the wearer, turning their strikes into lethal weapons.</content>
+    <content contentuid="h7ca38d98gaf22g4e9agb89bg60b459121a04" version="1">Predator's Gauntlets</content>
+    <content contentuid="he3100de4gf056g49a7gb772g9686d4a2e8df" version="1">Savagery of the Beast</content>
+    <content contentuid="h073606bbgf68ag4e4cgb290ge44fd9483029" version="1">When making melee attacks, you roll your damage dice twice and use the highest result.</content>
+
+    <!--Giant Barbarian-->
+    <content contentuid="had41024fg77d2g40bbg8368gf5b7f0082423" version="1">Carved from the bone of a colossal beast and imbued with the strength of ogres, this javelin will always return to its owner. Each throw carries the weight of a giant's might, capable of felling even the sturdiest foes.</content>
+    <content contentuid="hb61cfd3fg0662g445ag9e8eg197b812e668b" version="1">Ogre's Javelin</content>
+
+    <content contentuid="hf0008a14gc115g4864ga613g22671f80cce2" version="1">Forged from the iron of fallen meteors and adorned with ancient runes, this helm bestows upon its wearer the immense power of giants. It amplifies the force behind every strike, making each attack a devastating blow.</content>
+    <content contentuid="hb12a47fbgaa4fg4706gaedfg0be25f926309" version="1">Colossus Helm</content>
+    <content contentuid="he68b2f20g124cg44a8gb46egdccfec48c7bd" version="1">Giant's Might</content>
+    <content contentuid="hc88e7151ge44cg4ec2gac87gde4fbe6cf3b6" version="1">If the wearer is at least Large, they deal an additional [1] damage with Throw Attacks and Melee Weapon Attacks.</content>
+
+    <content contentuid="hdfca2f12g7f38g44f3g99cfgf74b73f50e53" version="1">Woven form the hides of titanic creatures, this mantle grants it wearer an imposing presence. Enemies who dare to strike are literally shrunk in fear, their strength sapped by the overwhelming power of the mantle.</content>
+    <content contentuid="h74470668g350bg4b86g8e36g8ac82de28fd2" version="1">Colossus Mantle</content>
+    <content contentuid="ha337977bg7e24g4366gbdd9g2ee7b6c09e6e" version="1">Shrink Away</content>
+    <content contentuid="hbfa07c4dgdc4ag4876gbf5fgf92ab403cb40" version="1">A creature that damages the wearer within [1] receives &lt;LSTag Type="Status" Tooltip="REDUCE"&gt;Reduced&lt;/LSTag&gt;.</content>
+
+    <content contentuid="h0473b4eeg9324g4afag9005g488cffb6ed3d" version="1">This amulet, bearing the symbol of ancient colossi, amplifies the wearer's power to titanic proportions. Each strike is a monumental event, shaking the earth and toppling foes with ease.</content>
+    <content contentuid="ha7050585g216fg433bga5b6g5d114157e505" version="1">Colossus Amulet</content>
+    <content contentuid="habde7920g3023g41b1ga6c6ge59487698180" version="1">Colossal Blows</content>
+    <content contentuid="h7b46c361g390ag4a13g82a6g13605f421e7b" version="1">When you roll a [1] on a damage die for a Melee or Thrown Attack, that die is rerolled once and the better result is taken. If the user is Large, this effect is also triggered on rolling a [2]. If the user is Huge, this effect is also triggered on rolling a [3]. If the user is Gargantuan, this effect is also triggered on rolling a [4].</content>
+
+    <content contentuid="hdf0d9ffdgc498g45c6g9a00g9bbc276f3139" version="1">Forged from the remnants of a giant's crown, this ring enhances the wearer's physical prowess. It grants the strength and agility of a giant, making them an unstoppable force on the battlefield.</content>
+    <content contentuid="hae168c18g02e4g43efg8383gc61211d3798e" version="1">Colossus Ring</content>
+    <content contentuid="h398ab6cegf204g4b10gbb72gbcc19f0f9fa2" version="1">Giant Muscles</content>
+    <content contentuid="hb0604022g06c0g4566gaaf6g14419d87da64" version="1">You gain a bonus to your Athletics &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt; equal to your Strength &lt;LSTag Tooltip="AbilityModifier"&gt;modifier&lt;/LSTag&gt;.</content>
+
+    <content contentuid="h68d27b6fgcd31g4e97g97f8gdd40dc4b82dd" version="1">These gauntlets, forged in the fires of a giant forge, enhance the wearer's strength to near mythical levels. They grant the resilience of stone and the power to crush mountains with bare hands.</content>
+    <content contentuid="h6a716f49gbc68g4bf5gb0a6gad76be990a82" version="1">Colossus Gauntlets</content>
+    <content contentuid="h19a1e8b2g6efag4794gbe70g73b2802c32d1" version="1">Giant Strength</content>
+    <content contentuid="hf997508bg9ef8g4c4cg8313g531028cde194" version="1">If the wearer is Large, their Strength increases by [1]. If the wearer is Huge, their Strength increases by [2]. If the wearer is Gargantuan, their Strength increases by [3].</content>
+
+    <content contentuid="h744a6fffg0192g41e9gb4a4g964fcc9e7bdd" version="1">Made from the hide of an ancient titan, these boots allow the wearer to stride across the land with giant steps. They grant unparalleled speed and stability.</content>
+    <content contentuid="h007726b6g5b34g4cf8g8f9dg7b2b3e5f1937" version="1">Colossus Boots</content>
+    <content contentuid="h7f2d34a1gb2edg4d55g93f6g03953917430e" version="1">Giant Fortitude</content>
+    <content contentuid="h09931621gab9dg49aegb96fg233d770d92c8" version="1">If the wearer is Large, their Constitution increases by [1]. If the wearer is Huge, their Constitution increases by [2]. If the wearer is Gargantuan, their Constitution increases by [3].</content>
+    <content contentuid="h3033e1f1g7e56g4be1ga940g2141cdd7ff70" version="1">Giant Stride</content>
+    <content contentuid="h30b43a45g2261g45f2ga47cgea9fc3f88bc6" version="1">If the wearer is Large, their &lt;LSTag Tooltip="MovementSpeed"&gt;movement speed&lt;/LSTag&gt; increases by [1]. If the wearer is Huge, their &lt;LSTag Tooltip="MovementSpeed"&gt;movement speed&lt;/LSTag&gt; increases by [2]. If the wearer is Gargantuan, their &lt;LSTag Tooltip="MovementSpeed"&gt;movement speed&lt;/LSTag&gt; increases by [3].</content>
+
+    <content contentuid="h3e96a8cfga028g43bdg807fga5c1af37a58c" version="1">Crafted from the hide of legendary beasts, this garb is said to permanently enhance the wearer's stature. It turns them into a towering figure, their every move shaking the ground beneath them.</content>
+    <content contentuid="h1bf4a42cg2c3eg4f6fg9966g4c5ee4d028b5" version="1">Colossus Garb</content>
+    <content contentuid="h68c25647g2135g4712g8042g09a316fc886b" version="1">Aspect of the Titans</content>
+    <content contentuid="h62fed684g590dg4477g825eg866e89287f6e" version="1">When the wearer is Large, deal additional damage on melee and thrown weapon attacks equal to 1/2 your Strength &lt;LSTag Tooltip="AbilityModifier"&gt;modifier&lt;/LSTag&gt;. If the wearer is Huge, this additional damage is instead equal to your full Strength &lt;LSTag Tooltip="AbilityModifier"&gt;modifier&lt;/LSTag&gt;. If the wearer is Gargantuan, this additional damage is equal to 2 times your Strength &lt;LSTag Tooltip="AbilityModifier"&gt;modifier&lt;/LSTag&gt;.</content>
+    <content contentuid="h3ae4d475gd363g49ddg916agbf6cecb1ba4f" version="1">Grow Taller</content>
+    <content contentuid="h2cd2e4f6g2e0dg4371gaeecg26c83c3149c7" version="1">The wearer is permanently &lt;LSTag Type="Status" Tooltip="ENLARGE"&gt;Enlarged&lt;/LSTag&gt;. This stacks with other sources of &lt;LSTag Type="Status" Tooltip="ENLARGE"&gt;Enlarge&lt;/LSTag&gt;.</content>
+    <content contentuid="h75ffba57g4296g4645gab06g1c8d1bc97c52" version="1">Clumsy</content>
+    <content contentuid="h64c8a4d1gb6b5g4dbagba17g176b3bd683cf" version="1">&lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; decreases by [1]. If the wearer is Large, their &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; decreases by [2]. If the wearer is Huge, their &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; decreases by [3]. If the wearer is Gargantuan, their &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; decreases by [4].</content>
+
+    <!--Zealot Barbarian-->
+    <content contentuid="h8bf24aaage3dcg4d9ag9a3eg77f3ca6e35c1" version="1">Woven from blessed fabrics, this cloak shimmers with a faint golden aura. When the barbarian charges into battle, the cloak billows dramatically,a s though winded by divine breath.</content>
+    <content contentuid="he3d0e1cbgedb6g4792gbfd2g6c38ccee4dae" version="1">Cloak of Sacred Might</content>
+    <content contentuid="h58758cfeg88fdg463bg9adegfdf6c18f86af" version="1">Pain Strengthens My Faith</content>
+    <content contentuid="h13244027g9174g48b2g90b7gced4c992634b" version="1">When an enemy damages the wearer, the wearer gains &lt;LSTag Type="Status" Tooltip="MAG_ZEAL"&gt;Zeal&lt;/LSTag&gt; for [1] turn.</content>
+
+    <content contentuid="he8d17709g6939g44d2gb54ag13266ee4a754" version="1">This hauberk gleams with a soft radiance and is surprisingly light. Each link is engraved with tiny runes that pulse with energy when the wearer's zeal is ignited.</content>
+    <content contentuid="hf49e41e8g0641g48a4ga472g391dac981f24" version="1">Hauberk of Sacred Might</content>
+
+    <content contentuid="hb5f2b43eg60ccg4d13gacf2g93c0847cc379" version="1">This simple band is deceptively ordinary looking, but upon closer inspection, it is finely crafted with protective wards. It provides clarity of mind and divine insight, helping the wearer to remain steadfast and wise in the heat of battle.</content>
+    <content contentuid="ha5e96868g74bbg4c68gb791g353702a976bf" version="1">Ring of Sacred Might</content>
+
+    <content contentuid="h4daefa46gd676g4424gb0fcgd4397be51892" version="1">This battleaxe is adorned with holy symbols and the metal glows with an inner fire. When swung in battle, it leaves a trail of divine light, and the blade hums with power upon striking a true blow.</content>
+    <content contentuid="h368d3ca6ge60bg4153ga8f5gfe21e4797e1f" version="1">Battleaxe of Sacred Might</content>
+    <content contentuid="h94773fd8gd98fg4fb8g91a2g3aab613f5fc2" version="1">Zealous Bloodcraze</content>
+    <content contentuid="hae69e97eg9c0dg4edcgb6degb8e28ccc8efd" version="1">When the wearer lands a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt;, the wearer gains [1] turns of &lt;LSTag Type="Status" Tooltip="MAG_ZEAL"&gt;Zeal&lt;/LSTag&gt;.</content>
+
+    <content contentuid="h362c0995g3ddbg4377g93a4g30becf9a9622" version="1">Forged with sacred steel, this warhammer is inscribed with verses of sacred texts along the handle. It feels remarkably balanced, ready to smite foes with divine fury.</content>
+    <content contentuid="h82e51781g5475g402dgafdfgf345eb2de606" version="1">Warhammer of Sacred Might</content>
+    <content contentuid="ha8e20d29g275cg474dgb026g2c2ef0e0487a" version="1">Zealous Bloodlust</content>
+    <content contentuid="h6054943dg4a6cg4f53g924fg80238f8f7c45" version="1">When the wearer lands a killing blow, gain [1] turns of &lt;LSTag Type="Status" Tooltip="MAG_ZEAL"&gt;Zeal&lt;/LSTag&gt;.</content>
+    <content contentuid="h019d2be1g3e20g42edgb20dg77f636b8411c" version="1">Slay The Powerful</content>
+    <content contentuid="hdae97becg32acg42adgac2dg79027298c1bf" version="1">The wielder gains a +[1] to &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; with this weapon when attacking enemies that have not taken damage.</content>
+
+    <content contentuid="h023049acg0ca2g48b5gae3bgbce568b2795e" version="1">Stout boots that radiate holy power at each step, imbuing the wearer with celestial speed and agility. They leave behind faintly glowing footprints on the battlefield.</content>
+    <content contentuid="h5cf848d2g83bag4bc2ga5b0g219702474372" version="1">Boots of Sacred Might</content>
+    <content contentuid="hd7db78b6gc671g41dag9696ga917d082bc8c" version="1">Zealous March</content>
+    <content contentuid="hf0f3313bg2224g4cdcgaf7cgf27484c132e2" version="1">Once per turn, when you &lt;LSTag Type="Spell" Tooltip="Shout_Dash"&gt;Dash&lt;/LSTag&gt; you gain &lt;LSTag Type="Status" Tooltip="MAG_ZEAL"&gt;Zeal&lt;/LSTag&gt; for [1] turns.</content>
+
+    <content contentuid="hfc847ef6ge811g473agbda7g930c17270170" version="1">This majestic helm projects an aura of righteous zeal. its visor is designed to resemble the fierce countenance of a celestial avenger.</content>
+    <content contentuid="he9b68a5eg48a1g417egb8fag9e8f063316ac" version="1">Helm of Sacred Might</content>
+    <content contentuid="h0a9e2c13g7832g4f42g8e36gfc6823d51d10" version="1">Aura of Zeal</content>
+    <content contentuid="hb8eb3797g9e17g413fg8210g34f34f658211" version="1">Emitting an aura of righteous zeal. Weapon attacks of nearby allies deal an additional [1].</content>
+    <content contentuid="h0ea5957cg1fadg47cfg9600g1dfba98630e6" version="1">Near an aura of righteous zeal. Weapon attacks of nearby allies deal an additional [1].</content>
+
+    <content contentuid="h8312b868ga9d7g4bd5gab22g69d11f5d7d6e" version="1">These heavy gauntlets are etched with symbols of divine strength. Clad in them, the wearer's grip is unbreakable, and their blows carry the weight of divine retribution</content>
+    <content contentuid="h6432d92dg6a26g4a89gae87g4a9637450a8a" version="1">Gauntlets of Sacred Might</content>
+    <content contentuid="hc58d389fgb539g4185ga247ge806c3723768" version="1">Unholy Touch</content>
+    <content contentuid="hb678f101gba85g407dg94fbga5da97e91e2d" version="1">Your weapon attacks deal an additional [1]</content>
+
+    <content contentuid="h37df099eg4e13g4e70g8d3bg1d380faf5937" version="1">An exquisite locket containing a sacred relic, pulsing with divine energy. It grants the wearer surges of zeal, enhancing their prowess with divine might.</content>
+    <content contentuid="h90ead075g176fg4d1fgb604g721a34079bac" version="1">Locket of Sacred Might</content>
+    <content contentuid="hbab5ad24g83aag493ag98a1gc00a6fcddb83" version="1">Embodiment of Divine Power</content>
+    <content contentuid="hfb199a6ag42c5g406cg998egeff0968c3565" version="1">When you &lt;LSTag Type="Spell" Tooltip="Shout_Rage"&gt;Rage&lt;/LSTag&gt;, gain [1] turn of &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to all damage. All enemies also gain [1] turn of &lt;LSTag Tooltip="Vulnerable"&gt;Vulnerablity&lt;/LSTag&gt; to Radiant and Necrotic damage.</content>
+    <content contentuid="h1a28433fg4b79g4c35gadb6g21284a3f7f04" version="1">Divine Power</content>
+    <content contentuid="hebe983f0g1e45g4ca8g8acdg0bdd65429eb8" version="1">&lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to all damage.</content>
+    <content contentuid="h52ca3840geb95g43fag9741gff2551ca887a" version="1">Divine Lethality</content>
+    <content contentuid="h58aec3ddg8f79g4afdg9907gabee5f82947d" version="1">&lt;LSTag Tooltip="Vulnerable"&gt;Vulnerable&lt;/LSTag&gt; to Radiant and Necrotic damage.</content>
+    <content contentuid="hde038befg8dffg48a0g8de6gd6511b45f5cf" version="1">Divine Anger</content>
+    <content contentuid="h0007d8b8g8b7cg4be0g8157gec2c117c143e" version="1">Deal an additional [1] Radiant and Necrotic damage on your weapon attacks.</content>
+
+    <!--Eloquence Bard-->
+    <content contentuid="h376cd762g20deg4b19g8209g10dbc507bdba" version="1">Set with jewels that gleam with the wisdom of rulers past, this crown bestows its wearer with the focus needed to lead and the clarity to maintain control in the midst of chaos.</content>
+    <content contentuid="haed8fe18g9235g4fefga6f1g727ab9f02137" version="1">Aristocrat's Crown</content>
+
+    <content contentuid="hc1bbd68ag59ddg490bg9443gc59d2028dfda" version="1">Woven with the silk of mystical silkworms, this tunic is both regal and resilient. It bears the emblem of an ancient lineage, granting the wearer an imposing presence that can quell the faintest of hearts.</content>
+    <content contentuid="h26c224cegdabdg4486g8f2dg6b84868b3ebb" version="1">Aristocrat's Tunic</content>
+
+    <content contentuid="hec935866gf436g40ffgba32g1e328f6782a3" version="1">These gloves are the mark of a true strategist, granting unparalleled control over crossbow and baton. Embroidered with Solonor's sacred sigils, they steady the hand and sharpen the mind.</content>
+    <content contentuid="hb33837b5ga60cg4ed5g84bbg9385e8b70d35" version="1">Aristocrat's Gloves</content>
+    <content contentuid="h490ef169ga9d2g4cd6g8ee8g282a463e2c78" version="1">Solonor's Guiding Hand</content>
+    <content contentuid="h64c34c6eg6660g4fcagadb7gfd88066e3687" version="1">You gain &lt;LSTag Tooltip="Proficiency"&gt;Proficiency&lt;/LSTag&gt; with hand crossbows, light crossbows and heavy crossbows. In addition, your ranged weapon attacks deal an additional [1] damage.</content>
+
+    <content contentuid="h53421ae1g91bcg4c53g8e07g74e02b7a25a2" version="1">This exquisitely crafted crossbow, with strings akin to a fine instrument, sings a melody of power. Its harmonious twang stirs the heart, inspiring strength in comrades as the battle rages.</content>
+    <content contentuid="h39cba02dgeb4bg4e9cg9165g34d2a2f8fde8" version="1">Bolt of the Gallant Muse</content>
+    <content contentuid="hd309f6f7gf8acg4b01g8f48gd7c4261ada5c" version="1">Inspire Strength</content>
+    <content contentuid="hd91a2a27g073ag46aagafc7gff0d8040bed9" version="1">You play a song of power. Your allies deal an additional [1] Thunder weapon damage per two points in Charisma.</content>
+    <content contentuid="h00471077ge968g4a06ga6a2g69d6d241291f" version="1">Weapon attacks deal an additional [1] for [2] turns.</content>
+
+    <content contentuid="h3c6c7372g08f1g4395ga997g6f8133f1f155" version="1">Crafted for the agile leader, these boots carry the rhythm of an unstoppable march. They echo with the beat of a drum, enhancing the pace of those who follow their step.</content>
+    <content contentuid="hfd26e581g989cg4f89g9c32g9eb97d3c83bb" version="1">Aristocrat's Boots</content>
+    <content contentuid="h45d83e9fg4749g4490ga12bg90fc709f5c5f" version="1">Allegro</content>
+    <content contentuid="h07ae0ce2gc229g4daagb5a0g158a7a9fab33" version="1">You play a song of speed. Your allies gain [1] turns of &lt;LSTag Type="Status" Tooltip="MAG_MOMENTUM"&gt;Momentum&lt;/LSTag&gt; per two points in Charisma</content>
+
+    <content contentuid="h9324ae22gc49fg4184g934bgf66fa6ed5348" version="1">Draped from the shoulders, this veil shimmers with a defensive aura. As it flutters in the wind, it hums a protective lullaby, bolstering the resolve of allies who stand within its reach.</content>
+    <content contentuid="h04088d20g15e2g4236g9362gf5094157d869" version="1">Aristocrat's Veil</content>
+    <content contentuid="h4f142a11g380cg43bega78eg3480e6db5d82" version="1">Inspire Defense</content>
+    <content contentuid="hdc7fd75fg6d3eg46cag8e8fg2d0e5acaa77b" version="1">You play a song of defense. Your allies gain [1] to their &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; and &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; per turn.</content>
+    <content contentuid="h776fc1bbgcc63g4a0bga077g9c28ac79cac3" version="1">You gain [1] to your &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; and &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; per turn remaining.</content>
+
+    <content contentuid="h3ee80fc7g76ecg437cgb7b0g906909e195d1" version="1">Hanging close to the heart, this medallion pulses with a leader's charisma. Its light is a beacon of hope, emboldening allies with the courage of a hundred campaigns.</content>
+    <content contentuid="hd5c5d669gcf64g4011gbe72g18965a0a08f1" version="1">Aristocrat's Medallion</content>
+    <content contentuid="h045af405gfff7g4f73g9b65g8e4aa9e1d745" version="1">Inspire Courage</content>
+    <content contentuid="h06ae1b78g5b95g4b0cg967eg580be43897cb" version="1">You play a song of courage. Your allies gain [1] to their &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; per two points in Charisma.</content>
+    <content contentuid="h0ed68015g711eg4c60gbaa5g1a3f81b52469" version="1">You gain [1] to your &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; for [2] turns.</content>
+
+    <content contentuid="h776becc9g2d77g46a9gb20cgd5adb44832d2" version="1">Encircling the finger, this ring is the seal of true heroism. When words fail, its silent call to valor amplifies the might of friends, turning their strikes into the stuff of legend.</content>
+    <content contentuid="had102f4bge0a7g4560gb2bbg860e4e538965" version="1">Aristocrat's Band</content>
+    <content contentuid="h519be06dg8010g4fe4g9c0dg7f0acf928538" version="1">Inspire Heroics</content>
+    <content contentuid="h8dc487deg2e5cg4be1g9123g0a07456454a1" version="1">Inspire an ally to deal maximum damage on their attacks for the next turn.</content>
+    <content contentuid="h6b5f2e06g51d3g4d37g97ffg0313ca3d12c1" version="1">Deal maximum damage on your attacks for this turn.</content>
+
+    <!--Forge Cleric-->
+    <content contentuid="ha2ea20c9g3c6cg409cg8515g70cb9e67d351" version="1">Forged from the core of a volcano, this helm grants the clarity of a sky unclouded by smoke. Visions dance within its visor, guiding the wearer's hands in both combat and creation.</content>
+    <content contentuid="h28c83462g813fg4784ga2cfgd6f6cf1872f6" version="1">Artisan's Helm</content>
+
+    <content contentuid="hda978581g343fg4940g9873g9742d7a80a24" version="1">Supple yet unyielding, these gloves crackle with latent flames. Each gesture, each touch, is imbued with the ability to mold the world as a smith shapes iron, with heat that can kindle the cold to life.</content>
+    <content contentuid="h9a1cf0bbg096bg428dgb2eag9e840b03e957" version="1">Artisan's Gloves</content>
+
+    <content contentuid="h270c199eg0aefg4d57g9bc4gefa8f45c63dd" version="1">At the necklace's core is a coal that burns with a divine flame. It's a miniature sun that never burns out, fueling spells with the relentless energy of a star's core.</content>
+    <content contentuid="hf5c55944g5e27g4affg8665ge6b7f6f5b457" version="1">Artisan's Pendant</content>
+    <content contentuid="h34cc1dcdg68a6g44d9g9f68g82e67e03f095" version="1">Burning Up</content>
+    <content contentuid="h02c14dd7g19d2g43ddgb532gb58905cfe193" version="1">When you cast a spell, gain turns of &lt;LSTag Type="Status" Tooltip="MAG_FIRE_HEAT"&gt;Heat&lt;/LSTag&gt; equal to the spell level of a spell.</content>
+
+    <content contentuid="h6b7d2f7agb527g454dg9601g73b2ef65eab8" version="1">This hammer's head is black as coal, but its strikes ignite the air, leaving trails of cinders. It blows ring with the authority of creation itself, bending both metal and fate with the power it unleashes.</content>
+    <content contentuid="h5cdcf28fg3860g40d4g87a3gf0cca9756928" version="1">Artisan's Hammer</content>
+    
+    <content contentuid="h84b88d0cg3ca6g4620g8e94g23264d74937f" version="1">Heavy with the gravity of the deep ores, these sabatons ground the cleric's presence. Each step forges a new path, an advance that sparks inspiration and ignites the march of progress.</content>
+    <content contentuid="h1d41b094g0c22g4755g905ag81f46ba0ac63" version="1">Artisan's Sabatons</content>
+    <content contentuid="ha035157fg26b8g458bg83b9g4d35ab46e1d1" version="1">Blazing Speed</content>
+    <content contentuid="h51f33811gb64fg4e36ga781g6d445922cef5" version="1">If you have [1] or more turns of &lt;LSTag Type="Status" Tooltip="MAG_FIRE_HEAT"&gt;Heat&lt;/LSTag&gt;, your &lt;LSTag Tooltip="MovementSpeed"&gt;movement speed&lt;/LSTag&gt; increases by [2].</content>
+
+    <content contentuid="h1c792f90g161cg4999g9da3gc979a18fd5dd" version="1">This mantle radiates the warmth of a hearth fire, shielding the wearer from harm. The fabric is interwoven with embers that never fade, a cloak as much a protector as it is a symbol of the eternal forge.</content>
+    <content contentuid="h51c3231dg17eag4a89g942cg20208e15008f" version="1">Artisan's Mantle</content>
+    <content contentuid="hd4ec0a3agce15g4178g9607gaf45548bddb2" version="1">Heat of the Forge</content>
+    <content contentuid="h6f7106b0g2533g46b9g8ef5g16becfcddbb3" version="1">You ignore &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; and &lt;LSTag Tooltip="Immune"&gt;Immunity&lt;/LSTag&gt; to Fire damage.</content>
+
+    <content contentuid="h22f84e3dg9288g45degb723g9414cc527c28" version="1">Circling the finger, this ring is an unbroken loop of creative fervor. It accumulates the furnace's fury, ready to release it in a surge that catalyzes both will and metal into unmatched feats.</content>
+    <content contentuid="h4cf4ade5g29bdg4d1cgbd4eg251c5c245266" version="1">Artisan's Band</content>
+    <content contentuid="h3bde42adg4aa0g411dgab3ag289181d217aa" version="1">Blazing Momentum</content>
+    <content contentuid="hdb1c2c32gd300g4178g8ecfg803b2c86ec32" version="1">If you have [1] or more turns of &lt;LSTag Type="Status" Tooltip="MAG_FIRE_HEAT"&gt;Heat&lt;/LSTag&gt;, gain an extra action.</content>
+
+    <content contentuid="hd6555627g2494g43fbg9203g8c10cadcb898" version="1">More than a shield, it's a testament to the zenith of craftsmanship, a bastion against adversity. Its surface reflects a forge's glow, capable of turning the mightiest blow into a shower of sparks, and the faintest hope into a beacon.</content>
+    <content contentuid="hd66ec84age3adg4d49g9b76gdb08d28c152f" version="1">Artisan's Masterpiece</content>
+    <content contentuid="h98009e0eg4f11g45f1g8f67g3ce08fb82f68" version="1">Fire Shield</content>
+    <content contentuid="he4171581g926cg40beg8568g4a43932da01d" version="1">You gain  &lt;LSTag Type="Status" Tooltip="FIRE_SHIELD_WARM"&gt;Fire Shield (Warm)&lt;/LSTag&gt;.</content>
+
+    <content contentuid="h910bc351gbe09g4d28g916eg9c87f5e0819b" version="1">Imbued with the heart of the volcano, this armor is a fortress. It channels the relentless endurance of earth's blood, turning the wearer into an avatar of the forge's indomitable will.</content>
+    <content contentuid="hb0f72832gfacbg4a4agbca6g5d59884167f4" version="1">Artisan's Plate</content>
+    <content contentuid="hdc42dbb8gc045g4d25g86d4g53a9badb6fce" version="1">Aura of Infernal Edge</content>
+    <content contentuid="h2e959100ga638g4df7g9450g0eeda69446b4" version="1">Your heat emanates from your person. If you have [1] more turns of &lt;LSTag Type="Status" Tooltip="MAG_FIRE_HEAT"&gt;Heat&lt;/LSTag&gt;, nearby Slashing weapons glow with white hot heat and cut more easily. Nearby enemies gain &lt;LSTag Tooltip="Vulnerable"&gt;Vulnerablity&lt;/LSTag&gt; to Slashing damage.</content>
+    <content contentuid="he8fa9f6agfbcag466eg887eg43624dc31fd1" version="1">Nearby heat is causing slashing weapons to glow with white hot heat, giving you a &lt;LSTag Tooltip="Vulnerable"&gt;Vulnerablity&lt;/LSTag&gt; to Slashing damage.</content>
+
+    <!--Star Druid-->
+    <content contentuid="he29fbc75g343bg4997ga48ag609cbff4d2cb" version="1">Woven from the silk of lunar moths, this mantle glows faintly in moonlight. It wraps the wearer in calm, setting their very being to match the unchanging constancy of stars.</content>
+    <content contentuid="h21c2d028gc343g4e47gb119gf7ef8c18d245" version="1">Celestial Mantle</content>
+
+    <content contentuid="h7f576677g4314g4feag8c20gb45d0b3a719c" version="1">These gloves sparkle with tiny, embedded crystals that catch the light, twinkling like a clear night's sky. Each gesture release a sparkle of radiant energy, enhancing the wearer's touch with the fire of distant suns.</content>
+    <content contentuid="h8ab48c31gd7b3g4b3eg9551gdb7968c88383" version="1">Celestial Grips</content>
+    <content contentuid="h0d4ce44bgbc3dg4d20g8923g0a4b259094ba" version="1">Twinkle</content>
+    <content contentuid="h6a1f8453g9f7cg4074g88a3gcba37eec7b86" version="1">When dealing [1], the wearer deals [2] additional [1].</content>
+
+    <content contentuid="he3e4bb9ag358cg43c1g84c8g4e40cfbd9d2d" version="1">Crafted from the hide of a fallen star beast, these boots ground the wearer to the celestial paths, offering stability as they traverse the chaos of existence.</content>
+    <content contentuid="h37273f20g0c72g47c8ga689g2ed530d45671" version="1">Celestial Boots</content>
+
+    <content contentuid="h91f6c1e2g44b5g4e0cgaf09gf406a0871f96" version="1">Crafted from a brancht hat fell from teh cosmic tree, this staff hums with the pulse of distant stars. Each swing casts motes of light that trail like comets across the sky.</content>
+    <content contentuid="ha6798c0fgf73dg49afg825dg094a162294c9" version="1">Celestial Staff</content>
+
+    <content contentuid="hf2bd1f89gba0fg47a3g8b21gfe5e7b047288" version="1">This amulet contains a fragment of a meteorite, pulsing with a wisdom as old as the universe. It guides the wearer's actions, as if the stars themselves plotted the course.</content>
+    <content contentuid="h2b9a077cg011eg4508g98degbbf6bb5c1f65" version="1">Celestial Amulet</content>
+    <content contentuid="ha3e49511g543dg48a1ga3c7g5fe18a46c8f2" version="1">Celestial Guidance</content>
+    <content contentuid="h5a6eb24egabb4g494bga81ag5900844ea030" version="1">When dealing [1] through a spell, add your Wisdom &lt;LSTag Tooltip="AbilityModifier"&gt;modifier&lt;/LSTag&gt; to the damage dealt.</content>
+
+    <content contentuid="he000a854ga86bg4901g8719g6e4a427b256a" version="1">This crown, set with gemstones that mimic the night sky, heightens the wearer's connection to the cosmos. Thoughts clear like the night's expanse, allowing wisdom to flow as freely as starlight.</content>
+    <content contentuid="h3dcbeea7gc1a9g4213gac80g6e5447fe7814" version="1">Celestial Crown</content>
+
+    <content contentuid="hb4e66043gc456g40eagb898g586b877e7616" version="1">Adorned with threads of light and shadow, this robe swirls with patterns that echo the celestial dance. It heals not just the body but also soothes the spirit, wrapping the wearer in comforting cosmic energy.</content>
+    <content contentuid="hd0b73801g4511g4dcbg888bgdc995abf7324" version="1">Celestial Robes</content>
+    <content contentuid="h7dcaf478g824cg4a67ga7d9g029812278b3a" version="1">Powerful Healing</content>
+    <content contentuid="h1e2b9629g1b63g4a6fgabd6g75966cca8790" version="1">Whenever you heal others, you restore the maximum number of possible hit points.</content>
+
+    <content contentuid="he0d0a5ffg8552g4740ga0f0g5b7e6f62d9a0" version="1">Forged from celestial alloy and set with a shard of comet core, this ring is a reservoir of astral energy. When worn, it enhances the bearer's insight, linking them directly to the heavenly ballet.</content>
+    <content contentuid="h3cd6f371g6d62g4039g95cdg83b4ba7ba5cf" version="1">Celestial Ring</content>
+    <content contentuid="hab9ed236g24d8g4bb5gbf4dga0c458d493fe" version="1">Starfall</content>
+    <content contentuid="h74e2e98egcc1fg408dg9a06g2f0f90c845aa" version="1">You shoot [1] additional bolts whenever you cast &lt;LSTag Type="Spell" Tooltip="Projectile_GuidingBolt"&gt;Guiding Bolt&lt;/LSTag&gt;.</content>
+
+    <!--Arcane Archer Fighter-->
+    <content contentuid="h439ec678g147cg4ef3ga0efgdd59e3841887" version="1">This circlet, crafted from moon-silver, ofers vision that pierces the veil of the mundane, revealing the world in the stark clarity of the arcane.</content>
+    <content contentuid="h722c0335g06fdg4adeg88f9g0cd88b2a939a" version="1">Corellon's Sight</content>
+    <content contentuid="h5f010860g4018g416fga300g06f391eeb9d3" version="1">Powerful Aim</content>
+    <content contentuid="h3535721cgf5deg42bcgad64g31c6a5d6e943" version="1">When you roll a 1 or 2 on a damage die for an attack with a ranged weapon, that die is rerolled once.</content>
+
+    <content contentuid="h1436ef1fg98e9g4e36gbccag89a24a3d3473" version="1">Leather and leaf, enchanted for unerring release, these gloves grant the archer's touch the precision of the hawk and the cunning of the fox.</content>
+    <content contentuid="h30194a90g162dg4718g9f53g53eaf2b374f9" version="1">Corellon's Grips</content>
+    <content contentuid="h93c44a3fg57e2g4999g83f8ge193f7ff0203" version="1">Lesser Archery</content>
+    <content contentuid="h01d71b7dg1cd2g48dag9547g4f5f8f21ef10" version="1">You gain a +[1] bonus to &lt;LSTag Tooltip="RangedWeaponAttack"&gt;ranged weapon attacks&lt;/LSTag&gt;.</content>
+
+    <content contentuid="h4313008bgf653g4758ga263g03b867707abb" version="1">This band, forged in the likeness of intertwining branches, hums with the might of the ancient woods, and its bearer's strikes land with the force of nature's own decree.</content>
+    <content contentuid="hb4495bdeg82cfg453ega6bbgc9f1f7e690ec" version="1">Corellon's Band</content>
+    <content contentuid="he24ea46dg980bg4298g8ddag574b31a741e1" version="1">Impact Arrows</content>
+    <content contentuid="h81dd619ag6e00g4a44gadc6g8d0e856e502d" version="1">Your &lt;LSTag Tooltip="RangedWeaponAttack"&gt;ranged weapon attacks&lt;/LSTag&gt; deal an additional [1] damage.</content>
+
+    <content contentuid="h089ffa95geb97g4084g8356gcc15ebb754b1" version="1">This cloak billows with the grace of the autumn breeze and holds the essence of the hunt, a flowing testament to the guardianship of the wilds.</content>
+    <content contentuid="hc816c9f1g7b2dg4c21ga94cg048d109d88a6" version="1">Corellon's Mantle</content>
+    <content contentuid="h97aa56ddgd342g4d16gbefeg42adfbfefc7c" version="1">Imbue Arrows</content>
+    <content contentuid="hf5fa3b7dga6ecg4c91g8953g868629f4ee7a" version="1">When you make a &lt;LSTag Tooltip="RangedWeaponAttack"&gt;ranged weapon attacks&lt;/LSTag&gt;, gain &lt;LSTag Type="Status" Tooltip="MAG_GISH_ARCANE_SYNERGY"&gt;Arcane Synergy&lt;/LSTag&gt; for [1] turns.</content>
+
+    <content contentuid="haefed5aege73bg4b69gab4fg1926e6717110" version="1">These boots carry the legacy of the forest's whisper, stepping on a bed of fallen leaves without trace, moving through thicket and thorn as if parting mist.</content>
+    <content contentuid="h55506910g9baag412cgb644g3dbb2dce3f2e" version="1">Corellon's Striders</content>
+
+    <content contentuid="hf5658af4g541fg4895gb464g660a2ea50f00" version="1">Fashioned from elven mythril, this hauberk is as light as a shadow, a second skin that breathes with the wearer, silent and unseen.</content>
+    <content contentuid="h483baa58gd831g4ddegb7b2gae943086b4e1" version="1">Corellon's Hauberk</content>
+
+    <content contentuid="h12370174g50a8g4946g8863gb923bb85c0f4" version="1">A gemstone pendant that glows with the heart of the forest, its light as mutable as the dappled sun through emerald canopies, imbuing the archer's aim with nature's caprice.</content>
+    <content contentuid="h519be513g1e31g4cfegafeeg212eee1f4341" version="1">Corellon's Pendant</content>
+    <content contentuid="h61f152cdg4c07g476dg9de9g51a3fc348226" version="1">Agile Cognition</content>
+    <content contentuid="hd0075f91gf74dg4f51g9b83g09b7f0ae3bb5" version="1">Set the wearer's Intelligence score to their Dexterity score. The enchantment has no effect if their Intelligence score is higher without it.</content>
+
+    <content contentuid="ha7f713ecg23ddg4c0fg8df1g9e43a8ee9565" version="1">Woven from the gossamer of twilight and starlight, this bow sings a hymn of the ancient woods with each release, and its arrows fly like thoughts, swift and deadly.</content>
+    <content contentuid="hae9507a3gb4c3g40b3gb4b8g272747fcd490" version="1">Corellon's String</content>
+    <content contentuid="h788ea26eg09b3g4142ga040g68bdf10bbba2" version="1">Eldritch Weapon</content>
+    <content contentuid="hf3794443ge79dg4806ga1d3g09e1db98e16b" version="1">This weapon deals additional damage equal to your Intelligence &lt;LSTag Tooltip="AbilityModifier"&gt;modifier&lt;/LSTag&gt;.</content>
+
+    <!--Conquest Paladin-->
+    <content contentuid="h5b9ba5b1g2578g4a1fg9ff6ge83c479da885" version="1">Crafted with the essence of conquest, these boots stamp an overwhelming presence onto the earth, marking territories with every step and inflicting psychological warfare on foes.</content>
+    <content contentuid="h357cd94bg8990g4f4dgabfdgb5c8da6a36b9" version="1">Dominator's Boots</content>
+    <content contentuid="h9c223e0fg3082g4aeag8a88g9793263507bf" version="1">Overwhelm</content>
+    <content contentuid="h06744b01gf11dg4b4dg8e79gc492f362f419" version="1">When the wearer inflicts a condition upon a hostile creature, they also inflict [1] turns of &lt;LSTag Type="Status" Tooltip="MAG_PSYCHIC_MENTAL_FATIGUE"&gt;Mental Fatigue&lt;/LSTag&gt;.</content>
+
+    <content contentuid="h66321f4cg263bg4cefgb92dg58c9649e0d6d" version="1">This amulet throbs with a dark power, its core pulsating with the ability to sap the strength and will of those who oppose its bearer, casting shadows of doubt in their minds.</content>
+    <content contentuid="hea0a38dag0270g486egae54g3795a19231e4" version="1">Dominator's Amulet</content>
+    <content contentuid="hf49053eeg71f0g4850gbbcfgc2a4a3b0f04c" version="1">Dominator's Bane</content>
+
+    <content contentuid="hc546e86cg62f6g4cb6gb946g1c3f5f0f18a7" version="1">A ring that captures the essence of psychic and radiant agony. Its presence alone can break the spirit of the strongest foes, instilling a deep-seated fear that echoes through their psyche.</content>
+    <content contentuid="hddb8c097g5c24g4107g9c01g9b717545a40d" version="1">Dominator's Ring</content>
+    <content contentuid="h1747ba9fg8d90g4db9ga253g1c94e74fc7d4" version="1">Fear of God</content>
+    <content contentuid="h39f0c0c0gdb43g4a48ga390g039a5623118b" version="1">When the wearer deals [1] or [2] to a &lt;LSTag Type="Status" Tooltip="MAG_PSYCHIC_MENTAL_FATIGUE"&gt;Mental Fatigue&lt;/LSTag&gt;, it becomes &lt;LSTag Type="Status" Tooltip="FRIGHTENED"&gt;Frightened&lt;/LSTag&gt; unless it succeeds on a Wisdom &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt;.</content>
+
+    <content contentuid="hc8bea7c8gb1fbg4ceaga71dg8e66fd76bb62" version="1">Forged from the darkest steel, this helm enhances the wearer's imposing presence. With every foe slain, its sinister aura deepens, radiating a palpable sense of dread.</content>
+    <content contentuid="he0a721fag918cg4816g9a0dg4aff516d51b0" version="1">Dominator's Helm</content>
+    <content contentuid="h0533aa42gb3f5g4f74g9b34g6e712ce30182" version="1">Growing Influence</content>
+    <content contentuid="he40f70ffg5a02g45b6ga9d7gf3aee94c417f" version="1">Once per turn, when you kill an enemy, gain [1] turns of &lt;LSTag Type="Status" Tooltip="MAG_VIOLENCE"&gt;Wrath&lt;/LSTag&gt;.</content>
+
+    <content contentuid="h5eb6af14g17d1g4733g9fd2gd6865e8a415e" version="1">These gauntlets are imbued with the power to weaken and intimidate with a mere gesture. Clad in these, the wearer commands respect and fear with each devastating blow.</content>
+    <content contentuid="h5f78853dg036cg4426g9766g944a42271c74" version="1">Dominator's Gauntlets</content>
+
+    <content contentuid="h062840a2g4cddg419bg82bcg3c0e084fe4b1" version="1">Cloaked in shadows of tyranny, this garment grants its wearer an unyielding rigidity against any who would seek to displace them, making each movement a declaration of invincible authority.</content>
+    <content contentuid="h78bf9dbege57eg4e8dga037g41b6f279a41f" version="1">Dominator's Cloak</content>
+
+    <content contentuid="hff68a725g787eg4f38g87edg81ccd15c13e5" version="1">This plate armor is a masterpiece of domination, each segment crafted to impose restriction and vulnerability upon those who dare strike its wearer. The battlefield bends to the will of its command.</content>
+    <content contentuid="h6333a9fdgae54g4c05g8d7ag42eb2af4125e" version="1">Dominator's Plate</content>
+    <content contentuid="h9cb3e95dgdaf8g4b12g9631g8c652aa0fc3a" version="1">Subjugator's Aura</content>
+    <content contentuid="h29013925g118dg4e4bgae00g81611264237c" version="1">Compel Subjugation</content>
+    <content contentuid="hab3f4643gd141g443fg9519g0c3d14f8681d" version="1">Pull every enemy in a [1] radius towards you with damaging force.</content>
+
+    <content contentuid="hf6593f66g13b7g46b4g9152gae721e5a8d12" version="1">This legendary maul is etched with runes of dread. Each strike instills an overwhelming fear in its foes, bending their wills towards despair as it crushes both body and spirit.</content>
+    <content contentuid="hef88624eg49cdg4c55gb586gaba3ebbde59e" version="1">Dominator's Maul</content>
+    <content contentuid="ha6d74ba5g3cafg41cag94f5g79ea39a111d9" version="1">Manifest Fear</content>
+    <content contentuid="h683230a6g5133g406fgbba5ga7f75bd2109e" version="1">Deal additional damage on your weapon attacks equal to your bonus to Intimidation.</content>
+
+    <!--Horizon Walker Ranger-->
+    <content contentuid="h76ba5f12g12f5g48d4ga45egfd6c8e922efc" version="1">Infused with the force of collapsing stars, these gloves enhance every strike with raw planar energy, turning simple gestures into devastating blasts of force.</content>
+    <content contentuid="hb0d03835g9a1eg4332gb44bg31a75b30019b" version="1">Planar Gloves</content>
+    <content contentuid="h2be7622bgd7d1g44a2g95c1g712980ec2499" version="1">Forceful Attack</content>
+    <content contentuid="hbb72ea14g9fc1g484ag94e4gb85b356a3548" version="1">Your weapon attacks deal an additional [1].</content>
+
+    <content contentuid="h2a1752fcg85f8g4dbdg8906gadd9f680ace5" version="1">This amulet is a nexus of protective forces, offering a shield against the arcane and mental assaults of planar entities, its core radiating a steady, grounding force.</content>
+    <content contentuid="h64fce578gf44bg4200g90e7gff7691f25ed6" version="1">Planar Amulet</content>
+
+    <content contentuid="hfc73be5fg2d1ag4fd1g9a40gc3996cf0e525" version="1">Inscribed with ancient runes, this ring channels the fundamental energies of creation, amplifying the wearer's attacks with pure force, resonating with the beat of all existence.</content>
+    <content contentuid="hfa0f9d3dgb205g4a7cga983gb1c4439a5960" version="1">Planar Ring</content>
+    <content contentuid="hcb0af02cg06c3g4083gb412g587d34740f0d" version="1">Powerful Strikes</content>
+    <content contentuid="h1b218464g41a0g464ega1f6gd3ab4f1eceda" version="1">Your weapon attacks also deal [1].</content>
+
+    <content contentuid="heecd41b7g9a7bg4ddagb60agb29d5df95ace" version="1">This circlet is inlaid with gems that glow with the wisdom of the cosmos. It grants the wearer an otherworldly insight, shielding their mind from the chaos that whispers from the void.</content>
+    <content contentuid="hf7057defgfe13g487ag9059g1517ec55cd56" version="1">Planar Circlet</content>
+
+    <content contentuid="hdf2855a4gb797g426agacb5g7dc894e9b087" version="1">Crafted from the essence of a planar storm, this mantle vibrates with retaliatory force. Each blow it absorbs is answerd in kind, a testament to the balance of all things.</content>
+    <content contentuid="h138cfa7cged56g45e1g8948g9cbdcc33b936" version="1">Planar Mantle</content>
+    <content contentuid="h370a7cb6g6fccg438dg9a1age94a50d3ed7c" version="1">Forceful Reprisal</content>
+
+    <content contentuid="h40eeee2ag5048g41b5g964dg3751714f2560" version="1">Forged in the heart of the Astral Plane, the longbow pulses with the energies of myriad planes. Its arrows scream through the air, tearing through the fabric of reality to strike beings not of this world.</content>
+    <content contentuid="h3e193bfdg1ec7g4e9eg8a58g4d1306d0085e" version="1">Planar Longbow</content>
+    <content contentuid="h70cc0690g8b6dg429dga32ag68a1610bae5d" version="1">Outsider Bane</content>
+    <content contentuid="hd5a093d3g8c7bg454dg929bg8a4b91a6099f" version="1">Deal an additional [1] to Abberations, Celestials, Elementals, Fey, Fiends, Elves, Githyanki and Gnomes.</content>
+    <content contentuid="h6db27b7dg8044g448bga041g62c8f46b4ba0" version="1">Slayer of Outsiders</content>
+    <content contentuid="hc61e340bg4562g42e7gbc66gab26503775f3" version="1">Has &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; against Aberrations, Celestials, Elementals, Fey, Fiends, Elves, Githyanki and Gnomes.</content>
+
+    <content contentuid="h8e12839agf011g4756gad4cgaca8e3cc73c8" version="1">This armour is woven from the very threads of reality. It aligns with the wearer's essence, offering unmatched protection and agility, its mere presence distorting the presence of otherworldly foes.</content>
+    <content contentuid="hcbcc4843gd9eeg46c5g9839gd132d602a551" version="1">Planar Plate</content>
+    <content contentuid="ha011720bg4a64g4339gbe97g28354a0be278" version="1">Planar Protection</content>
+    <content contentuid="hd0080a5bg50b2g4ac0g9921g692f12630b73" version="1">Attacks made by Aberrations, Celestials, Elementals, Fey, Fiends, Elves, Githyanki and Gnomes have &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on you.</content>
+
+    <content contentuid="hcc55eb15g014dg4d4fgb1d9g5e9fcf27027a" version="1">Legendary boots that step between worlds with ease, granting the wearer freedom from all that would bind or hold them, mirroring the unchained nature of the planes themselves.</content>
+    <content contentuid="h57dbab7ag8499g44b0gb75bg7738b66a1550" version="1">Planar Boots</content>
+    <content contentuid="h485df054g2f97g485dgaa8ag6546b4deb725" version="1">Total Freedom</content>
+    <content contentuid="h697988eeg8fdcg4c20g93c2g46ca41da0d39" version="1">&lt;LSTag Tooltip="MovementSpeed"&gt;Movement speed&lt;/LSTag&gt; can't be reduced by Difficult Terrain, spells or magical effects. Can't be &lt;LSTag Type="Status" Tooltip="PARALYZED"&gt;Paralysed&lt;/LSTag&gt; or &lt;LSTag Type="Status" Tooltip="RESTRAINED"&gt;Restrained&lt;/LSTag&gt; or forcibly moved. Immune to surface conditions. Can move without provoking opportunity attacks.</content>
+
+    <!--Swashbuckler Rogue-->
+    <content contentuid="h9b2885b2g5af2g40abg8892g020199cefa2e" version="1">This weathered hat has seen many horizons. Adorned with a feather from a mythicsl sea raven, it bestows upon its wearer a deceptive charm as enigmatic as the sea's own whispers.</content>
+    <content contentuid="h5266a505g0257g4122g829cg1ec3ebecc151" version="1">Corsair's Tricorne</content>
+    <content contentuid="hda88d16fg97cdg42b5g9199gdbd7daee4036" version="1">Pirate Proficiency</content>
+    <content contentuid="h693eb84dg1ac4g4ffagb03dgcac952b9ade8" version="1">You now gain &lt;LSTag Tooltip="Proficiency"&gt;Proficiency&lt;/LSTag&gt; with scimitars, tridents and hand crossbows.</content>
+
+    <content contentuid="h11592031gd8f5g4b9fgb990ged1d262f383a" version="1">Supple and sturdy, these gloves are stitched with the essence of the deep. They grant the bearer swiftness and precision, turning the tide of battle with deft maneuvers only spoken of in sailor's tales.</content>
+    <content contentuid="h0fd00c2fgb2dag4311gb8aagf6a5b85104a8" version="1">Corsair's Gloves</content>
+
+    <content contentuid="hc4b86f33g0516g4953gac4ag96a4b2572575" version="1">More than a simple band, this ring is the symbol of the unspoken code of the sea. It sets the bearer's charisma ablaze like the sunset over a calm sea, ensuring their words weigh as heavily as gold.</content>
+    <content contentuid="h5034604ag0ab5g41f2g80f9g022bcbef1951" version="1">Corsair's Parley</content>
+
+    <content contentuid="h09658245ga1e6g4089g8f05gfb77eb5a971a" version="1">Crafted from the sails of ships that dared to challenge the storms, this mantle carries the resilience of those who navigate by stars and tempests. It shields the wearer with the sea's embrance when danger looms.</content>
+    <content contentuid="h3946d176g9be0g423egb026gd325df1f1020" version="1">Corsair's Mantle</content>
+    <content contentuid="hfe1386a4g1adcg4cfega5f4g9ffd8a5e7188" version="1">Splash</content>
+    <content contentuid="hdc0aa618g3b9cg4bc0g9150gbcd2016a3a93" version="1">A creature that damages the wearer within [1] receives &lt;LSTag Type="Status" Tooltip="WET"&gt;Wet&lt;/LSTag&gt;. The wearer of this cloak is constantly &lt;LSTag Type="Status" Tooltip="WET"&gt;Wet&lt;/LSTag&gt;.</content>
+
+    <content contentuid="hd8bbce91g9802g4cdeg8a4dg4ec43714b99b" version="1">Bound with the hide of a leviathan, these boots allow a corsair to tread over ice and storm without fear. They promise a footing as sure as the ancient mariners who first charted the world's edges.</content>
+    <content contentuid="h1cb47bcbga07dg4e66gb2d6g151c1034e06e" version="1">Corsair's Boots</content>
+    <content contentuid="h7eda654dg23a4g43a0g8bc2g9e517e216a77" version="1">Sea Legs</content>
+    <content contentuid="h5064b96cga9adg489bg99c0g3abcf532f60a" version="1">You cannot be knocked &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Prone&lt;/LSTag&gt; and are &lt;LSTag Tooltip="Resistant"&gt;Resistant&lt;/LSTag&gt; to Cold damage.</content>
+
+    <content contentuid="h18d31c78gd304g4b42gbe5dgc0915f284a06" version="1">Forged from the depths, the Tidecutter cleaves through air and water with equal ease. A favorite among pirate captains, its edge is said to be sharpened by the very souls of the sea, and its strike calls forth the waters to ensnare its foes.</content>
+    <content contentuid="hd0c91ba4gb68bg4155g88bfgfe3153a2a9c8" version="1">Corsair's Tidecutter</content>
+    <content contentuid="h793376abgbb57g429bg8064g2356ce1d3958" version="1">Deadly Water</content>
+    <content contentuid="hc0b6daacgd87eg45c5g958cgcf24bd1ab217" version="1">If the wearer is standing in a water surface, they reduce the number needed to land a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; by 1.</content>
+
+    <content contentuid="hee810646g6033g4b73gba24ga5e492c3e068" version="1">A companion blade to the Tidecutter, the Sealslicer boasts a hilt wrapped in scales that shimmer like the ocean at dawn. Its wielder dances through battles, as each swing unleashes the ferocity of the tides.</content>
+    <content contentuid="h0b3347cdg20ccg4691ga4c2gf03b2a2aa2ab" version="1">Corsair's Seaslicer</content>
+
+    <content contentuid="h7b830990g74c5g438fgbd37gda8d76a3729c" version="1">This chest piece, interwoven with threads of sunken treasure and coral fortifies a corsair's agility. It's said that those who don the rigging can leap across decks and docks as if carried by the wind itself.</content>
+    <content contentuid="h3e8067a6g6d8cg4568gbb40ga90760688fe8" version="1">Corsair's Rigging</content>
+    <content contentuid="h9c5bf548gf7b7g4d94g9485gb50948428a56" version="1">Perfect Balance</content>
+    <content contentuid="h7c537207ge7e6g4a55gb5eag7b604349da67" version="1">You use your superior balance to land devastating hits on your opponent. You may add your bonus to Acrobatics to your damage.</content>
+
+    <content contentuid="h12ac41e4g8fc0g45d2ga939gede54bc09427" version="1">Legend holds that this pendant contains the eye of a kraken, offering a gaze that pierces the abyss. It grants the wearer the power to strike with the might of the ocean's depths, chilling the hearts of their enemies.</content>
+    <content contentuid="h7f9719edg4c11g4149ga9c2g62ed2eb5830d" version="1">Pendant of the Kraken</content>
+    <content contentuid="hca1df56cg5ca5g40a5g9d2ag15196e85b05a" version="1">Ambush of the Deep</content>
+    <content contentuid="h6afa12a9gccdfg4feaga89eg9cd3ea413c99" version="1">Your &lt;LSTag Type="Spell" Tooltip="Target_SneakAttack"&gt;Sneak Attacks&lt;/LSTag&gt; now deal additional Cold damage equal to your &lt;LSTag Type="Spell" Tooltip="Target_SneakAttack"&gt;Sneak Attacks&lt;/LSTag&gt; dice.</content>
+
+    <!--Divine Soul Sorcerer-->
+    <content contentuid="hd525dc55gac10g42eagab5bg32dd103bf926" version="1">Carved from a branch of a sacred tree, this staff pulses with a divine aura. Each spell it casts is infused with the blessing of the heavens, guiding and strengthening allies.</content>
+    <content contentuid="hba40cf3agec3eg4613g8c4dg0b4f7970263f" version="1">Seraphim's Staff</content>
+    <content contentuid="h0de14b19g50adg4395g8a19gd76e52852c97" version="1">Tempus's Blessing</content>
+    <content contentuid="h17910e3bg20fbg454aga275g96548af39a51" version="1">In addition to &lt;LSTag Type="Spell" Tooltip="Target_Bless"&gt;Bless's&lt;/LSTag&gt; current effect, it also grants an additional [1] to weapon and unarmed &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;.</content>
+
+    <content contentuid="h68f69676ge308g45f6gafa5gc290f175b16e" version="1">Crafted from the feathers of a divine messenger, these gloves protect and empower the wearer. Each healing touch is bolstered by Mystra's protection, shielding the healed from further harm.</content>
+    <content contentuid="h43b11345g6ba8g4172ga58cg57504218a961" version="1">Seraphim's Gloves</content>
+    <content contentuid="h2111f9d6gce31g48aag9ef8g5168d7e94e3a" version="1">Mystra's Protection</content>
+    <content contentuid="h46e247e9gbfd2g4f79gabc1g6d15c49c6b4d" version="1">When you heal another creature, it gains &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to non-physical damage.</content>
+    
+    <content contentuid="hb1ef6eccgc35bg4780g9eb1g64f5b4d5eb73" version="1">Made from the soft leather of a divine beast, these sandals grant swiftness and clarity. Their steps are light, enabling the wearer to move with expedience, spreading healing and hope.</content>
+    <content contentuid="h133bc79dgd62bg4019gb650g20e082b82369" version="1">Seraphim's Sandals</content>
+    <content contentuid="h2a72cb44g0b53g4c6fg9a47gd838552b5731" version="1">Rejuvenating Expediency</content>
+    <content contentuid="hfb19001cgca89g4aa4gae42gfd9949752d27" version="1">When you heal an ally, grant them [1] turns of &lt;LSTag Type="Status" Tooltip="MAG_MOMENTUM"&gt;Momentum&lt;/LSTag&gt;.</content>
+
+    <content contentuid="h22e71a8cgfcd3g45eag8d81g329136b24771" version="1">This crown, forged in celestial light, connects its bearer to the higher planes. Wearing it enhances spiritual and magical insights, providing clarity and power to command the divine will.</content>
+    <content contentuid="hcb084b7fg02d8g4bf0g9ea9g41cc677da9ca" version="1">Seraphim's Crown</content>
+    <content contentuid="h9884c93agf77fg4090gbd7eg96001add699d" version="1">Connection to the Divine</content>
+    <content contentuid="he25ec74age79cg48degbc40g5ee083963ddd" version="1">You gain a bonus to your Religion &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt; equal to your Charisma &lt;LSTag Tooltip="AbilityModifier"&gt;modifier&lt;/LSTag&gt;.</content>
+
+    <content contentuid="h0ce91990gbd19g4d7cgad10g6e2b033b1685" version="1">These vestments are imbued with a celestial light. They enhance the healing prayers of their wearer, wrapping those in need with the warmth and brightness of the dawn.</content>
+    <content contentuid="h62038848g6734g4c16gaf9bg155dd8b137c0" version="1">Seraphim's Vestments</content>
+
+    <content contentuid="h4c0e75c9ga502g4954gb9cbg394f22557440" version="1">Woven from the feathers of celestial beings, this mantle offers sanctuary to the weary and the righteous. Its presence alone creates a haven of peace, warding off malevolence with a shield of pure light.</content>
+    <content contentuid="hc47f4e68g33deg4c15g891egd176342756bb" version="1">Seraphim's Mantle</content>
+
+    <content contentuid="hd5300382gb120g4476g9c98g668de204ce4f" version="1">This amulet, containing a shard of a fallen celestial, radiates a powerful aura. It enhances the wearer's presence, imbuing their words and spells with divine authority.</content>
+    <content contentuid="h8813a20fg58b8g4059ga58cgda36d82e8148" version="1">Seraphim's Amulet</content>
+    <content contentuid="h1a2183c3gddf0g4d1dga3d8ge8ca2b90b0a1" version="1">Divine Empowerment</content>
+    <content contentuid="hb584d4d6gfb4ag45f5g9f18g6128f85f5569" version="1">When you deal [1] or [2] through a spell, deal additional damage equal to your Charisma &lt;LSTag Tooltip="AbilityModifier"&gt;modifier&lt;/LSTag&gt;.</content>
+
+    <content contentuid="he08c92dfgaa61g4275g8b1fgcec0bcc600c5" version="1">A legendary ring that serves as a conduit for the raw power of creation. It channels the potent forces of sorcery through the wearer, granting them moments of unparalleled magical prowess.</content>
+    <content contentuid="h766a1ff3g5d1fg4bccg94d8g155fde844ce2" version="1">Seraphim's Ring</content>
+    <content contentuid="h92457681g7871g43a5g8ea0gb8fc27cbc33a" version="1">Conduit of the Divine</content>
+    <content contentuid="h951f69e6g5587g487bgb655g971ce9011e2d" version="1">When you deal [1] or [2] through a spell, deal additional damage equal to your bonus to your Religion.</content>
+    <content contentuid="hcdb70118gec25g44b9ga172g0ee700ccc991" version="1">Explosive Healing</content>
+    <content contentuid="h4019308bg1ef8g4938gacf0gcac03b86888e" version="1">When you heal a target, heal an additional number of d6s equal to your &lt;LSTag Tooltip="Proficiency"&gt;Proficiency&lt;/LSTag&gt; bonus.</content>
+
+    <!--Shadow Magic Sorcerer-->
+    <content contentuid="h4566078fgc206g4d9bg9037g3c7aa55b9a8d" version="1">Born from the core of a shadowy realm, this staff is a sliver of eternal night. It whispers with darkness, allowing its wielder to weave spells that cling to their foes like the inescapable gloom.</content>
+    <content contentuid="hf6611f3cg7748g4710gbc8agb2b504cedb56" version="1">Eclipsed Staff</content>
+
+    <content contentuid="h7e69e527g31eeg4edbg8c69ge5808a694777" version="1">Crafted from the essence of fleeting dusk, these boots step between worlds, leaving no trace. Each stride is a silent passage through the twilight, a dance with the dark itself.</content>
+    <content contentuid="h78f53114g8f5cg4c7eg99bdg6ee70bb4a307" version="1">Eclipsed Steps</content>
+    <content contentuid="hcccf7397g2c48g4f73g9c65g8cec3b9db28f" version="1">Move in Darkness</content>
+    <content contentuid="h0ce98d69gef3dg402agb261ga6d661fb87e0" version="1">Gain [1] &lt;LSTag Tooltip="MovementSpeed"&gt;movement speed&lt;/LSTag&gt; in obscured areas.</content>
+    <content contentuid="ha4e70d96g2708g4234g9eb9g50e568cb2fc6" version="1">%%% Move in Darkness Owner</content>
+
+    <content contentuid="h0c3225fcg3f27g4435gb96cg96d983498175" version="1">A circlet cut from the cloth of night, this band is a conduit for enfeebling energies. To wear it is to channel the withering touch of the dark, ensnaring foes in a lattice of weakening shadow.</content>
+    <content contentuid="hfd55450eg89fag40e3gaa22g5bb5d1fd421b" version="1">Eclipsed Band</content>
+    <content contentuid="hcf046abdg93c7g4315g9ea3g5cdaf8d76623" version="1">Enemy of Fey</content>
+    <content contentuid="hf08b7a7eg1a89g418fg984dg4f5acdd313f6" version="1">You have &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on attack rolls against Fey type enemies.</content>
+
+    <content contentuid="h5161f802g2a0ag449bg8953g0b1631d50464" version="1">This veil is a fragment of twilight, a gift from the dusky edges of reality. It sits upon the brow like a thought, granting the bearer the power to vanish from sight and mind.</content>
+    <content contentuid="hc89f3274g82f5g4e10gb5f1gb8f6f01b6fea" version="1">Eclipsed Hood</content>
+
+    <content contentuid="h9c889a1ag0b57g48b0ga18bg12ef37076bf0" version="1">This robe flows like liquid absence, a garment spun from the substance of shadows. It armors its wearer not with mail, but with the unyielding force of the void.</content>
+    <content contentuid="hfb439687g56c4g40a3g8719g25c1f1e6ba8b" version="1">Eclipsed Robe</content>
+    <content contentuid="h5550bed1g5270g4674g99d6ge5d787c4ebe2" version="1">Shadow Armour</content>
+    <content contentuid="h7dea759egea92g4603g829cgc677a4617c96" version="1">The wearer has +[1] to &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; and &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; as long as they are obscured.</content>
+    <content contentuid="hc9ec38e3g6014g4b42g9bd4g15e6b10fccfc" version="1">%%% Shadow Armour Owner</content>
+
+    <content contentuid="hdf280e8dg4f2eg4eb9g9f6dg043f89b61cb2" version="1">A shroud of whispers and chill, this mantle is the cloak of those who walk the line between light and dark. It drapes over shoulders with the weight of secrets and the power of silent command.</content>
+    <content contentuid="hdbc5dd7fg350dg4824gbad5gce0f0f8cc64c" version="1">Eclipsed Mantle</content>
+
+    <content contentuid="h177115f3gbe19g4e9fg9b7dg963db46f71ca" version="1">At the heart of this pendant beats the pulse of a shadow's lifeblood. It is a wellspring of necromantic power, doubling the reach of a sorcerer's morbid fascination.</content>
+    <content contentuid="h411a3eeag858eg454bg895ag413f098b4f04" version="1">Eclipsed Pendant</content>
+    <content contentuid="h4215c3d2g5349g474eg8f23g0d3e3e8ca9c5" version="1">Superior Necromancy</content>
+    <content contentuid="h097b5ee0g48ebg456bg92e7gb4cc7d553382" version="1">Hit an additional target whenever you cast &lt;LSTag Type="Spell" Tooltip="Projectile_RayOfSickness"&gt;Ray of Sickness&lt;/LSTag&gt;, &lt;LSTag Type="Spell" Tooltip="Projectile_RayOfEnfeeblement"&gt;Ray of Enfeeblement&lt;/LSTag&gt; and &lt;LSTag Type="Spell" Tooltip="Target_Blight"&gt;Blight&lt;/LSTag&gt;.</content>
+
+    <content contentuid="he990e9b8g2183g42a7gba4dgdfa5de68a11f" version="1">These gloves are the hands of the night itself, shaping the darkness into forms and fancies. To don them is to command the strength of shadows, siphoning vigor from foe to friend.</content>
+    <content contentuid="h6ca29d22ga3f7g42bcg9c1dged3de1401191" version="1">Eclipsed Gloves</content>
+    <content contentuid="hb9206707g51f4g4cc9gb626g0fad80146ee3" version="1">Enfeebling Spell</content>
+    <content contentuid="h253cb3fagb006g441fg848fga9f131f414aa" version="1">Whenever the wearer deals Necrotic damage with a spell or &lt;LSTag Tooltip="Cantrip"&gt;Cantrip&lt;/LSTag&gt;, they apply &lt;LSTag Type="Status" Tooltip="RAY_OF_ENFEEBLEMENT"&gt;Enfeebled&lt;/LSTag&gt; for [1] turns.</content>
+
+    <!--Celestial Warlock-->
+    <content contentuid="h08686924g82a8g4d22gbb5eg6c04d0dd63f3" version="1">This mace is forged from the hands of a celestial smith, its head glowing with a radiant light. Each swing releases bursts of divine energy, smiting foes with the force of celestial judgment.</content>
+    <content contentuid="hdd4114e2ge5b2g4aafg8214gfc28e207a976" version="1">Heavenly Mace</content>
+
+    <content contentuid="hd39f511eg396eg476cgaeffg21eff827fc3e" version="1">Infused with the essence of sacred paths, these sandals grant the wearer an otherworldly perception, illuminating the hidden and obscure, guiding them through complexities of battle.</content>
+    <content contentuid="h0cb72749g958ag477eg872cgf2f4d55fe794" version="1">Heavenly Sandals</content>
+    <content contentuid="h4cfdd0b6g64b4g4ddcgae69g8f3389110af8" version="1">Arcane Optics</content>
+    <content contentuid="hae46fa7ag6011g4875g9190g8b774d014de5" version="1">When the wearer inflicts a condition upon a hostile creature, they also inflict [1] turns of &lt;LSTag Type="Status" Tooltip="MAG_RADIANT_RADIATING_ORB"&gt;Radiating Orb&lt;/LSTag&gt;.</content>
+
+    <content contentuid="h216ff2fag565ag435fg8c06g408b590ac892" version="1">A beacon of celestial might, this amulet channels the raw energies of the cosmos, enhancing the destructive power of divine spells and fortifying the wearer's defenses.</content>
+    <content contentuid="h65a26209gf96dg484fgaae3gdabbdbaa10b3" version="1">Heavenly Amulet</content>
+    <content contentuid="h720ef5dag0f55g4ec4g8f3bga6632c8d3102" version="1">Celestial Might</content>
+    <content contentuid="h2157d58eg81dfg4677gbd58g87b926826f33" version="1">When one of your &lt;LSTag Tooltip="Cantrip"&gt;cantrips&lt;/LSTag&gt; deals [1] or [2], add your &lt;LSTag Tooltip="SpellcastingAbilityModifier"&gt;Spellcasting Modifier&lt;/LSTag&gt; to the damage dealt.</content>
+
+    <content contentuid="hec0cbbbfg0ab5g4f46gb284g1f9ce3d61fde" version="1">This mantle, woven from the essence of angelic wings, shields the wearer from both corporeal and spiritual assailants, casting a protective barrier against forces of darkness and light alike.</content>
+    <content contentuid="h839bae9fg6456g490cg9aecgf1834a469823" verison="1">Heavenly Mantle</content>
+    
+    <content contentuid="hea2d01b0g44f3g401cg8460g0681bdd4b607" version="1">These gauntlets are embossed with holy symbols, each spell delivering a surge of protective energy, shielding allies from harm.</content>
+    <content contentuid="h029d44dbg408dg45dcg8f17g2b9c9e999ba6" version="1">Heavenly Gauntlets</content>
+
+    <content contentuid="hc4c44f0fg11cag4cb6gb00dg1172928a8d21" version="1">Crafted with angelic silver and set with a gem that mirrors the heavens, this diadem magnifies the wearer's divine aura, enhancing their spiritual and healing powers.</content>
+    <content contentuid="h5273a6ddg3453g45c9g9a99gc0ce6b78189b" version="1">Heavenly Diadem</content>
+    
+    <content contentuid="hc81f89d3g8ac6g4325g814ag354d0d5c7522" version="1">This ring, imbued with the essence of divine charisma, pulses with a compelling presence. It enhances the wearer's influence, turning their every word and gesture into a testament of faith.</content>
+    <content contentuid="hb005166bg42d5g4958gbfc5gdf9eac6aca1e" version="1">Heavenly Ring</content>
+
+    <content contentuid="h25411f4cgc8c4g46c3gb4dcg74f75ec5dc66" version="1">Legendary armour, as light as a feather and as hard as divine decree. It grants the wearer to soar above the battlefield, untouched by mortal harms, radiating a halo of celestial energy.</content>
+    <content contentuid="hf69f8a4cgc6afg4179g9cfdgf8725c528a34" version="1">Heavenly Armour</content>
+    <content contentuid="hd2cd1a43g3837g4031gacc4g2f1befa52aa8" version="1">Celestial Rejuvenation</content>
+
+    <!--Hexblade Warlock-->
+    <content contentuid="h030a07d1g2787g4d66g818dg839dca892435" version="1">This helm, adorned with obsidian and nightshade, grants visions of dark power, whispering secrets of life and death with every foe vanquished.</content>
+    <content contentuid="h120d4c93g53adg4e4cg9f48g136829d678d5" version="1">Helm of the Dark Pact</content>
+    <content contentuid="h7f062b3egfe8ag467dg944fg0f31b7b91dd5" version="1">Siphon Life</content>
+    <content contentuid="h03bbbacag5eb1g4cccga8ecgf356b19c1b9f" version="1">When you kill a foe, regain [1].</content>
+
+    <content contentuid="ha63cdaecg4e34g4e4eg81c1g59a3c2da0a97" version="1">These gloves,stitched from the hide of shadow beasts, enhance the wearer's grasp on the arcane. Each spell cast feels as if drawn from the very wellspring of shadow magic.</content>
+    <content contentuid="h8f6a92e7g1e21g45cfg808ag13ef448b0371" version="1">Grips of the Dark Pact</content>
+
+    <content contentuid="h66d0c2bfga2f6g4147g9aabg0442e9757fc9" version="1">Encircled by runes that pulse with necrotic energy, this ring fortifies the wearer's connection to the dark arts, turning even the simplest touch deadly with the chill of the grave.</content>
+    <content contentuid="h43412808gfa6cg4d18gb95dg35831096a939" version="1">Band of the Dark Pact</content>
+    <content contentuid="h7c640bdegdb8ag4fceg99degaf9fd9de0376" version="1">Dark Implements</content>
+    <content contentuid="hbb25ba2ag632cg4a1ega34ag124a63b6b804" version="1">Your weapon attacks also deal [1].</content>
+
+    <content contentuid="hc0ea6799g4fc7g4a6fgbf9cgbcfe0b3d125a" version="1">Clad in this half plate, the wearer stands as a bulwark against the light. The cuirass absorbs the life force of defeated enemies, converting their essence into a shield of dark energy.</content>
+    <content contentuid="hc0c2d4a1g1de9g44fcgabbbg35c416c2581c" version="1">Cuirass of the Dark Pact</content>
+    <content contentuid="h4c45d7b6gae23g46ceg8089g40263b08a156" version="1">Siphon Power</content>
+    <content contentuid="hb6aaa3e0g6564g41bbg9f95gaedbf3fce455" version="1">When you kill a foe, gain [1] turns of &lt;LSTag Type="Status" Tooltip="MAG_GISH_ARCANE_CHARGE"&gt;Arcane Charge&lt;/LSTag&gt;.</content>
+
+    <content contentuid="h34a20498g9827g4080gb949g4caad0575c5c" version="1">Silent as the grave, these boots carry the wearer through dimensions thin as veils. Each step is a whisper, each movement a shadow fleeting across the realms. </content>
+    <content contentuid="h388837fdg5f7bg41bag9a93gfa1217a45957" version="1">Boots of the Dark Pact</content>
+
+    <content contentuid="hf430e6e1ga6c2g4760gadb2g3ec343796d55" version="1">Woven from the midnight mist, this cloak swirls with the an aura of enigma. Each thread pulses with stolen vitality, empowering the wearer with the echoes of lives extinguished.</content>
+    <content contentuid="he3365b4eg3372g4a57g9cc9g1f2d74699794" version="1">Cloak of the Dark Pact</content>
+    <content contentuid="hf808cd29gad44g478dg9102ga9432dc3bf5c" version="1">Siphon Might</content>
+    <content contentuid="h95152487g860cg4a36ga54bgd0d64203e7e5" version="1">When you kill a foe, gain [1] turns of &lt;LSTag Type="Status" Tooltip="MAG_GISH_ARCANE_SYNERGY"&gt;Arcane Synergy&lt;/LSTag&gt;.</content>
+    <content contentuid="h4eb163f0ga186g4f59g9bafgd42046a05b4a" version="1">Powerful Hex</content>
+    <content contentuid="h9e8add01g508cg41a6g905cgc11a40319b2f" version="1">You deal an additional [1] to creatures marked by &lt;LSTag Type="Status" Tooltip="BANE"&gt;Bane&lt;/LSTag&gt;, &lt;LSTag Type="Spell" Tooltip="Target_BestowCurse"&gt;Bestow Curse&lt;/LSTag&gt; or &lt;LSTag Type="Spell" Tooltip="Target_Hex"&gt;Hex&lt;/LSTag&gt;.</content>
+
+    <content contentuid="h9962f5b9g81f1g4eccg9765g8931c9baa512" version="1">At the core of this amulet lies a shard of pure darkness, pulsating with the power of ancient pacts. It enhances the wearer's charisma, weaving their words and wills with irresistible force.</content>
+    <content contentuid="hd6d175eag32beg496ag8944ga51d86f69c86" version="1">Amulet of the Dark Pact</content>
+    <content contentuid="h8fe4f90egd81fg418bg9a77ga986209bb3ef" version="1">Greater Curse</content>
+    <content contentuid="hf74acf74gb9e0g48c4g9573g75234bf09d31" version="1">When you cast &lt;LSTag Type="Spell" Tooltip="Target_BestowCurse"&gt;Bestow Curse&lt;/LSTag&gt;, you may target an additional enemy.</content>
+
+    <content contentuid="h9252d347g0bc1g4ffdg8f51ge4b9fc61c96d" version="1">Hidden in the dungeon of White Plume Mountain, Blackrazor shines like a piece of night sky filled with stars. Its black scabbard is decorated with pieces of cut obsidian.</content>
+    <content contentuid="hb13ebcdegc78fg4b1egb664g2dd0a2bb7a89" version="1">Blackrazor</content>
+    <content contentuid="h6fd0937ag30f3g45a0gb935g69f3c8e5c01f" version="1">Sentient Weapon</content>
+    <content contentuid="hd064ee1dg6f93g4cc9g91c7g34abe5a925ab" version="1">On a hit, deal additional damage equal to your Charisma &lt;LSTag Tooltip="AbilityModifier"&gt;modifier&lt;/LSTag&gt;.</content>
+    <content contentuid="ha96f7775ga13eg4087g82ffgcc38b7ae38fb" version="1">Soul Hunter</content>
+    <content contentuid="hfe6c60dfg9464g43fega4d7gc17926039781" version="1">Immune to being &lt;LSTag Type="Status" Tooltip="FEARED"&gt;Feared&lt;/LSTag&gt; and &lt;LSTag Type="Status" Tooltip="CHARMED"&gt;Charmed&lt;/LSTag&gt;.</content>
+    <content contentuid="h79ce4061gdd95g418cg9d18g4bc5b5b412fe" version="1">Dark Bond</content>
+    <content contentuid="hce3650fcg6ef8g4a9fg8cfdge2e7ab03aee9" version="1">Deal an additional [1] for every foe you slay, up to a maximum of +[2].</content>
+    <content contentuid="h09e9c3d7g2ef5g4393ga8b1gf82904c905ef" version="1">Affected entity deals an additional [1]</content>
+
+    <!--Bladesinger Wizard-->
+    <content contentuid="hf740df38g0eddg4baega708gb71cf4ee884d" version="1">Crafted from the finest silks that flow with the wearer's movements, this tunic empowers spells to leave enemies bewildered, their attacks grasping at empty air as the caster dances away.</content>
+    <content contentuid="hd7044273g0315g4ed2g8578g8c9cadd39ded" version="1">Dancer's Garb</content>
+    <content contentuid="h09bae2a8g5a14g4b54gb2c4g422023eae84c" version="1">Flourishing Spell</content>
+    <content contentuid="h204dd278g6db7g4608g9381gb2c9f861a356" version="1">When the wearer casts a spell that damages a creature, it automatically Disengages and won't trigger &lt;LSTag Tooltip="OpportunityAttack"&gt;Opportunity Attacks&lt;/LSTag&gt;.</content>
+
+    <content contentuid="hcb7a781cg9d8bg4d46g939agc83e6c97880f" version="1">Soft-soled and light, these sandals carry the wisdom of ancient dance masters. They enhance the wearer's speed and responsiveness, making every battlefield a stage for their nimble footwork.</content>
+    <content contentuid="h841b0914g2c6fg4ce8g928eg8556e8f04054" version="1">Dancer's Sandals</content>
+    <content contentuid="he2dd24d5gc462g4f64ga2ecge1d7a7ac7409" version="1">Expedient Spell</content>
+    <content contentuid="hac04fd66g81b9g44eagb5a4g5455c73fa721" version="1">When the wearer casts a spell, gain &lt;LSTag Type="Status" Tooltip="MAG_MOMENTUM"&gt;Momentum&lt;/LSTag&gt; for [1] turns.</content>
+
+    <content contentuid="h19db595cg270dg4719ga578gdbd7cc989a2c" version="1">This ring, crafted from twining bands of gold, sharpens the wearer's instincts, allowing them to anticipate and react to threats with the precision of a master choreographer.</content>
+    <content contentuid="h8ee0c2e8gf0a0g438eg912fg4e3b0c5b00d2" version="1">Dancer's Ring</content>
+
+    <content contentuid="hd5d72e83g95a8g462ega766gbe2fbf8315e9" version="1">This ethereal veil shimmers with an arcane light. When worn, it grants the agility of a shadow, allowing the wearer to slip away from foes with the ease of a breeze parting smoke.</content>
+    <content contentuid="h63c4d673gc13dg43ddgaff5gb41343acea1f" version="1">Dancer's Veil</content>
+    <content contentuid="hc61c79bfg30beg46bcg9b84g71ad3bf59e5e" version="1">Arcane Backstep</content>
+    <content contentuid="hfb6834ebgd3f5g4cd7gb3d8g67bc8d1d28d9" version="1">When the wearer &lt;LSTag Type="Spell" Tooltip="Shout_Disengage"&gt;Disengages&lt;/LSTag&gt;, they also gain &lt;LSTag Type="Status" Tooltip="MAG_GISH_ARCANE_ACUITY"&gt;Arcane Acuity&lt;/LSTag&gt; for [1] turns.</content>
+
+    <content contentuid="h3653b5f4gd0c9g4f38g88f9gd0ca5c69cac2" version="1">Set with a gem that pulses with the rhythm of the heart, this amulet enhances the caster's spell potency when threats loom close, turning desperation into deadly advantage.</content>
+    <content contentuid="hbab99c50gb1ebg446bgaf3bge494a393e1ca" version="1">Dancer's Amulet</content>
+    <content contentuid="hbe52fb98g11ffg4c75g86deg14be416f47f9" version="1">Proximity Casting</content>
+    <content contentuid="hdc895e31g4df6g4654g8b70ge4d055ed7ecf" version="1">While &lt;LSTag Type="Status" Tooltip="FLANKED"&gt;Threatened&lt;/LSTag&gt;, you deal additional damage with spells equal to your Intelligence &lt;LSTag Tooltip="AbilityModifier"&gt;modifier&lt;/LSTag&gt;.</content> 
+
+    <content contentuid="h673e9914gc4cag46afg9668g8f9e366cf776" version="1">A delicate silver band, imbued with the essence of fluid motion. It enhances the wearer's mental acuity during performances, turning each step and gesture into a captivating spectacle.</content>
+    <content contentuid="h51a2264egca53g4e58gbe5agc2f2f2d69a9c" version="1">Dancer's Circlet</content>
+    <content contentuid="h012c55c1g0d83g4440gb5c8gb18d6d52b6e6" version="1">Flourishing Acuity</content>
+    <content contentuid="heb1fbb90gdee4g4808ga6c2g1206dd4de9d5" version="1">While &lt;LSTag Type="Status" Tooltip="FLANKED"&gt;Threatened&lt;/LSTag&gt;, when the wearer casts a spell, they gain &lt;LSTag Type="Status" Tooltip="MAG_GISH_ARCANE_ACUITY"&gt;Arcane Acuity&lt;/LSTag&gt; for [1] turns.</content>
+    <content contentuid="h439a8b09gfa1cg4247g8ac8gf76d0c5d24f1" version="1">Intricate Footwork</content>
+    <content contentuid="h85a3acb8gc432g4cb2ga7aega609281a331c" version="1">You gain a bonus to your Performance &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt; equal to your Intelligence &lt;LSTag Tooltip="AbilityModifier"&gt;modifier&lt;/LSTag&gt;.</content>
+
+    <content contentuid="h2918a55fgba57g447fg9f35g935012c66cd8" version="1">These leather gauntlets are stitched with sigils of agility and intellect. They enhance the wearer's manual dexterity, perfecting movements that are as effective in combat as they are beautiful in performance.</content>
+    <content contentuid="he6a5f43ag2f1fg4c9dg9a76g1626fe25002e" version="1">Dancer's Gauntlets</content>
+    <content contentuid="h1c87fe0bg0b6dg4c71gae47g287ba3a92940" version="1">Studied Gymnast</content>
+    <content contentuid="h9e17e37bg9153g48bag9d1bg2588b2b533a0" version="1">You gain a bonus to your Acrobatics &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt; equal to your Intelligence &lt;LSTag Tooltip="AbilityModifier"&gt;modifier&lt;/LSTag&gt;.</content>
+
+    <content contentuid="hb248779dgb75fg4c60g8f0agfb5655e502a7" version="1">Scroll of Greater Bear's Endurance</content>
+    <content contentuid="hcf95e4c1g4778g4f18g9605g8b7f72308120" version="1">Scroll of Greater Bull's Strength</content>
+    <content contentuid="h0fd1231cg97fdg453agb72bg9519208cf1ab" version="1">Scroll of Greater Cat's Grace</content>
+    <content contentuid="h67880117g42f3g4934gb9b2g282abff86713" version="1">Scroll of Greater Eagle's Splendor</content>
+    <content contentuid="h72400e13g410cg422cg8839g0293452ffa50" version="1">Scroll of Greater Fox's Cunning</content>
+    <content contentuid="h9262a7ddg3c84g44e7gbcbcgd917ca723c45" version="1">Scroll of Greater Owl's Wisdom</content>
+    <content contentuid="h4d8fd61dgba33g43adga6c1gcdb2f90dfe29" version="1">Optimize Ability</content>
+    <content contentuid="h142d4edag65c5g4a9ag9131gf0df1dd5e76c" version="1">Bestow a magical enhancement upon an ally. They gain &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt; and +[1] with a chosen &lt;LSTag Tooltip="Abilities"&gt;Ability&lt;/LSTag&gt;. Additionally they gain a particular benefit relevant to that &lt;LSTag Tooltip="Abilities"&gt;Ability&lt;/LSTag&gt;.</content>
+    <content contentuid="hd507319agefa6g4f99g8c72g8e6df895f39e" version="1">Greater Bear's Endurance</content>
+    <content contentuid="h1abee26agcd21g4799gaf1dga36856891907" version="1">Creature gains &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on Constitution &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;. Hit point maximum increases by [1], gain &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; on all damage types except Psychic and Constitution increases by [2].</content>
+    <content contentuid="h96bc808fgebbbg4729gb7aag6b9726e9679c" version="1">Has &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on Constitution &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;. Hit point maximum increases by [1], gain &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; on all damage types except Psychic and Constitution increases by [2].</content>
+    <content contentuid="h91db8bdeg6168g4ab3g9dedg9c393950f20b" version="1">Greater Bull's Strength</content>
+    <content contentuid="hbff14d9cgb33ag41e2gab57g947de992eb99" version="1">Creature gains &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on Strength &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;. &lt;LSTag Tooltip="CarryWeight"&gt;Carrying capacity&lt;/LSTag&gt; is quadrupled, deal additional melee damage equal to the Strength modifier and Strength increases by [1].</content>
+    <content contentuid="h68244b0eg9c2eg4948g96cdg648b7a49c6da" version="1">Has &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on Strength &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;. &lt;LSTag Tooltip="CarryWeight"&gt;Carrying capacity&lt;/LSTag&gt; is quadrupled, deal additional melee damage equal to the Strength modifier and Strength increases by [1].</content>
+    <content contentuid="h4efe4064g93acg424ag98fdgd0f1b78c9a87" version="1">Greater Cat's Grace</content>
+    <content contentuid="hae4b0ac6g1c7ag42b2ga3bbg838597dacc4a" version="1">Creature gains &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on Dexterity &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;. Take no damage from falling, reduce critical threshold by [1] and Dexterity increases by [1].</content>
+    <content contentuid="hfe68fa23g668dg4c84ga794g6abd2b087ad0" version="1">Has &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on Dexterity &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;. Take no damage from falling, reduce critical threshold by [1] and Dexterity increases by [1].</content>
+    <content contentuid="he5a26d72g943ag4e09gb8cfg62591ed3b240" version="1">Greater Eagle's Splendor</content>
+    <content contentuid="hff34ec7dg61ecg4036gafe7g41069af18e3f" version="1">Creature gains &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on Charisma &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;. Deals additional damage on spells equal to their &lt;LSTag Tooltip="SpellcastingAbilityModifier"&gt;Spellcasting Modifier&lt;/LSTag&gt; and Charisma increases by [1].</content>
+    <content contentuid="hbd38b08cg9963g4c86gb92dg0f2078e9cdbc" version="1">Has &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on Charisma &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;. Deals additional damage on spells equal to their &lt;LSTag Tooltip="SpellcastingAbilityModifier"&gt;Spellcasting Modifier&lt;/LSTag&gt; and Charisma increases by [1].</content>
+    <content contentuid="h4a244b5dg4154g4fb2gb87dg8e8785551d2d" version="1">Greater Fox's Cunning</content>
+    <content contentuid="hee44ed49g0c8fg4fa6gacadg699b03bc59fe" version="1">Creature gains &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on Intelligence &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;. Gains an additional Bonus Action and Reaction to use per turn and Intelligence increases by [1].</content>
+    <content contentuid="h5d366f18g5e20g4738g9a31ga07bef1645bc" version="1">Has &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on Intelligence &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;. Gains an additional Bonus Action and Reaction to use per turn and Intelligence increases by [1].</content>
+    <content contentuid="h8f84f280g79ebg496ag9b00gf93b98e6556c" version="1">Greater Owl's Wisdom</content>
+    <content contentuid="hd37eaa24g51c1g45a0g9326g4bb025695cb5" version="1">Creature gains &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on Wisdom &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;. Gain a +[1] bonus to Initiative, cannot be &lt;LSTag Type="Status" Tooltip="SURPRISED"&gt;Surprised&lt;/LSTag&gt;, &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; against spells and Wisdom increases by [2].</content>
+    <content contentuid="h6d9bc997g3367g41d7g86b1g415b3063e687" version="1">Has &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on Wisdom &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;. Gain a +[1] bonus to Initiative, cannot be &lt;LSTag Type="Status" Tooltip="SURPRISED"&gt;Surprised&lt;/LSTag&gt;, &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; against spells and Wisdom increases by [2].</content>
+
+</contentList>

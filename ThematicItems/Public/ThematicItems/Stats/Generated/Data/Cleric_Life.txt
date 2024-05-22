@@ -1,0 +1,172 @@
+new entry "ThematicItems_Serene_Mantle"
+type "item"
+using "_Back_Magic"
+data "RootTemplate" "12bfb880-29b4-4f76-8cf3-c99049c94050"
+data "Rarity" "Uncommon"
+data "Boosts" "UnlockSpell(Target_TI_LesserRestoration)"
+data "ValueOverride" "116"
+data "Unique" 1
+
+new entry "ThematicItems_Serene_Sandals"
+type "Armor"
+using "_Foot_Magic"
+data "RootTemplate" "39ef7d24-62e1-4e63-888e-773297a01625"
+data "Rarity" "Uncommon"
+data "PassivesOnEquip" "TI_Expedient_Healer"
+data "ProficiencyGroup" "MediumArmor"
+data "ValueOverride" "276"
+data "Unique" 1
+
+new entry "ThematicItems_Serene_Band"
+type "item"
+using "_Ring_Magic"
+data "RootTemplate" "e5a50ac2-0b0e-4e78-9024-270752cb95c1"
+data "Rarity" "Uncommon"
+data "Boosts" "UnlockSpell(Target_TI_CureWounds)"
+data "ValueOverride" "184"
+data "Unique" 1
+
+new entry "ThematicItems_Serene_Gloves"
+type "Armor"
+using "_Hand_Magic"
+data "RootTemplate" "37753186-fe98-4cdb-bb60-b41530814ccf"
+data "Rarity" "Rare"
+data "PassivesOnEquip" "TI_Strengthen"
+data "ProficiencyGroup" "MediumArmor"
+data "ValueOverride" "1416"
+data "Unique" 1
+
+new entry "ThematicItems_Serene_Medallion"
+type "item"
+using "_Amulet_Magic"
+data "RootTemplate" "f4bb1a5e-eaa2-4f11-805a-b002ed018148"
+data "Rarity" "Rare"
+data "PassivesOnEquip" "TI_Combat_Medic"
+data "ValueOverride" "1406"
+data "Unique" 1
+
+new entry "ThematicItems_Serene_Halo"
+type "Armor"
+using "_Head_Magic"
+data "RootTemplate" "0c67a76e-901a-48e4-a1b3-ab2bd68fdf17"
+data "Rarity" "VeryRare"
+data "PassivesOnEquip" "TI_Divine_Restoration"
+data "Boosts" "Ability(Wisdom, 2, 24)"
+data "ValueOverride" "2443"
+data "Unique" 1
+
+new entry "ThematicItems_Serene_Mail"
+type "Armor"
+using "_Body"
+data "RootTemplate" "3deda30c-d5e4-452b-9eb1-fd3f1611c230"
+data "Rarity" "VeryRare"
+data "ArmorClass" "18"
+data "ArmorType" "ChainMail"
+data "PassivesOnEquip" "ARM_SuperiorMaterial_2_Passive;TI_Healing_Shell"
+data "Boosts" "Disadvantage(Skill,Stealth);CriticalHit(AttackTarget,Success,Never);Ability(Constitution, 2, 24)"
+data "ProficiencyGroup" "HeavyArmor"
+data "ValueOverride" "2996"
+data "Unique" 1
+
+-----
+
+new entry "ThematicItems_Serene_Aegis"
+type "Armor"
+using "ARM_Shield"
+data "RootTemplate" "56f442e1-388f-4a08-96c9-f291f36adb3b"
+data "Rarity" "Rare"
+data "PassivesOnEquip" "MAG_ShieldRiposte_Passive;UND_SocietyOfBrilliance_PullingRing_Passive"
+data "ValueOverride" "1431"
+data "Unique" 1
+
+new entry "ThematicItems_Lifebloom"
+type "Weapon"
+using "WPN_Mace_2"
+data "RootTemplate" "9dfa800f-937b-4603-b2f6-625c526e0296"
+data "Rarity" "Legendary"
+data "DefaultBoosts" "WeaponEnchantment(3);WeaponProperty(Magical)"
+data "BoostsOnEquipMainHand" "UnlockSpell(Target_ConcussiveSmash);UnlockSpell(Target_PostureBreaker);UnlockSpell(Shout_MAG_DevoteesMace_Healing_Aura)"
+data "PassivesOnEquip" "TI_Restore_Energy"
+data "ValueOverride" "8968"
+data "Unique" 1
+
+-----
+
+new entry "TI_Expedient_Healer"
+type "PassiveData"
+data "DisplayName" "h6740cbb7gdfeeg4284g8f83g0094d34c1825"
+data "Description" "hc5eb5eb7gb03ag42c5gb351gb971024575b4"
+data "StatsFunctorContext" "OnHeal"
+data "Conditions" "Character()"
+data "StatsFunctors" "RestoreResource(SELF, Movement, 100%, 0)"
+
+new entry "TI_Strengthen"
+type "PassiveData"
+data "DisplayName" "h59ea32b2g7a40g4b95g8b2fgad66215433f0"
+data "Description" "h8fb5d386gc781g49c5g8893g71b6c4999d0a"
+data "DescriptionParams" "2"
+data "StatsFunctorContext" "OnHeal"
+data "Conditions" "Character()"
+data "StatsFunctors" "ApplyStatus(MAG_VIOLENCE, 100, 2); ApplyStatus(MAG_VIOLENCE_DURATION_TECHNICAL, 100, 1); ApplyStatus(TI_AMPLIFICATION, 100, 2); ApplyStatus(TI_AMPLIFICATION_DURATION_TECHNICAL, 100, 1)"
+
+new entry "TI_Combat_Medic"
+type "PassiveData"
+data "DisplayName" "h9222f9b2g13c1g42d9gae5bg1af9b5facde4"
+data "Description" "hbcc7723fgfb76g4f68g8047ga2086984562d"
+data "StatsFunctorContext" "OnHeal"
+data "Conditions" "Character() and not Self()"
+data "StatsFunctors" "RegainHitPoints(max(1,WisdomModifier))"
+
+new entry "TI_Divine_Restoration"
+type "PassiveData"
+data "DisplayName" "hd1f9efe7ge4f7g475fgb8f6g67fdc65a301a"
+data "Description" "h4c38c36dge4cbg41f2g9b4fg4f3354f3d4c2"
+data "DescriptionParams" "2"
+data "StatsFunctorContext" "OnHeal"
+data "Conditions" "Character()"
+data "StatsFunctors" "ApplyStatus(MAG_ZEAL, 100, 2); ApplyStatus(MAG_ZEAL_DURATION_TECHNICAL, 100, 1); ApplyStatus(MAG_GISH_ARCANE_ACUITY, 100, 2); ApplyStatus(MAG_GISH_ARCANE_ACUITY_DURATION_TECHNICAL, 100, 1); ApplyStatus(TI_EMPOWERMENT, 100, 2); ApplyStatus(TI_EMPOWERMENT_DURATION_TECHNICAL, 100, 1)"
+
+new entry "TI_Healing_Shell"
+type "PassiveData"
+data "DisplayName" "hc17066ebgcb2cg4437gb760g1894375be4d3"
+data "Description" "h91fc04c6g07e9g4c4dg9224gfbffe2531bee"
+data "DescriptionParams" "3"
+data "StatsFunctorContext" "OnHeal"
+data "Conditions" "Character()"
+data "StatsFunctors" "ApplyStatus(BLADE_WARD, 100, 3); ApplyStatus(TI_MAGIC_WARD, 100, 3); ApplyStatus(BLESS, 100, 3)"
+
+new entry "TI_Restore_Energy"
+type "PassiveData"
+data "DisplayName" "h450790abgee85g477fg96fdgf713cdc245f6"
+data "Description" "hf1f3e1acgcb30g4a9bgae4fg20a27663351b"
+data "StatsFunctorContext" "OnAttack"
+data "Conditions" "SpellId('Shout_PreserveLife') or SpellId('Shout_HealingRadiance_Heal') or SpellId('Target_Heal') or SpellId('Target_TI_Heal_Celestial') or SpellId('Target_TI_Rejuvenating_Water')"
+data "StatsFunctors" "RestoreResource(Movement, 100%, 0);RestoreResource(BonusActionPoint, 100%, 0);RestoreResource(ActionPoint, 100%, 0)"
+
+-----
+
+new entry "TI_MAGIC_WARD"
+type "StatusData"
+data "StatusType" "BOOST"
+using "BLADE_WARD"
+data "DisplayName" "h486e117eg3c99g4a4bg850fg2cb54dcd1147"
+data "Description" "h64145f87g3c96g49a1gbb95gb9594bfe65fe"
+data "StackId" "TI_MAGIC_WARD"
+data "Boosts" "Resistance(Acid, Resistant);Resistance(Cold, Resistant);Resistance(Fire, Resistant);Resistance(Force, Resistant);Resistance(Lightning, Resistant);Resistance(Necrotic, Resistant);Resistance(Poison, Resistant);Resistance(Psychic, Resistant);Resistance(Radiant, Resistant);Resistance(Thunder, Resistant)"
+data "OnApplyFunctors" ""
+
+-----
+
+new entry "Target_TI_LesserRestoration"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_LesserRestoration"
+data "UseCosts" "ActionPoint:1"
+data "Cooldown" "OncePerShortRestPerItem"
+
+new entry "Target_TI_CureWounds"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_CureWounds"
+data "UseCosts" "ActionPoint:1"
+data "Cooldown" "OncePerShortRestPerItem"

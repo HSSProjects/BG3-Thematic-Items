@@ -1,0 +1,133 @@
+new entry "ThematicItems_Duellist_Cloak"
+type "item"
+using "_Back_Magic"
+data "RootTemplate" "72079be3-ec51-4920-a624-04749283b0d3"
+data "Rarity" "Uncommon"
+data "Boosts" "UnlockSpell(Shout_Disengage_BonusAction)"
+data "ValueOverride" "382"
+data "Unique" 1
+
+new entry "ThematicItems_Duellist_Armor"
+type "Armor"
+using "_Body"
+data "RootTemplate" "c17f15cb-bc2f-4b66-a0b7-5bf4934cef70"
+data "Rarity" "Uncommon"
+data "ArmorClass" "13"
+data "ArmorType" "ChainShirt"
+data "PassivesOnEquip" "TI_Evasive_Maneuvers"
+data "Proficiency Group" "MediumArmor"
+data "Armor Class Ability" "Dexterity"
+data "AbilityModifierCap" "2"
+data "ValueOverride" "328"
+data "Unique" 1
+
+new entry "ThematicItems_Duellist_Boots"
+type "Armor"
+using "_Foot_Magic"
+data "RootTemplate" "b8f73f4a-6ad7-4ac1-8abc-c10f08c1bee5"
+data "Rarity" "Uncommon"
+data "Boosts" "Advantage(SavingThrow, Dexterity)"
+data "ValueOverride" "172"
+data "Unique" 1
+
+new entry "ThematicItems_Duellist_Cap"
+type "Armor"
+using "_Head_Magic"
+data "RootTemplate" "31929a07-5a05-4e73-b76e-2e55381d64d7"
+data "Rarity" "Rare"
+data "PassivesOnEquip" "TI_Toppling_Thrust"
+data "ValueOverride" "719"
+data "Unique" 1
+
+new entry "ThematicItems_Duellist_Locket"
+type "item"
+using "_Amulet_Magic"
+data "RootTemplate" "3ac83dd4-5c9f-44cb-ade7-506c62d8e645"
+data "Rarity" "Rare"
+data "PassivesOnEquip" "TI_Duellist_Reflexes"
+data "ValueOverride" "1414"
+data "Unique" 1
+
+new entry "ThematicItems_Duellist_Gloves"
+type "Armor"
+using "_Hand_Magic"
+data "RootTemplate" "086f0706-cb71-414e-b44c-2c1acab936bd"
+data "Rarity" "VeryRare"
+data "PassivesOnEquip" "MAG_OfTheDuelist_Gloves_Passive;TI_Dodge"
+data "ValueOverride" "2009"
+data "Unique" 1
+
+new entry "ThematicItems_Duellist_Ring"
+type "item"
+using "_Ring_Magic"
+data "RootTemplate" "6e2daf68-57b4-45bb-a289-2c5346dccdbe"
+data "Rarity" "VeryRare"
+data "PassivesOnEquip" "TI_Find_The_Opening"
+data "Boosts" "Ability(Dexterity, 2, 24)"
+data "ValueOverride" "1846"
+data "Unique" 1
+
+-----
+
+new entry "ThematicItems_Bladesong"
+type "Weapon"
+using "WPN_Scimitar_2"
+data "RootTemplate" "8b0a47e1-48dd-41bf-9940-4bf09d1b4b9c"
+data "Rarity" "Legendary"
+data "DefaultBoosts" "WeaponEnchantment(3);WeaponProperty(Magical)"
+data "BoostsOnEquipMainHand" "UnlockSpell(Target_OpeningAttack);UnlockSpell(Target_Slash_New);UnlockSpell(Target_MAG_TheDueller_BonusAttack);UnlockSpell(Shout_TI_EvasiveFootwork_Bard)"
+data "PassivesMainHand" "Arsenal_LesserPowerAttack;MAG_TheClover_OffHand_Passive"
+data "ValueOverride" "8789"
+data "Unique" 1
+
+-----
+
+new entry "TI_Evasive_Maneuvers"
+type "PassiveData"
+data "DisplayName" "he13e1277ga346g43c8ga74fg1886503c816f"
+data "Description" "h9d9c1792gddf0g4551ga954gf4e3584139a9"
+data "DescriptionParams" "2"
+data "StatsFunctorContext" "OnAttacked"
+data "Conditions" "IsMeleeAttack() and not HasDamageEffectFlag(DamageFlags.Hit) and Character()"
+data "StatsFunctors" "ApplyStatus(MAG_MOMENTUM,100,2);ApplyStatus(MAG_MOMENTUM_DURATION_TECHNICAL,100,1)"
+
+new entry "TI_Toppling_Thrust"
+type "PassiveData"
+data "DisplayName" "h09cb7e4dg92f4g4853g9700ge424cb4cd076"
+data "Description" "h11b02968ge395g411ag983dgdfa69e2407c4"
+data "DescriptionParams" "2"
+data "StatsFunctorContext" "OnAttack"
+data "Condition" "IsMeleeAttack() and Enemy() and not IsMiss()"
+data "StatsFunctors" "ApplyStatus(MAG_ATTACK_DEBUFF,100,2)"
+
+new entry "TI_Duellist_Reflexes"
+type "PassiveData"
+data "DisplayName" "h11cae765g71fbg4a9fga193gf9525af1d114"
+data "Description" "h158b5652gaadag411ag812cgeb1044a2d52a"
+data "Boosts" "ActionResource(ReactionActionPoint, 1, 0)"
+
+new entry "TI_Dodge"
+type "PassiveData"
+data "DisplayName" "h25cc5d23g5ebdg42c2ga2d7ga4a2c712a321"
+data "Description" "hafeb68c2g8a1bg4707g87e0g6dec15fbf59a"
+data "DescriptionParams" "2"
+data "BoostContext" "OnCreate;OnEquip"
+data "BoostConditions" "IsOffHandSlotEmpty() and FightingStyle_Dueling(context.Source)"
+data "Boosts" "AC(2)"
+
+new entry "TI_Find_The_Opening"
+type "PassiveData"
+data "DisplayName" "h27b244d0g4437g4919g9536g5ad058292cb1"
+data "Description" "h1269309cg8868g4c65gbeccg8c5c3803f78f"
+data "DescriptionParams" "1"
+data "StatsFunctorContext" "OnAttacked"
+data "Conditions" "IsMeleeAttack() and not HasDamageEffectFlag(DamageFlags.Hit) and Character()"
+data "StatsFunctors" "ApplyStatus(TI_EMPOWERMENT,100,2);ApplyStatus(TI_EMPOWERMENT_DURATION_TECHNICAL,100,1)"
+
+-----
+
+new entry "Shout_TI_EvasiveFootwork_Bard"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_EvasiveFootwork"
+data "UseCosts" "BardicInspiration:1"
