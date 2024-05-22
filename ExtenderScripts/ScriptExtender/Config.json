@@ -1,5 +1,0 @@
-{
-	"RequiredExtensionVersion": 15,
-	"ModTable": "ThematicItems",
-	"FeatureFlags": ["Lua"]
-}
