@@ -117,7 +117,7 @@ type "PassiveData"
 data "DisplayName" "h7033c845gcd2eg4a84g947bg95f5cb7552f8"
 data "Description" "h83ea49f7g5cb2g4514g82dfg827d7df8cdab"
 data "DescriptionParams" "DealDamage(,Acid);DealDamage(,Cold);DealDamage(,Fire);DealDamage(,Lightning);DealDamage(,Poison);2"
-data "Boosts" "IF(HasDamageDoneForType(DamageType.Acid)):DamageBonus(1, Acid);IF(HasDamageDoneForType(DamageType.Cold)):DamageBonus(1, Cold);IF(HasDamageDoneForType(DamageType.Fire)):DamageBonus(1, Fire);IF(HasDamageDoneForType(DamageType.Lightning)):DamageBonus(1, Lightning);IF(HasDamageDoneForType(DamageType.Poison)):DamageBonus(1, Poison)"
+data "Boosts" "IF(HasDamageDoneForType(DamageType.Acid)):DamageBonus(2, Acid);IF(HasDamageDoneForType(DamageType.Cold)):DamageBonus(2, Cold);IF(HasDamageDoneForType(DamageType.Fire)):DamageBonus(2, Fire);IF(HasDamageDoneForType(DamageType.Lightning)):DamageBonus(2, Lightning);IF(HasDamageDoneForType(DamageType.Poison)):DamageBonus(2, Poison)"
 
 new entry "TI_Draconic_Vision"
 type "PassiveData"

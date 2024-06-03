@@ -291,7 +291,7 @@
     <content contentuid="hc546e86cg62f6g4cb6gb946g1c3f5f0f18a7" version="1">A ring that captures the essence of psychic and radiant agony. Its presence alone can break the spirit of the strongest foes, instilling a deep-seated fear that echoes through their psyche.</content>
     <content contentuid="hddb8c097g5c24g4107g9c01g9b717545a40d" version="1">Dominator's Ring</content>
     <content contentuid="h1747ba9fg8d90g4db9ga253g1c94e74fc7d4" version="1">Fear of God</content>
-    <content contentuid="h39f0c0c0gdb43g4a48ga390g039a5623118b" version="1">When the wearer deals [1] or [2] to a &lt;LSTag Type="Status" Tooltip="MAG_PSYCHIC_MENTAL_FATIGUE"&gt;Mental Fatigue&lt;/LSTag&gt;, it becomes &lt;LSTag Type="Status" Tooltip="FRIGHTENED"&gt;Frightened&lt;/LSTag&gt; unless it succeeds on a Wisdom &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt;.</content>
+    <content contentuid="h39f0c0c0gdb43g4a48ga390g039a5623118b" version="1">When the wearer deals [1] or [2] to a &lt;LSTag Type="Status" Tooltip="MAG_PSYCHIC_MENTAL_FATIGUE"&gt;Mentally Fatigued&lt;/LSTag&gt; target, it becomes &lt;LSTag Type="Status" Tooltip="FRIGHTENED"&gt;Frightened&lt;/LSTag&gt; unless it succeeds on a Wisdom &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt;.</content>
 
     <content contentuid="hc8bea7c8gb1fbg4ceaga71dg8e66fd76bb62" version="1">Forged from the darkest steel, this helm enhances the wearer's imposing presence. With every foe slain, its sinister aura deepens, radiating a palpable sense of dread.</content>
     <content contentuid="he0a721fag918cg4816g9a0dg4aff516d51b0" version="1">Dominator's Helm</content>

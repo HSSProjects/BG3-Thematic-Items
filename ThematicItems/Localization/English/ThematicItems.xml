@@ -455,7 +455,7 @@
   <content contentuid="h3b760d86g2748g4732g83bfg83e2e567bf8c" version="1">When the wearer deals Necrotic damage, they cause a &lt;LSTag Type="Spell" Tooltip="Projectile_TI_Necrotic_Decay_Explosion"&gt;Necrotic Shockwave&lt;/LSTag&gt;.</content>
   <content contentuid="hf9d7e5c3g77a7g4a46g9b87g6385eed86a54" version="1">Inflict &lt;LSTag Type="Status" Tooltip="TI_NECROTIC_DECAY"&gt;Decay&lt;/LSTag&gt; in a [1] radius.</content>
   <content contentuid="h14b2b592g3177g43b6gb4e6gec49ddc78d12" version="1">Decay</content>
-  <content contentuid="hc1d9c637gd077g4df5g895cg3600dcac5f42" version="1">Affected entity has &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on Strength and Constitution &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;When there are [1] or more turns remaining, the entity must succeed a Constitution Saving throw or become &lt;LSTag Type="Status" Tooltip="PARALYZED"&gt;Decay&lt;/LSTag&gt;</content>
+  <content contentuid="hc1d9c637gd077g4df5g895cg3600dcac5f42" version="1">Affected entity has &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on Strength &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;. They also deal [1] less damage on weapon attacks equal to the turns of this condition they have remaining.&lt;br&gt;&lt;br&gt;When there are [2] or more turns remaining, the entity must succeed a Constitution Saving throw or become &lt;LSTag Type="Status" Tooltip="SLOW"&gt;Slowed&lt;/LSTag&gt;.</content>
 
   <content contentuid="h6d07a421g9f64g480dga3a8g0d2fb04394fe" version="1">Rooted in the ancient dance of growth and decay, these boots carry the wearer through life's thicket, their steps leaving behind the rich scent of fertile soil, ripe for the sprouting of new life from old.</content>
   <content contentuid="h202c808eg5becg4d98g9c4cgb8e96945694b" version="1">Treads of the Fungal Bloom</content>
@@ -888,6 +888,7 @@
   <content contentuid="h14e55c74gff58g4af2ga024g5e2fc7ca1314" version="1">Guardian's Band</content>
   <content contentuid="hba8f45ddg8428g4e95gab73g4379453b3df9" version="1">Radiant Residue</content>
   <content contentuid="h15af9a78g0181g4455gb005gae03d8ad0e4c" version="1">Once per turn, when you deal Radiant damage, you gain [1] &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; for [2] turns.</content>
+  <content contentuid="hbd9e480cg6acdg4be4gb17ag20d1003a1414" version="1">Gain a +[1] bonus to &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt;.</content>
 
   <content contentuid="hd7438881g3cccg4ed7gb6c8g0f4f1c2b81ca" version="1">A cloak that seems woven from the ver essence of safeguarding, it lays upon the bearer's shoulders like a mantle of certainty, turning aside blows and malice with equanimity.</content>
   <content contentuid="h64c73786g9528g4983g9876g083b218cbe9d" version="1">Guardian's Drape</content>
@@ -1719,7 +1720,8 @@
   <content contentuid="h5299d707g00c7g47b8g8eb5ge4f4645dab17" version="1">Oversized Weapon</content>
   <content contentuid="h99f2f61dg0cf4g42cag9b71g8cdc599cc789" version="1">If the wearer is Large, this weapon deals an additional [1]. If the wearer is Huge, this weapon deals an additional [2]. If the wearer is Gargantuan, this weapon deals an additional [3].</content>
   <content contentuid="hdfb3eaafg01e3g49a4g92b1gc7f3a7e1eaf5" version="1">Heavy Weapon</content>
-  <content contentuid="hdc300097g8a80g42ddg88f1g1f7aa2446b08" version="1">This weapon requires [1] Strength.</content>
+  <content contentuid="hdc300097g8a80g42ddg88f1g1f7aa2446b08" version="1">This weapon requires [1] Strength or for the wearer to be Large or you will attack at &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt;.</content>
+  <content contentuid="hf4debda6gb45fg4c57ga84fg5f3b76680078" version="1">This weapon requires [1] Strength or for the wearer to be Huge or you will attack at &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt;.</content>
 
   <content contentuid="h9559895bg0965g4060gb611ga00ae8f75783" version="1">Forged in the shifting sands of the desert, this scimitar slices through enemies with the precision and speed of a sandstorm. Its blade chills the air, leaving foes shivering in its wake.</content>
   <content contentuid="hcf725678gc53ag4793g9326gf608b311c2ff" version="1">Desert Giant's Scimitar</content>

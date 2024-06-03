@@ -132,31 +132,32 @@ type "PassiveData"
 data "DisplayName" "hdfb3eaafg01e3g49a4g92b1gc7f3a7e1eaf5"
 data "Description" "hdc300097g8a80g42ddg88f1g1f7aa2446b08"
 data "DescriptionParams" "21"
-data "Boosts" "IF(not StrengthGreaterThan(20,context.Source)):Disadvantage(AttackRoll)"
+data "Boosts" "IF(not StrengthGreaterThan(20, context.Source) and not SizeEqualOrGreater(Size.Large, context.Source)):Disadvantage(AttackRoll)"
 
 new entry "Arsenal_Strength_Requirement_23"
 type "PassiveData"
 using "Arsenal_Strength_Requirement_21"
 data "DescriptionParams" "23"
-data "Boosts" "IF(not StrengthGreaterThan(22,context.Source)):Disadvantage(AttackRoll)"
+data "Boosts" "IF(not StrengthGreaterThan(22,context.Source) and not SizeEqualOrGreater(Size.Large, context.Source)):Disadvantage(AttackRoll)"
 
 new entry "Arsenal_Strength_Requirement_25"
 type "PassiveData"
 using "Arsenal_Strength_Requirement_21"
 data "DescriptionParams" "25"
-data "Boosts" "IF(not StrengthGreaterThan(24,context.Source)):Disadvantage(AttackRoll)"
+data "Boosts" "IF(not StrengthGreaterThan(24,context.Source) and not SizeEqualOrGreater(Size.Large, context.Source)):Disadvantage(AttackRoll)"
 
 new entry "Arsenal_Strength_Requirement_27"
 type "PassiveData"
 using "Arsenal_Strength_Requirement_21"
+data "Description" "hf4debda6gb45fg4c57ga84fg5f3b76680078"
 data "DescriptionParams" "27"
-data "Boosts" "IF(not StrengthGreaterThan(26,context.Source)):Disadvantage(AttackRoll)"
+data "Boosts" "IF(not StrengthGreaterThan(26,context.Source) and not SizeEqualOrGreater(Size.Huge, context.Source)):Disadvantage(AttackRoll)"
 
 new entry "Arsenal_Strength_Requirement_29"
 type "PassiveData"
-using "Arsenal_Strength_Requirement_21"
+using "Arsenal_Strength_Requirement_27"
 data "DescriptionParams" "29"
-data "Boosts" "IF(not StrengthGreaterThan(28,context.Source)):Disadvantage(AttackRoll)"
+data "Boosts" "IF(not StrengthGreaterThan(28,context.Source) and not SizeEqualOrGreater(Size.Huge, context.Source)):Disadvantage(AttackRoll)"
 
 -----
 
